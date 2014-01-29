@@ -2,175 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/test/fixtures/src/sub/b" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/test/fixtures/src/c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/test/fixtures/src/d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/test/fixtures/src/e" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/test/fixtures/src/f" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/jsonfile/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm-transaction/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/rimraf/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/jsonfile/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/jsonfile/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/rimraf/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/README.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/README.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/README.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/README.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/jsonfile/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/rimraf/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/benchmark/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm-transaction/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm-transaction/node_modules/debug/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/test/fixtures/src/a" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/test/fixtures/src/sub/a" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/examples/add_do.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/test/fixtures/src/b" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/benchmark/bench.gnu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/benchmark/bench.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/benchmark/benchmark-native.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/benchmark/benchmark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/rimraf/bin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/examples/chain.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/test/chainsaw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/chmod.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/circular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/circular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/clobber.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/test/compare_v1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/lib/copy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/lib/create.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/date.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/date.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm-transaction/node_modules/debug/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm-transaction/node_modules/debug/lib/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/lib/deep_equal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/equal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/equal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/error.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/has.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/test/hash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm-transaction/node_modules/debug/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/instance.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/instance.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/interface.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/interface.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/examples/join.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/lib/json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/examples/json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/examples/json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/jsonfile/lib/jsonfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/keys.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/examples/leaves.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/leaves.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/examples/leaves.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/leaves.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/testling/leaves.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/examples/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/lib/mkdir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/mkdirp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/mutability.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/mutability.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/test/ncp-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/lib/ncp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/.bin/ncp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/bin/ncp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/examples/negative.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/negative.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/examples/negative.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/negative.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/obj.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/obj.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/lib/output.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/jsonfile/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/ncp/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/rimraf/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm-transaction/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm-transaction/node_modules/debug/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/examples/parseq.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/examples/parseq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/perm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/perm_sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm-transaction/lib/plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/examples/pow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/examples/prompt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/test/property.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/race.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/test/readdir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/readme.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/readme.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/rel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/lib/remove.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/return.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/return_sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/rimraf/rimraf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/.bin/rimraf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/root.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/rimraf/test/run.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/examples/scrub.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/test/seq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/test/seq_.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/rimraf/test/setup.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/siblings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/examples/stat_all.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/examples/stat_all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/stop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/stop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/examples/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/examples/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/stringify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/subexpr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/chainsaw/node_modules/traverse/test/super_deep.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/super_deep.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/rimraf/test/test-async.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/rimraf/test/test-sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/test/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DB/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/test/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/umask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/fs-extra/node_modules/mkdirp/test/umask_sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/node-uuid/uuid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/environment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/settings.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/test.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/user.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/DB/test.js" afterPath="$PROJECT_DIR$/app/controllers/home_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/doc/API.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/doc/API.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/BigDecTest.java" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/BigDecTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.js" />
@@ -200,11 +40,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/every-test.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/every-test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/every-test.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/every-test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/floor.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/floor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/minus.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/minus.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/mod.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/mod.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/neg.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/neg.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/others.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/others.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/plus.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/plus.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/pow.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/pow.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/quick-test.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/quick-test.html" />
@@ -242,82 +82,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="24" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="22" selection-start="757" selection-end="757" vertical-scroll-proportion="1.3352602" vertical-offset="33" max-vertical-offset="615">
-              <folding />
+            <state line="10" column="23" selection-start="217" selection-end="217" vertical-scroll-proportion="0.25052193" vertical-offset="0" max-vertical-offset="479">
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="test.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DB/test.js">
+        <entry file="file://$PROJECT_DIR$/app/models/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+            <state line="13" column="2" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/express/lib/view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="41" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="1245">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/jade/package.json">
+      <file leaf-file-name="environment.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="19" selection-start="75" selection-end="80" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1110">
-              <folding />
+            <state line="22" column="28" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/orm/package.json">
+      <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="15" selection-start="258" selection-end="258" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1530">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/orm/.travis.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Contributing.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/orm/Contributing.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/mysql/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="19" selection-start="292" selection-end="297" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="765">
-              <folding />
+            <state line="7" column="2" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
+        <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="2" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="4" column="37" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home_controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/settings.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="27" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="9" selection-start="264" selection-end="264" vertical-scroll-proportion="-0.625" vertical-offset="150" max-vertical-offset="615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Caches/WebStorm7/extLibs/nodejs-v0.10.24-src/core-modules-sources/lib/module.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="339" column="0" selection-start="9614" selection-end="9614" vertical-scroll-proportion="0.0" vertical-offset="4653" max-vertical-offset="7860">
               <folding />
             </state>
           </provider>
@@ -336,16 +199,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/DB/test.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/views/layout.jade" />
+        <option value="$PROJECT_DIR$/Model/gom_insts.js" />
+        <option value="$PROJECT_DIR$/DB/test.js" />
+        <option value="$PROJECT_DIR$/model/dbModel.js" />
+        <option value="$PROJECT_DIR$/DB/DBCC.js" />
+        <option value="$PROJECT_DIR$/routes/userAction.js" />
+        <option value="$PROJECT_DIR$/app/controllers/index.js" />
+        <option value="$PROJECT_DIR$/app/controllers/home_controller.js" />
+        <option value="$PROJECT_DIR$/config/routes.js" />
+        <option value="$PROJECT_DIR$/config/settings.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/app/models/test.js" />
+        <option value="$PROJECT_DIR$/config/environment.js" />
+        <option value="$PROJECT_DIR$/app/models/index.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="763" />
-    <option name="y" value="23" />
-    <option name="width" value="679" />
+    <option name="y" value="22" />
+    <option name="width" value="762" />
     <option name="height" value="808" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -374,7 +248,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -403,7 +276,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -417,11 +290,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -435,7 +304,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -449,22 +322,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="SearchEverywhereHistory" value="" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -475,23 +361,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -541,31 +419,35 @@
       <created>1390991629209</created>
       <updated>1390991629209</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" 继续增加依赖模块">
+      <created>1390996839090</created>
+      <updated>1390996839090</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="763" y="23" width="679" height="808" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="762" height="808" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.49848023" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38128492" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5379939" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20647773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5003524" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28313252" sideWeight="0.5003524" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28184283" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -583,12 +465,55 @@
     <MESSAGE value="添加orm模块" />
     <MESSAGE value="还是添加orm模块，刚才没有添加到git。。" />
     <MESSAGE value="修改package.json文件的部分信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改package.json文件的部分信息" />
+    <MESSAGE value=" 继续增加依赖模块" />
+    <option name="LAST_COMMIT_MESSAGE" value=" 继续增加依赖模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jade/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="19" selection-start="75" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/orm/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/orm/Contributing.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="292" selection-end="297" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
@@ -603,25 +528,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="2" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="2" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/orm/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/orm/Contributing.md">
@@ -633,43 +542,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="292" selection-end="297" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="765">
+        <state line="8" column="19" selection-start="292" selection-end="297" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/orm/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="258" selection-end="258" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1530">
+        <state line="13" column="15" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/jade/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="75" selection-end="80" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1110">
+        <state line="3" column="19" selection-start="75" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1110">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DB/test.js">
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$USER_HOME$/Library/Caches/WebStorm7/extLibs/nodejs-v0.10.24-src/core-modules-sources/lib/module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+        <state line="339" column="0" selection-start="9614" selection-end="9614" vertical-scroll-proportion="0.0" vertical-offset="4653" max-vertical-offset="7860">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="22" selection-start="757" selection-end="757" vertical-scroll-proportion="1.3352602" vertical-offset="33" max-vertical-offset="615">
+        <state line="11" column="9" selection-start="264" selection-end="264" vertical-scroll-proportion="-0.625" vertical-offset="150" max-vertical-offset="615">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="41" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.6052632" vertical-offset="9" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="2" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="37" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="27" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="2" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="28" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="217" selection-end="217" vertical-scroll-proportion="0.25052193" vertical-offset="0" max-vertical-offset="479">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
