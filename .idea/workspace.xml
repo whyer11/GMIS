@@ -2,318 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/BigDecTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/build/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/TypeScript/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/doc/API.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/AggregateFunctions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/Auth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/BigDecTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/ChainFind.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/ChainInstance.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/ChangeUser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/Changelog.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/Changes.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ClientAuthenticationPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ComChangeUserPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ComPingPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ComQueryPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ComQuitPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ComStatisticsPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/lib/Comparators.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/Connection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/ConnectionConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/Contributing.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/EmptyPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/lib/Enforce.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/EofPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/ErrorCodes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ErrorPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Express.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Associations/Extend.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/Field.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/FieldPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Handshake.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/lib/Helpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Hook.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/lib/Insert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Instance.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/LICENCE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/LICENCE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/LICENCE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/lodash/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/debuglog/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/LazyLoad.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/License" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/License" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/LocalDataFilePacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Associations/Many.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/ORM.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/OkPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/OldPasswordPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Associations/One.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/PacketHeader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/PacketWriter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/Parser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Ping.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/Pool.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/PoolCluster.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/PoolConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/PoolConnection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Promise.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Property.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/Protocol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Query.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/lib/Query.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Quit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/hat/README.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/debuglog/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/lodash/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/require-all/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/lib/Remove.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/ResultSet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/ResultSetHeaderPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/RowDataPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/lib/Select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Sequence.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/lib/Set.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Settings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Singleton.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/SqlString.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Statistics.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/StatisticsPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/lib/Update.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/UseOldPasswordPacket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Utilities.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Validators.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/lib/Where.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/lib/_stream_duplex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/lib/_stream_passthrough.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/lib/_stream_readable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/lib/_stream_transform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/lib/_stream_writable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/abs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Drivers/aliases.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/association-extend.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/association-hasmany-extra.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/association-hasmany-hooks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/association-hasmany.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/association-hasone-required.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/association-hasone-reverse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/association-hasone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-out.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/bigdecimal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/bignumber-vs-bigdecimal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/bignumber-vs-number.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/bignumber.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/bignumber.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/bigtime-OOM.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/bigtime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/bugs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/build/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/ceil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/charsets.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/cmp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/test/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/lib/enforcements/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/test/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/test/integration/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/config.example.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/require-all/test/mydir/sub/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/console-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/support/coverage-package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/db.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/debuglog/debuglog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/div.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/duplex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/test/integration/enforce.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/errors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/event.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/every-test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/every-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/field_flags.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/build/files.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/float.patch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/float.patch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/floor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/require-all/test/mydir/foo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/tool/generate-error-constants.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/hat/example/hat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/require-all/test/mydir/hello.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Drivers/helpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/hook.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/hat/test/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/packets/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/require-all/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/hat/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/instance.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/lib/enforcements/lists.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/test/integration/lists.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/lodash/dist/lodash.compat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/lodash/dist/lodash.compat.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/lodash/lodash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/lodash/dist/lodash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/lodash/dist/lodash.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/lodash/dist/lodash.underscore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/lodash/dist/lodash.underscore.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/logging.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/require-all/test/controllers/main-Controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/make.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/minus.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/mocha.opts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/mod.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/model-aggregate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/model-clear.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/model-count.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/model-create.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/model-exists.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/model-find-chain.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/model-find.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/model-get.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/model-keys.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/model-one.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/model-save.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Drivers/DML/mongodb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/support/my_plugin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Drivers/DDL/mysql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Drivers/DML/mysql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/lib/Dialects/mysql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/neg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/require-all/test/mydir/sub/no.2js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/require-all/test/controllers/notthis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/orm-exports.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/TypeScript/orm.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/require-all/test/controllers/other-Controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/others.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/debuglog/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/build/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/require-all/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/hat/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/lodash/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/passthrough.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/lib/enforcements/patterns.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/test/integration/patterns.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/plus.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Drivers/DDL/postgres.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Drivers/DML/postgres.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/lib/Dialects/postgresql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/pow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/predefined-validators.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/property-custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/property-lazyload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/property-number-size.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/property-timezones.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/property.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/quick-test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/quick-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/hat/example/rack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/hat/test/rack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/lib/enforcements/ranges.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/test/integration/ranges.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/readable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Drivers/DML/redshift.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/round.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/test/run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/run.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/lib/enforcements/security.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/enforce/test/integration/security.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/server_status.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/settings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/single-test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/smart-types.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/support/spec_helper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/support/spec_load.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/support/spec_load_second.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/support/spec_load_third.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/TypeScript/sql-query.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Drivers/DDL/sqlite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/lib/Drivers/DML/sqlite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/lib/Dialects/sqlite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/sqrt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-dialect-mysql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-dialect-postgresql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-dialect-sqlite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/lib/test-helpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-insert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-limit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-offset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-remove.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/build/test-replacements.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-select-aggregate-groupby.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-select-aggregate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-select-type.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/test/simple/test-string-decoder-end.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/test/simple/test-string-decoder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-update.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-where-advanced.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-where-custom-types.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-where-exists.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/node_modules/sql-query/test/integration/test-where.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/require-all/test/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/times.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toExponential.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toFixed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toFraction.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toPrecision.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toString.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/transform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/types.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/lib/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/v8-LICENCE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/orm/test/integration/validation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/readable-stream/writable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/require-all/test/mydir/sub/yes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/doc/API.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/doc/API.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/BigDecTest.java" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/BigDecTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.min.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/LICENCE.txt" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/LICENCE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/LICENCE.txt" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/LICENCE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/LICENCE" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/LICENCE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/lib/PoolCluster.js" afterPath="$PROJECT_DIR$/node_modules/mysql/lib/PoolCluster.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/README.md" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/README.txt" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/abs.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/abs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-in.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-in.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-out.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-out.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/bigdecimal.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/bigdecimal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/bignumber-vs-bigdecimal.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/bignumber-vs-bigdecimal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/bignumber-vs-number.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/bignumber-vs-number.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/bignumber.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/bignumber.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/bigtime-OOM.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/bigtime-OOM.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/bigtime.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/bigtime.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/bugs.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/bugs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/ceil.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/ceil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/cmp.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/cmp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/config.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/console-errors.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/console-errors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/div.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/div.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/every-test.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/every-test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/every-test.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/every-test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/floor.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/floor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/minus.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/minus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/mod.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/mod.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/neg.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/neg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/others.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/others.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/plus.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/plus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/pow.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/pow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/quick-test.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/quick-test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/quick-test.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/quick-test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/round.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/round.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/single-test.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/single-test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/sqrt.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/sqrt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/times.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/times.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toExponential.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toExponential.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toFixed.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toFixed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toFraction.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toFraction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toPrecision.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toPrecision.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toString.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/toString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/v8-LICENCE.txt" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/v8-LICENCE.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GMIS.iws" />
@@ -346,10 +81,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="15" selection-start="187" selection-end="187" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="270">
+            <state line="26" column="27" selection-start="584" selection-end="584" vertical-scroll-proportion="0.77227724" vertical-offset="0" max-vertical-offset="555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/jade/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="19" selection-start="75" selection-end="80" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1110">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/orm/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="15" selection-start="258" selection-end="258" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -364,10 +117,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Contributing.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Contributing.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/orm/Contributing.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mysql/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="19" selection-start="292" selection-end="297" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -507,6 +269,42 @@
               <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jade" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -588,19 +386,23 @@
       <created>1390988892094</created>
       <updated>1390988892094</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="还是添加orm模块，刚才没有添加到git。。">
+      <created>1390989389258</created>
+      <updated>1390989389258</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891566" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5003524" order="7" side_tool="true" content_ui="tabs" />
@@ -628,7 +430,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="添加orm模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加orm模块" />
+    <MESSAGE value="还是添加orm模块，刚才没有添加到git。。" />
+    <option name="LAST_COMMIT_MESSAGE" value="还是添加orm模块，刚才没有添加到git。。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -669,13 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="15" selection-start="187" selection-end="187" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/orm/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529">
@@ -686,6 +482,34 @@
     <entry file="file://$PROJECT_DIR$/node_modules/orm/Contributing.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="292" selection-end="297" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/orm/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="258" selection-end="258" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jade/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="19" selection-start="75" selection-end="80" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="27" selection-start="584" selection-end="584" vertical-scroll-proportion="0.77227724" vertical-offset="0" max-vertical-offset="555">
           <folding />
         </state>
       </provider>
