@@ -10,5 +10,8 @@ module.exports = function(orm,db){
         CLS_ID:Number,
         INST_NAME:String,
         INST_NOTE:String
-    });
+    },
+        {
+            id:"INST_ID"
+        });
 };
