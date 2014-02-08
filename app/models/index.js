@@ -6,7 +6,7 @@ var orm = require('orm'),
     connection = null;
 
 function setup(db,cb){
-    require('./test')(orm,db);
+    require('./gom_insts')(orm,db);
 
     return cb(null,db);
 }
