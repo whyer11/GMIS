@@ -3,13 +3,14 @@
  */
 module.exports = function (req, res, err) {
     var gom_clses = req.models.gom_clses;
-    var rootClass;
+    var rootClass = "LKJ";
     gom_clses.find({CLS_ID: 0}, function (err, data) {
         console.log(data[0].CLS_NAME);
         rootClass = data[0].CLS_NAME.toString();
-    });
-    res.render('add_classes', {
-        title: '添加类型',
-        rootClass: rootClass
+        res.render('add_classes', {
+            title: '添加类型',
+            rootClass: rootClass
+        })
+
     });
 };

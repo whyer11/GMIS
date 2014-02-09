@@ -1,3 +1,18 @@
 //
    Created by whyer on 14-2-9.
-a SDFGSDF #{rootClass}
+extends layout
+
+block content
+    h1= rootClass
+    p welcome to #{rootClass}
+
+    button#add_class addclass
+
+    div.container
+        div.pull-left#addclass_name
+        div.pull-right#addclass_props
+
+
+
+
+    script(src='../javascripts/addclasses.js')
