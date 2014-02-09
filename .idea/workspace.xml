@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/gom_props.js" />
+    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="继续创建模型，但是。。。我感觉应该可以像。。。那个什么一样可以自动创建的吧。。尼玛的一个个打，不是这么玩的吧&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/doc/API.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/doc/API.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/BigDecTest.java" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/BigDecTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.js" />
@@ -31,7 +30,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/every-test.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/every-test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/every-test.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/every-test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/floor.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/floor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.js" afterPath="$PROJECT_DIR$/app/controllers/home_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/index.js" afterPath="$PROJECT_DIR$/app/models/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/minus.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/minus.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/mod.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/mod.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/neg.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/neg.js" />
@@ -93,10 +92,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/models/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="35" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="405">
+                <state line="10" column="35" selection-start="269" selection-end="269" vertical-scroll-proportion="0.24958402" vertical-offset="0" max-vertical-offset="601">
                   <folding />
                 </state>
               </provider>
@@ -111,10 +110,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="gom_props.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="gom_props.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/models/gom_props.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="24" selection-start="623" selection-end="623" vertical-scroll-proportion="0.48859936" vertical-offset="0" max-vertical-offset="614">
+                <state line="22" column="24" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
                   <folding>
                     <element signature="e#0#38#0" expanded="false" />
                   </folding>
@@ -227,10 +226,10 @@
         <option value="$PROJECT_DIR$/config/environment.js" />
         <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/app/models/gom_insts.js" />
-        <option value="$PROJECT_DIR$/app/models/index.js" />
         <option value="$PROJECT_DIR$/app/models/gom_clses.js" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.js" />
         <option value="$PROJECT_DIR$/app/models/gom_props.js" />
+        <option value="$PROJECT_DIR$/app/models/index.js" />
       </list>
     </option>
   </component>
@@ -473,7 +472,11 @@
       <created>1391912590268</created>
       <updated>1391912590268</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="继续创建模型，但是。。。我感觉应该可以像。。。那个什么一样可以自动创建的吧。。尼玛的一个个打，不是这么玩的吧">
+      <created>1391914753299</created>
+      <updated>1391914753299</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -542,7 +545,8 @@
     <MESSAGE value="时隔多日。。终于能从数据库里取出数据。。尼玛，一天的心情都变好了。。" />
     <MESSAGE value="插入数据没有问题，测试完毕" />
     <MESSAGE value="创建gom_clses模型，操作没有问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建gom_clses模型，操作没有问题" />
+    <MESSAGE value="继续创建模型，但是。。。我感觉应该可以像。。。那个什么一样可以自动创建的吧。。尼玛的一个个打，不是这么玩的吧" />
+    <option name="LAST_COMMIT_MESSAGE" value="继续创建模型，但是。。。我感觉应该可以像。。。那个什么一样可以自动创建的吧。。尼玛的一个个打，不是这么玩的吧" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -827,13 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/gom_clses.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="2" selection-start="427" selection-end="427" vertical-scroll-proportion="0.39531478" vertical-offset="0" max-vertical-offset="683">
@@ -850,10 +847,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/gom_props.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="24" selection-start="623" selection-end="623" vertical-scroll-proportion="0.48859936" vertical-offset="0" max-vertical-offset="614">
+        <state line="22" column="24" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="35" selection-start="269" selection-end="269" vertical-scroll-proportion="0.24958402" vertical-offset="0" max-vertical-offset="601">
+          <folding />
         </state>
       </provider>
     </entry>
