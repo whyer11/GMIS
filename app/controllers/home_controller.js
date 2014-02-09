@@ -4,12 +4,16 @@
 
 
 module.exports = function (req, res, next) {
-    req.models.gom_insts.find({INST_ID: 0}, function (err, data) {
-        console.log(data[0].INST_NAME);
-    });
     var gom_insts = req.models.gom_insts;
+    var gom_clses = req.models.gom_clses;
+    gom_clses.find({CLS_ID: 0}, function (err, data) {
+        console.log(data[0].CLS_NAME);
+    });
+
+
+    /*
     gom_insts.create({
-        INST_ID:0,
+        INST_ID: 0,
         STATE_ID: 0,
         INSTACP_ID: 0,
         CLS_ID: 0,
@@ -21,6 +25,7 @@ module.exports = function (req, res, next) {
         }
         console.log(items);
     });
+    */
     res.render('index', {
         title: 'index'
     });

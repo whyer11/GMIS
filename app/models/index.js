@@ -7,6 +7,7 @@ var orm = require('orm'),
 
 function setup(db,cb){
     require('./gom_insts')(orm,db);
+    require('./gom_clses')(orm,db);
 
     return cb(null,db);
 }
