@@ -6,17 +6,17 @@ var path = require('path'),
     settings = require('./settings'),
     models = require('../app/models/');
 
-module.exports = function(app){
-    app.configure(function(){
-        app.use(express.static(path.join(settings.path,'public')));
+module.exports = function (app) {
+    app.configure(function () {
+        app.use(express.static(path.join(settings.path, 'public')));
         app.use(express.favicon());
         app.use(express.logger('dev'));
         app.use(express.json());
         app.use(express.urlencoded());
         app.use(express.methodOverride());
-        app.use(function(req,res,next){
-            models(function(err,db){
-                if(err){
+        app.use(function (req, res, next) {
+            models(function (err, db) {
+                if (err) {
                     return next(err);
                 }
                 req.models = db.models;

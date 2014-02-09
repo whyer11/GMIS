@@ -5,19 +5,19 @@ var orm = require('orm'),
     settings = require('../../config/settings'),
     connection = null;
 
-function setup(db,cb){
-    require('./gom_insts')(orm,db);
-    require('./gom_clses')(orm,db);
-    require('./gom_props')(orm,db);
+function setup(db, cb) {
+    require('./gom_insts')(orm, db);
+    require('./gom_clses')(orm, db);
+    require('./gom_props')(orm, db);
 
-    return cb(null,db);
+    return cb(null, db);
 }
 
-module.exports = function(cb){
+module.exports = function (cb) {
 
-    orm.connect(settings.database,function(err,db){
+    orm.connect(settings.database, function (err, db) {
 
-        db.settings.set('instance.returnAllErrors',true);
-        setup(db,cb);
+        db.settings.set('instance.returnAllErrors', true);
+        setup(db, cb);
     });
 };
