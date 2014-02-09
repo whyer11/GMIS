@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="定时更新">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/addclasses.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/addclsesname_controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/jquery-1.11.0.min.js" />
+    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="正在尝试ajax，后端有问题">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/doc/API.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/doc/API.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/BigDecTest.java" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/BigDecTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.js" />
@@ -16,8 +13,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/README.md" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/README.txt" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/README.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/abs.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/abs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/add_classes.jade" afterPath="$PROJECT_DIR$/views/add_classes.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/addclses_controller.js" afterPath="$PROJECT_DIR$/app/controllers/addclses_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/addclasses.js" afterPath="$PROJECT_DIR$/public/javascripts/addclasses.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/addclsesname_controller.js" afterPath="$PROJECT_DIR$/app/controllers/addclsesname_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-in.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-in.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-out.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-out.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/bigdecimal.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/bigdecimal.js" />
@@ -35,8 +32,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/every-test.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/every-test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/every-test.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/every-test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/floor.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/floor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/index.js" afterPath="$PROJECT_DIR$/app/controllers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/minus.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/minus.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/mod.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/mod.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/neg.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/neg.js" />
@@ -46,7 +41,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/quick-test.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/quick-test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/quick-test.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/quick-test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/round.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/round.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.js" afterPath="$PROJECT_DIR$/config/routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/single-test.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/browser/single-test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/sqrt.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/sqrt.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/times.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/times.js" />
@@ -93,10 +87,8 @@
           <file leaf-file-name="addclasses.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/javascripts/addclasses.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="26" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="480">
-                  <folding>
-                    <marker date="1391933110000" expanded="true" signature="326:587" placeholder="{&quot;type&quot;: 'post'...}" />
-                  </folding>
+                <state line="17" column="26" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -104,7 +96,7 @@
           <file leaf-file-name="addclses_controller.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/addclses_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="2" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
+                <state line="15" column="2" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
                   <folding />
                 </state>
               </provider>
@@ -113,10 +105,8 @@
           <file leaf-file-name="addclsesname_controller.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/controllers/addclsesname_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="2" selection-start="161" selection-end="161" vertical-scroll-proportion="0.17013232" vertical-offset="0" max-vertical-offset="529">
-                  <folding>
-                    <element signature="e#0#38#0" expanded="false" />
-                  </folding>
+                <state line="4" column="31" selection-start="109" selection-end="109" vertical-scroll-proportion="0.10869565" vertical-offset="0" max-vertical-offset="552">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -143,15 +133,6 @@
             <entry file="file://$PROJECT_DIR$/node_modules/seq/node_modules/hashish/README.markdown">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2955">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="super_deep.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/node_modules/seq/node_modules/hashish/node_modules/traverse/test/super_deep.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="7" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="79" max-vertical-offset="930">
                   <folding />
                 </state>
               </provider>
@@ -206,10 +187,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home_controller.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="home_controller.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="2" selection-start="640" selection-end="640" vertical-scroll-proportion="0.8695652" vertical-offset="0" max-vertical-offset="570">
+                <state line="32" column="2" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
                   <folding />
                 </state>
               </provider>
@@ -218,16 +199,16 @@
           <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/index.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="19" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165">
+                <state line="5" column="19" selection-start="85" selection-end="85" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="165">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="add_classes.jade" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="add_classes.jade" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="35" selection-start="184" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="345">
+                <state line="11" column="35" selection-start="184" selection-end="197" vertical-scroll-proportion="0.31309298" vertical-offset="0" max-vertical-offset="527">
                   <folding />
                 </state>
               </provider>
@@ -276,9 +257,9 @@
         <option value="$PROJECT_DIR$/views/add_classes.jade" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/app/controllers/index.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/addclasses.js" />
         <option value="$PROJECT_DIR$/config/routes.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclsesname_controller.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/addclasses.js" />
       </list>
     </option>
   </component>
@@ -568,7 +549,11 @@
       <created>1391916339245</created>
       <updated>1391916339245</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="正在尝试ajax，后端有问题">
+      <created>1391949760117</created>
+      <updated>1391949760117</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -595,6 +580,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282123" sideWeight="0.49848023" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38128492" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -609,7 +595,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -660,7 +645,8 @@
     <MESSAGE value="继续创建模型，但是。。。我感觉应该可以像。。。那个什么一样可以自动创建的吧。。尼玛的一个个打，不是这么玩的吧" />
     <MESSAGE value="继续创建模型，但是。。。我感觉应该可以像。。。那个什么一样可以自动创建的吧。。尼玛的一个个打，不是这么玩的吧&#10;上一次。。没有上传成功么。。？？" />
     <MESSAGE value="定时更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="定时更新" />
+    <MESSAGE value="正在尝试ajax，后端有问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="正在尝试ajax，后端有问题" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -858,16 +844,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="53" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
           <folding>
-            <marker date="1391930002000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/addclasses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding>
-            <marker date="1391933110000" expanded="true" signature="326:587" placeholder="{&quot;type&quot;: 'post'...}" />
+            <marker date="1391949759000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -875,13 +852,6 @@
     <entry file="file://$PROJECT_DIR$/config/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="12" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="2" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
           <folding />
         </state>
       </provider>
@@ -909,21 +879,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="2" selection-start="640" selection-end="640" vertical-scroll-proportion="0.8695652" vertical-offset="0" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="184" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="345">
+        <state line="32" column="2" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <folding />
         </state>
       </provider>
@@ -963,12 +919,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="2" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="85" selection-end="85" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="184" selection-end="197" vertical-scroll-proportion="0.31309298" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/addclasses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="26" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/addclsesname_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="161" selection-end="161" vertical-scroll-proportion="0.17013232" vertical-offset="0" max-vertical-offset="529">
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
+        <state line="4" column="31" selection-start="109" selection-end="109" vertical-scroll-proportion="0.10869565" vertical-offset="0" max-vertical-offset="552">
+          <folding />
         </state>
       </provider>
     </entry>

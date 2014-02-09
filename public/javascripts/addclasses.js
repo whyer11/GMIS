@@ -9,11 +9,14 @@ $(function () {
             "<a id='subclassname'>确定</a>"
         );
         $('#subclassname').click(function () {
+            alert($('#classname').val());
             $.ajax({
                 type: 'post',
                 url: '/add_class_name',
                 dataType: 'json',
-                data: $('#subclassname').val(),
+                data: {
+                    name: $('#classname').val()
+                },
                 success: function (data) {
                     console.log(data);
                 }
