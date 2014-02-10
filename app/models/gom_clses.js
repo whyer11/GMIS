@@ -12,8 +12,9 @@ module.exports = function (orm, db) {
         CLS_NOTE: String,
         CLS_DISP_IND: Number,
         CLS_CODE: String,
-        CLS_IMAGE: Number
+        CLS_IMAGE: Buffer
     }, {
         id: "CLS_ID"
     });
+
 };
