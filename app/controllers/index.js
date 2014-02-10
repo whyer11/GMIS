@@ -3,6 +3,6 @@
  */
 module.exports = {
     home: require('./home_controller'),
-    addclses: require('./addclses_controller'),
-    addclsesname: require('./addclsesname_controller')
+    addclses: require('./addclses_main_controller'),
+    addclsesname: require('./addclses_add_controller')
 };

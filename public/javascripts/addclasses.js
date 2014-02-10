@@ -6,13 +6,13 @@ $(function () {
         $('#addclass_name').html("" +
             "<a>类型名称：</a>" +
             "<input type='text' id='classname'>" +
-            "<a id='subclassname'>确定</a>"
+            "<a class='btn-primary' id='subclassname'>确定</a>"
         );
         $('#subclassname').click(function () {
             alert($('#classname').val());
             $.ajax({
                 type: 'post',
-                url: '/add_class_name',
+                url: '/add_class_name.json',
                 dataType: 'json',
                 data: {
                     name: $('#classname').val()

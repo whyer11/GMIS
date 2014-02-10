@@ -6,5 +6,5 @@ var controllers = require('../app/controllers');
 module.exports = function (app) {
     app.get('/', controllers.home);
     app.get('/add_classes', controllers.addclses);
-    app.post('/add_class_name', controllers.addclsesname);
+    app.post('/add_class_name.json', controllers.addclsesname);
 };
