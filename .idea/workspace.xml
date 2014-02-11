@@ -600,7 +600,11 @@
       <created>1392080053901</created>
       <updated>1392080053901</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="定时更新">
+      <created>1392080149921</created>
+      <updated>1392080149921</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
