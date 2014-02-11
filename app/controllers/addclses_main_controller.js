@@ -3,13 +3,11 @@
  */
 module.exports = function (req, res, err) {
     var gom_clses = req.models.gom_clses;
-    var rootClass = "LKJ";
-    gom_clses.find({CLS_ID: 0}, function (err, data) {
-        console.log(data[0].CLS_NAME);
-        rootClass = data[0].CLS_NAME.toString();
+    gom_clses.find(['CLS_ID', 'A'], function (err, data) {
+
         res.render('add_classes', {
             title: '添加类型',
-            rootClass: rootClass
+            rootClass: data
         })
 
     });
