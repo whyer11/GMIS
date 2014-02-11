@@ -7,29 +7,33 @@ block content
   script(type='text/javascript').
     $(function(){
       var allclasses;
-      var viewtreesettings={};
-      var zNode = [
-        {name:'fnode',
-          children:[
-            {name:'znode',
-              children:[
-                {name:'a'},
-                {name:'b'},
-                {name:'c'}
-              ]
-            }
-          ]
+      var viewtreesettings={
+        data:{
+          simpleData:{
+            enable:true
+          }
         }
-      ];
+      };
+      var rootnode =[];
       window.onload=function(){
         $.get('/display_class_name.json',{},function(data){
           allclasses = data;
 
+          maketree(allclasses.data);
+
+          $.fn.zTree.init($('#treeDemo'), viewtreesettings, rootnode);
         });
       }
-      $.fn.zTree.init($("#treeDemo"), viewtreesettings, zNode);
-    var maketree = function(data){
 
+    var maketree = function(data){
+      for(var i = 0;i<data.length;i++){
+        var n = {
+          id:data[i].CLS_ID,
+          pId:data[i].PARENT_CLS_ID,
+          name:data[i].CLS_NAME
+        }
+        rootnode.push(n);
+      }
     }
     })
   button#add_class addclass
