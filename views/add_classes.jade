@@ -3,20 +3,39 @@
 extends layout
 
 block content
-  script()
+  script(src='../javascripts/jquery.ztree.core-3.5.js')
   script(type='text/javascript').
     $(function(){
       var allclasses;
+      var viewtreesettings={};
+      var zNode = [
+        {name:'fnode',
+          children:[
+            {name:'znode',
+              children:[
+                {name:'a'},
+                {name:'b'},
+                {name:'c'}
+              ]
+            }
+          ]
+        }
+      ];
       window.onload=function(){
         $.get('/display_class_name.json',{},function(data){
           allclasses = data;
 
         });
       }
-      console.log(allclasses);
+      $.fn.zTree.init($("#treeDemo"), viewtreesettings, zNode);
+    var maketree = function(data){
+
+    }
     })
   button#add_class addclass
   div.container
     div.pull-left#addclass_name
     div.pull-right#addclass_props
+  div.container
+    ul#treeDemo.ztree
   script(src='../javascripts/addclasses.js')
