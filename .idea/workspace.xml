@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="怒16小时（间断时间！！）。。">
+    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="定时更新">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/doc/API.html" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/doc/API.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/BigDecTest.java" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/BigDecTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_ICU4J/BigDecimal-all-last.js" />
@@ -13,9 +13,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/README.md" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/README.txt" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/README.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/abs.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/abs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/add_classes.jade" afterPath="$PROJECT_DIR$/views/add_classes.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" afterPath="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/addclses_main_controller.js" afterPath="$PROJECT_DIR$/app/controllers/addclses_main_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-in.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-in.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-out.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/test/base-out.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/bigdecimal.js" afterPath="$PROJECT_DIR$/node_modules/mysql/node_modules/bignumber.js/perf/lib/bigdecimal_GWT/bigdecimal.js" />
@@ -97,8 +94,10 @@
           <file leaf-file-name="addclses_main_controller.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/addclses_main_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="0" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-                  <folding />
+                <state line="6" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+                  <folding>
+                    <marker date="1392080053000" expanded="true" signature="81:297" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -115,8 +114,10 @@
           <file leaf-file-name="addclses_add_controller.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="39" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-                  <folding />
+                <state line="13" column="39" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+                  <folding>
+                    <marker date="1392080053000" expanded="true" signature="76:500" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -218,7 +219,7 @@
           <file leaf-file-name="add_classes.jade" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="4" selection-start="68" selection-end="68" vertical-scroll-proportion="0.14231499" vertical-offset="0" max-vertical-offset="527">
+                <state line="5" column="0" selection-start="64" selection-end="64" vertical-scroll-proportion="0.14231499" vertical-offset="0" max-vertical-offset="527">
                   <folding />
                 </state>
               </provider>
@@ -595,7 +596,11 @@
       <created>1392039065478</created>
       <updated>1392039065478</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="定时更新">
+      <created>1392080053901</created>
+      <updated>1392080053901</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -686,12 +691,12 @@
     <MESSAGE value="创建gom_clses模型，操作没有问题" />
     <MESSAGE value="继续创建模型，但是。。。我感觉应该可以像。。。那个什么一样可以自动创建的吧。。尼玛的一个个打，不是这么玩的吧" />
     <MESSAGE value="继续创建模型，但是。。。我感觉应该可以像。。。那个什么一样可以自动创建的吧。。尼玛的一个个打，不是这么玩的吧&#10;上一次。。没有上传成功么。。？？" />
-    <MESSAGE value="定时更新" />
     <MESSAGE value="正在尝试ajax，后端有问题" />
     <MESSAGE value="后端ajax获取到数据" />
     <MESSAGE value="添加Bootstrap支持，我发现我已经离开不了Bootstrap了" />
     <MESSAGE value="怒16小时（间断时间！！）。。" />
-    <option name="LAST_COMMIT_MESSAGE" value="怒16小时（间断时间！！）。。" />
+    <MESSAGE value="定时更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="定时更新" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -964,15 +969,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="39" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
+        <state line="13" column="39" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding>
+            <marker date="1392080053000" expanded="true" signature="76:500" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/addclses_main_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <folding />
+        <state line="6" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <folding>
+            <marker date="1392080053000" expanded="true" signature="81:297" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -992,7 +1001,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="68" selection-end="68" vertical-scroll-proportion="0.14231499" vertical-offset="0" max-vertical-offset="527">
+        <state line="5" column="0" selection-start="64" selection-end="64" vertical-scroll-proportion="0.14231499" vertical-offset="0" max-vertical-offset="527">
           <folding />
         </state>
       </provider>
