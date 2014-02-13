@@ -3,43 +3,14 @@
 extends layout
 
 block content
+  script(src='../javascripts/addclasses.js')
   script(src='../javascripts/jquery.ztree.core-3.5.js')
-  script(type='text/javascript').
-    $(function(){
-      var allclasses;
-      var viewtreesettings={
-        data:{
-          simpleData:{
-            enable:true
-          }
-        }
-      };
-      var rootnode =[];
-      window.onload=function(){
-        $.get('/display_class_name.json',{},function(data){
-          allclasses = data;
-
-          maketree(allclasses.data);
-
-          $.fn.zTree.init($('#treeDemo'), viewtreesettings, rootnode);
-        });
-      }
-
-    var maketree = function(data){
-      for(var i = 0;i<data.length;i++){
-        var n = {
-          id:data[i].CLS_ID,
-          pId:data[i].PARENT_CLS_ID,
-          name:data[i].CLS_NAME
-        }
-        rootnode.push(n);
-      }
-    }
-    })
+  script(src='../javascripts/jquery.ztree.excheck-3.5.js')
+  script(src='../javascripts/jquery.ztree.exedit-3.5.js')
   button#add_class addclass
   div.container
-    div.pull-left#addclass_name
-    div.pull-right#addclass_props
+    div#addclass_name
+    div#addclass_props
   div.container
     ul#treeDemo.ztree
-  script(src='../javascripts/addclasses.js')
+
