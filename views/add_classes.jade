@@ -26,10 +26,30 @@ block content
           failSilently : true
         });
         validator.addItem({
-          element:'#username',
-          required:true
-        })
-
+          element:'#class_name',
+          required:true,
+          rule:'email'
+        });
+        var i=0;
+        var validateItems=[];
+        $('#newprop').click(function(){
+          $('#props').append('<div class="ui-form-item">' +
+            '<label class="ui-label" for="class_prop_'+i+'">' +
+            '<span class="ui-form-required"> *' +
+            '</span>属性名：</label>' +
+            '<input id="class_prop_'+i+'" class="ui-input" type="text" name="class_prop_'+i+'">' +
+            '<div class="ui-form-explain">输入属性名称' +
+            '</div></div>');
+          //TODO
+          validateItems[i]={
+            element:'#class_prop_"+i+"',
+            required:true,
+            rule:'email'
+          }
+          validator.addItem(validateItems[i]);
+          i++;
+        });
+      })
     });
 
   button#add_class addclass
@@ -37,18 +57,24 @@ block content
     div#addclass_name.pull-left
       ul#treeDemo.ztree
     div#addclass_props.pull-left
-  div.modal.hide.fade#myModal(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden="true")
-    div.modal-header
-      button.close(type="button",data-dismiss="modal",aria-hidden="true") &times;
-      h3 新建子类型
-    div.modal-body
-      form.ui-form#election(action="",method="post")
+  form.ui-form#election(action="/add_child_classes",method="post")
+    div.modal.hide.fade#myModal(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden="true")
+      div.modal-header
+        button.close(type="button",data-dismiss="modal",aria-hidden="true") &times;
+        h3 新建子类型
+      div.modal-body
+        h3 名称
         div.ui-form-item
-          label.ui-label(for="username") 用户名
+          label.ui-label(for="class_name")
             span.ui-form-required *
-          input#username.ui-input(name="username",type="text")
-          div.ui-form-explain 用户名为电子邮箱
-    div.modal-footer
-      button.btn 关闭
+            | 类型名称：
+          input#class_name.ui-input(name="class_name",type="text")
+          div.ui-form-explain 输入类型名称
+        h3 属性
+        div#props
+          a.btn.btn-info#newprop 新建属性
+      div.modal-footer
+        input.btn(type="submit")
+        button.btn 关闭
 
 

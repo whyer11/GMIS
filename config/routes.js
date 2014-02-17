@@ -9,4 +9,5 @@ module.exports = function (app) {
     app.post('/add_class_name.json', controllers.addclsesname);
     app.get('/display_class_name.json', controllers.displayclsesname);
     app.post('/render_current_node.json', controllers.rendercurrentnode);
+    app.post('/add_child_classes', controllers.addclsesname)
 };
