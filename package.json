@@ -31,6 +31,7 @@
         "orm-transaction":"*",
         "node-uuid":"*",
         "seq":"*",
-        "fs-extra":"*"
+        "fs-extra": "*",
+        "mocha": "*"
     }
 }
