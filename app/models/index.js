@@ -8,10 +8,10 @@ var orm = require('orm'),
 
 function setup(db, cb) {
     var file = fs.readdirSync('./app/models');
-    addModels(file, db);
+    addModelsToORM(file, db);
     return cb(null, db);
 }
-function addModels(file, db) {
+function addModelsToORM(file, db) {
     for (var i = 0; i < file.length; i++) {
         var modelName = file[i];
         if (modelName == 'index.js') {

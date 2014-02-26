@@ -1,235 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="添加 “添加子类型” 一点问题没有，前端到后端的传输">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/images/error.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/images/ok.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/.gitignore.orig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/.gitignore.rej" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/commander/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/commander/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/test/00-setup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/CONTRIBUTORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/commander/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/growl/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/commander/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/inherits/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/commander/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Node_js_Dependencies_for_GMIS.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/README.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/diff/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/inherits/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/commander/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/debug/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/growl/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/commander/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/_mocha" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/bin/_mocha" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/attrs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/test/bash-comparison.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/test/bash-results.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/basic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/test/basic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/test/basic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/interfaces/bdd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/bench.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/block-comment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/block.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/test/brace-expand.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/test/caching.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/case.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/test/chmod.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/chmod.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/test/clobber.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/clobber.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/code.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/commander/lib/commander.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/comment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/compiler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/context.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/templates/coverage.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/test/cwd-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/browser/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/debug/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/debug/lib/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/test/defaults.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/browser/diff.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/diff/diff.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/doc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/doctype.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/doctypes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/dot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/each.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/browser/events.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/interfaces/exports.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/test/extglob-ending-with-state-char.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/filter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/filters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/foreach.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/browser/fs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/examples/g.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/glob.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/test/globstar-match.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/growl/lib/growl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/testing/head.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/hook.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/html-cov.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/testing/index.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/interfaces/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/commander/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/debug/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/commander/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/testing/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/inherits/inherits.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/inherits/inherits_browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/inline-tags.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/jade.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/jade.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/jade.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/jade.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/.bin/jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/bin/jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/json-cov.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/json-stream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/landing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/testing/layout.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/lexer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/literal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/test/mark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/markdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/test/memory-leak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/templates/menu.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/minimatch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/mixin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/test/mkdirp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/mkdirp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/mocha.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/mocha.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/mocha.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.bin/mocha" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/bin/mocha" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/ms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/test/nocase-nomagic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/node.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/nyan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/test/open.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/commander/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/debug/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/diff/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/inherits/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/growl/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/commander/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/parser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/browser/path.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/test/pause-resume.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/test/perm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/perm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/test/perm_sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/perm_sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/polyfills.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/examples/pow.js.orig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/examples/pow.js.rej" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/examples/pow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/examples/pow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/browser/progress.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/progress.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/interfaces/qunit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/test/race.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/race.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/test/readdir-sort.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/readme.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/test/rel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/rel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/return.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/return_sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/test/root-nomount.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/test/root.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/root.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/runnable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/runner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/runtime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/runtime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/runtime.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/templates/script.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/self-closing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/minimatch/node_modules/sigmund/sigmund.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/test/stat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/templates/style.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/suite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/test/sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/tag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/tap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/interfaces/tdd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/test.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/node_modules/inherits/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/growl/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/nodes/text.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/browser/tty.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/test/umask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/umask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/node_modules/mkdirp/test/umask_sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/mkdirp/test/umask_sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/testing/user.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/testing/user.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/examples/usr-local.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/jade/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/lib/reporters/xunit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/mocha/node_modules/glob/test/zz-cleanup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/GMIS.iml" afterPath="$PROJECT_DIR$/.idea/GMIS.iml" />
+    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="成功通过for循环添加对model的支持，正在添加测试模块">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/middleware/opt_db.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" afterPath="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.js" afterPath="$PROJECT_DIR$/app/controllers/home_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/index.js" afterPath="$PROJECT_DIR$/app/models/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GMIS.iws" />
@@ -252,13 +29,13 @@
     <favorites_list name="GMIS" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49908423">
+    <splitter split-orientation="horizontal" split-proportion="0.63352275">
       <split-first>
         <leaf>
-          <file leaf-file-name="add_classes.jade" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
+          <file leaf-file-name="addclasses.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/javascripts/addclasses.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="74" column="32" selection-start="2501" selection-end="2508" vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="1290">
+                <state line="20" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1155">
                   <folding />
                 </state>
               </provider>
@@ -276,8 +53,10 @@
           <file leaf-file-name="addclses_main_controller.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/addclses_main_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="58" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="270">
-                  <folding />
+                <state line="5" column="4" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+                  <folding>
+                    <marker date="1393373943000" expanded="true" signature="81:299" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -285,7 +64,7 @@
           <file leaf-file-name="addclses_add_controller.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="11" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+                <state line="13" column="2" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
                   <folding />
                 </state>
               </provider>
@@ -294,7 +73,7 @@
           <file leaf-file-name="gom_props.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/models/gom_props.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="25" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="480">
+                <state line="22" column="25" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
                   <folding />
                 </state>
               </provider>
@@ -303,43 +82,36 @@
           <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/models/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="39" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+                <state line="10" column="4" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/package.json">
+          <file leaf-file-name="opt_db.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/middleware/opt_db.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="20" selection-start="479" selection-end="479" vertical-scroll-proportion="0.5035294" vertical-offset="101" max-vertical-offset="630">
+                <state line="12" column="48" selection-start="284" selection-end="284" vertical-scroll-proportion="0.28355387" vertical-offset="0" max-vertical-offset="529">
+                  <folding>
+                    <element signature="e#0#39#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="gom_insts.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/models/gom_insts.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="16" column="2" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="environment.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/config/environment.js">
+          <file leaf-file-name="home_controller.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="28" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="510">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/config/routes.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="24" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="23" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+                <state line="19" column="15" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
                   <folding />
                 </state>
               </provider>
@@ -349,10 +121,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="add_classes.jade" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="add_classes.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="57" column="3" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.8249453" vertical-offset="478" max-vertical-offset="1290">
+                <state line="15" column="0" selection-start="544" selection-end="544" vertical-scroll-proportion="-0.6" vertical-offset="210" max-vertical-offset="1290">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="gom_clses.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/models/gom_clses.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="7" selection-start="436" selection-end="436" vertical-scroll-proportion="0.44347826" vertical-offset="0" max-vertical-offset="575">
                   <folding />
                 </state>
               </provider>
@@ -391,12 +172,9 @@
         <option value="$PROJECT_DIR$/app/models/gom_props.js" />
         <option value="$PROJECT_DIR$/config/environment.js" />
         <option value="$PROJECT_DIR$/config/settings.js" />
-        <option value="$PROJECT_DIR$/app/controllers/home_controller.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclses_controller.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclsesname_controller.js" />
-        <option value="$PROJECT_DIR$/app/models/gom_clses.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclses_display_controller.js" />
-        <option value="$PROJECT_DIR$/app/controllers/addclses_main_controller.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclses_renderNodeInfo_controller.js" />
         <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
@@ -404,10 +182,15 @@
         <option value="$PROJECT_DIR$/app/controllers/index.js" />
         <option value="$PROJECT_DIR$/config/routes.js" />
         <option value="$PROJECT_DIR$/views/add_classes.jade" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/models/test.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/test/test.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" />
+        <option value="$PROJECT_DIR$/app/controllers/addclses_main_controller.js" />
+        <option value="$PROJECT_DIR$/app/controllers/home_controller.js" />
         <option value="$PROJECT_DIR$/app/models/index.js" />
+        <option value="$PROJECT_DIR$/app/middleware/opt_db.js" />
+        <option value="$PROJECT_DIR$/app/models/gom_clses.js" />
       </list>
     </option>
   </component>
@@ -469,7 +252,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -483,7 +266,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -519,6 +334,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="middleware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GMIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -529,26 +362,26 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../express" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="SearchEverywhereHistory" value="settings&#10;sett" />
     <property name="FullScreen" value="true" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="134" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="69" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="151" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="77" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="155" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="79" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="949" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="440" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="233" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="114" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="234" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="115" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="237" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="116" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="685" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="320" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -721,7 +554,11 @@
       <created>1392635856897</created>
       <updated>1392635856897</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="成功通过for循环添加对model的支持，正在添加测试模块">
+      <created>1393318797322</created>
+      <updated>1393318797322</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -746,23 +583,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282123" sideWeight="0.49848023" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3698795" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3698795" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32770744" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18463707" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25229034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15362932" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3698795" sideWeight="0.5003524" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27349398" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28433734" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28433734" sideWeight="0.5003524" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27349398" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28433734" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32770744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -823,7 +660,8 @@
     <MESSAGE value="定时更新，读取每个类型的属性，正在添加类的其他功能" />
     <MESSAGE value="网页上又一点错误，正在排查。前端改的比较多。&#10;想吐槽一下jade 这尼玛算什么前端模板引擎。真尼玛的头大！" />
     <MESSAGE value="添加 “添加子类型” 一点问题没有，前端到后端的传输" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加 “添加子类型” 一点问题没有，前端到后端的传输" />
+    <MESSAGE value="成功通过for循环添加对model的支持，正在添加测试模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="成功通过for循环添加对model的支持，正在添加测试模块" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -832,16 +670,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="37" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="180" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/settings.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="27" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="375" />
@@ -967,16 +795,6 @@
         <state line="8" column="3" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5040" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/gom_insts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="20" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/gom_clses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/orm/test/mocha.opts">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105" />
@@ -1007,61 +825,9 @@
         <state line="13" column="17" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="285" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.js">
+    <entry file="file://$PROJECT_DIR$/test/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="2" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="156" selection-end="168" vertical-scroll-proportion="0.18255578" vertical-offset="0" max-vertical-offset="493" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_renderNodeInfo_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="26" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/addclasses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="167" max-vertical-offset="1155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_main_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="58" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/gom_props.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="25" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="32" selection-start="2501" selection-end="2508" vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="1290">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_display_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="510">
+        <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
           <folding />
         </state>
       </provider>
@@ -1080,31 +846,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="17" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_renderNodeInfo_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="26" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_display_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="11" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="39" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+        <state line="23" column="23" selection-start="479" selection-end="479" vertical-scroll-proportion="0.55334985" vertical-offset="122" max-vertical-offset="525">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="479" selection-end="479" vertical-scroll-proportion="0.5035294" vertical-offset="101" max-vertical-offset="630">
+        <state line="29" column="1" selection-start="637" selection-end="637" vertical-scroll-proportion="0.96666664" vertical-offset="0" max-vertical-offset="630">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/gom_props.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="16" selection-start="156" selection-end="168" vertical-scroll-proportion="0.12676056" vertical-offset="0" max-vertical-offset="710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_main_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding>
+            <marker date="1393373943000" expanded="true" signature="81:299" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="15" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="544" selection-end="544" vertical-scroll-proportion="-0.6" vertical-offset="210" max-vertical-offset="1290">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/addclasses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="10" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/gom_clses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="7" selection-start="436" selection-end="436" vertical-scroll-proportion="0.44347826" vertical-offset="0" max-vertical-offset="575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/gom_insts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="2" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="2" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/middleware/opt_db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="48" selection-start="284" selection-end="284" vertical-scroll-proportion="0.28355387" vertical-offset="0" max-vertical-offset="529">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

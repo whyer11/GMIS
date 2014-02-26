@@ -8,7 +8,7 @@ module.exports = function (req, res, next) {
     var gom_clses = req.models.gom_clses;
     //回调函数第一个必须是err，好像是默认的，具体为什么我也不大了解
     gom_clses.find({CLS_ID: 0}, function (err, data) {
-        //console.log(data[0].CLS_NAME);
+        console.log(data[0].CLS_NAME);
     });
 
 
