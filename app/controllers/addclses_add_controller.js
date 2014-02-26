@@ -9,6 +9,8 @@ module.exports = function (req, res) {
     var gom_clses = req.models.gom_clses;
     var gom_props = req.models.gom_props;
     var form = req.body;
-    opt_db.newModel('daa', 'jj');
+    console.log(form);
+    var modelContent = opt_db.newModelContent(form);
+    opt_db.newModel(form.class_name, modelContent);
     res.end();
 };
