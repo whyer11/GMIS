@@ -34,13 +34,18 @@ $(function () {
     function onClick(event, treeId, treeNode) {
         $.post('/render_current_node.json', {'id': treeNode.id}, function (data) {
             renderNodeInfo(data.nodeInfo);
+            $('.getparentID').bind('click', function () {
+                var self = $('.getparentID');
+                $('#parent_class_id').val(self.data('classid'));
+            });
         });
+
     }
 
     //TODO
     function renderNodeInfo(nodeInfos) {
         $('#addclass_props').html('<h1>属性：</h1>' +
-            '<a class="btn btn-primary" id="addnewnode" data-target="#myModal" data-toggle="modal">新建子类型</a>');
+            '<a class="btn btn-primary getparentID" id="classID_' + nodeInfos[0].id + '" data-classid = "' + nodeInfos[0].id + '" data-target="#myModal" data-toggle="modal">新建子类型</a>');
         for (var i = 0; i < nodeInfos.length; i++) {
             $('#addclass_props').append('' +
                 '<a>属性名:</a>' +
@@ -49,6 +54,7 @@ $(function () {
         }
 
     }
+
 
     window.onload = function () {
         $.get('/display_class_name.json', {}, function (data) {

@@ -11,7 +11,8 @@ module.exports = function (req, res, err) {
             if (data[i].PROP_CAN_VISIBLE == 'T') {
 
                 var propObj = {
-                    name: data[i].PROP_NAME
+                    name: data[i].PROP_NAME,
+                    id: data[i].CLS_ID
                 };
                 nodeInfo[a] = propObj;
                 a++;

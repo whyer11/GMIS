@@ -2,13 +2,6 @@
  * Created by whyer on 14-2-25.
  */
 var fs = require('fs');
-var content = 'module.exports = function(orm,db){' +
-    'var gom_aa = db.define("gom_aa",{' +
-    'CLS_ID:Number' +
-    '},{' +
-    'id:"CLS_ID"' +
-    '});' +
-    '};';
 /*
  */
 exports.newModel = function (modelName, modelContent) {
@@ -42,20 +35,13 @@ exports.newModelContent = function (fm) {
         '};';
 
     function printClassProps(fm) {
-        var props = [];
-        var i = 0;
         var str = "";
-        for (var p in fm) {
-            props[i] = fm[p];
-            console.log(i + ':' + props[i]);
-            i++;
-
-        }
-        for (var q = 1; q < props.length; q++) {
-            if (q == props.length - 1) {
-                str += '       ' + props[q] + ':String' + '\n';
+        var props = fm.class_prop;
+        for (var e = 0; e < fm.class_prop.length; e++) {
+            if (e == fm.class_prop.length - 1) {
+                str += '       ' + props[e] + ':String' + '\n';
             } else {
-                str += '       ' + props[q] + ':String,' + '\n';
+                str += '       ' + props[e] + ':String,' + '\n';
             }
         }
         return str;
@@ -63,3 +49,13 @@ exports.newModelContent = function (fm) {
 
     return modelStr;
 };
+
+
+exports.getMaxPrimaryID = function (table, key) {
+
+    var max = table.find(['' + key + '', 'Z'], function (err, data) {
+        return data[0].key;
+    });
+    console.log(max);
+    return max;
+}

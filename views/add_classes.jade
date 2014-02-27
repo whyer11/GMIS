@@ -37,7 +37,7 @@ block content
             '<label class="ui-label" for="class_prop_'+i+'">' +
             '<span class="ui-form-required"> *' +
             '</span>属性名：</label>' +
-            '<input id="class_prop_'+i+'" class="ui-input" type="text" name="class_prop_'+i+'">' +
+            '<input id="class_prop_'+i+'" class="ui-input" type="text" name="class_prop">' +
             '<div class="ui-form-explain">输入属性名称' +
             '</div></div>');
           //TODO
@@ -69,6 +69,7 @@ block content
             span.ui-form-required *
             | 类型名称：
           input#class_name.ui-input(name="class_name",type="text")
+          input#parent_class_id(name="parent_class_id",type="hidden")
           div.ui-form-explain 输入类型名称
         h3 属性
         div#props
