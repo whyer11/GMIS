@@ -50,12 +50,3 @@ exports.newModelContent = function (fm) {
     return modelStr;
 };
 
-
-exports.getMaxPrimaryID = function (table, key) {
-
-    var max = table.find(['' + key + '', 'Z'], function (err, data) {
-        return data[0].key;
-    });
-    console.log(max);
-    return max;
-}
