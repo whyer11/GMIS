@@ -10,6 +10,7 @@ module.exports = function (req, res) {
     var gom_props = req.models.gom_props;
     var form = req.body;
     var currentClassId = 0;
+    var currentPropId = 0;
     var modelContent = opt_db.newModelContent(form);
     opt_db.newModel(form.class_name, modelContent);
 
@@ -24,10 +25,45 @@ module.exports = function (req, res) {
             CLS_DISP_IND: 1,
             CLS_CODE: ""
         }, function (err, items) {
-            if (err) console.log(err)
-            console.log(items);
+            if (err) {
+                console.log(err)
+            } else {
+                console.log("insert successfully(table gom_clses)");
+            }
+
         });
+
+
+        gom_props.find(['PROP_ID', 'Z']).run(function (err, data) {
+            currentPropId = data[0].PROP_ID + 1;
+            for (var i = 0; i < form.class_prop.length; i++) {
+                gom_props.create({
+                    PROP_ID: currentPropId,
+                    CLS_ID: currentClassId,
+                    PROP_NAME: form.class_prop[i],
+                    PROP_TYPE: "D",
+                    PROP_CAN_VISIBLE: "T",
+                    PROP_CAN_MODIFY: "T",
+                    PROP_CAN_DELETE: "T",
+                    PROP_DISP_IND: 1,
+                    PROP_CODE: ""
+                }, function (err, items) {
+                    if (err) {
+                        console.log(err)
+                    } else {
+                        console.log("insert successfully(table gom_props)");
+                    }
+
+                });
+                currentPropId++;
+            }
+
+        })
+
+
     });
+
+
     console.log(currentClassId);
 
 
