@@ -33,13 +33,16 @@ block content
         var i=0;
         var validateItems=[];
         $('#newprop').click(function(){
-          $('#props').append('<div class="ui-form-item">' +
-            '<label class="ui-label" for="class_prop_'+i+'">' +
-            '<span class="ui-form-required"> *' +
-            '</span>属性名：</label>' +
-            '<input id="class_prop_'+i+'" class="ui-input" type="text" name="class_prop">' +
-            '<div class="ui-form-explain">输入属性名称' +
-            '</div></div>');
+          $('#props').append('<li class="span4"><div class="thumbnail">' +
+        '<label>属性名称</label>' +
+        '<input name="PROP_NAME" type="text" PLACEHOLDER="属性名称">' +
+        '<label>属性列名</label>' +
+        '<input name="PROP_COL" type="text">' +
+        '<label>属性列属性</label>' +
+        '<input name="PROP_DBMS_TYPE" type="text">' +
+        '<label>属性长度</label>' +
+        '<input name="PROP_LENGTH" type="text">' +
+        '</div></li>');
           //TODO
           validateItems[i]={
             element:'#class_prop_"+i+"',
@@ -55,23 +58,23 @@ block content
     div#addclass_name.pull-left
       ul#treeDemo.ztree
     div#addclass_props.pull-left
-  form.ui-form#election(action="/add_child_classes",method="post")
-    div.modal.fade#myModal(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden="true")
+  form.form-horizontal#election(action="/add_child_classes",method="post")
+    input#parent_class_id(name="parent_class_id",type="hidden")
+    div.modal.fade.mymodal#myModal(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden="true")
       div.modal-header
         button.close(type="button",data-dismiss="modal",aria-hidden="true") &times;
         h3 新建子类型
       div.modal-body
-        h3 名称
-        div.ui-form-item
-          label.ui-label(for="class_name")
-            span.ui-form-required *
-            | 类型名称：
-          input#class_name.ui-input(name="class_name",type="text")
-          input#parent_class_id(name="parent_class_id",type="hidden")
-          div.ui-form-explain 输入类型名称
-        h3 属性
-        div#props
-          a.btn.btn-info#newprop 新建属性
+        div.row-fluid
+          div.span4
+            label 类型名称
+            input#class_name(name="class_name",type="text",placeholder="类型名称")
+            label 类型表名称
+            input#class_tab_name(name="class_tab_name",type="text",placeholder="类型表名称")
+          div.span8.pull-left
+            h3 属性
+            ul.thumbnails#props
+            a.btn.btn-info#newprop 新建属性
       div.modal-footer
         input.btn(type="submit")
         button.btn 关闭

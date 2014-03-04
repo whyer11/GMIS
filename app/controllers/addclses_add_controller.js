@@ -20,7 +20,7 @@ module.exports = function (req, res) {
             CLS_ID: currentClassId,
             PARENT_CLS_ID: form.parent_class_id,
             CLS_NAME: form.class_name,
-            CLS_TAB_NAME: form.class_name,
+            CLS_TAB_NAME: form.class_tab_name,
             CLS_TAB_SCHEMA: 'root',
             CLS_DISP_IND: 1,
             CLS_CODE: ""
