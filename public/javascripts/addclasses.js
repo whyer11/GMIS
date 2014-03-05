@@ -72,7 +72,19 @@ $(function () {
             };
             rootnode.push(n);
         }
-    }
+    };
 
+    $('#newprop').click(function () {
+        $('#props').append('<li class="span4"><div class="thumbnail">' +
+            '<label>属性名称</label>' +
+            '<input name="PROP_NAME" type="text" PLACEHOLDER="属性名称">' +
+            '<label>属性列名</label>' +
+            '<input name="PROP_COL" type="text">' +
+            '<label>属性列属性</label>' +
+            '<input name="PROP_DBMS_TYPE" type="text">' +
+            '<label>属性长度</label>' +
+            '<input name="PROP_LENGTH" type="text">' +
+            '</div></li>');
+    });
 
 });

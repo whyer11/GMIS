@@ -7,53 +7,7 @@ block content
   script(src='../javascripts/jquery.ztree.core-3.5.js')
   script(src='../javascripts/jquery.ztree.excheck-3.5.js')
   script(src='../javascripts/jquery.ztree.exedit-3.5.js')
-  script(charset="utf-8" id="seajsnode" src="http://static.alipayobjects.com/seajs/1.3.1/??sea.js,plugin-combo.js")
-  script.
-    seajs.config({
-      alias : {
-        '$' : 'gallery/jquery/1.7.2/jquery',
-        'validator' : 'arale/validator/0.9.4/validator'
 
-      }
-    });
-    $(function(){
-      seajs.use([ '$', 'validator' ], function($, Validator){
-        var validator = new Validator({
-          element : '#election',
-          onFormValidated : function(err, results, form) {
-            window.console && console.log&& console.log(err, results, form);
-          },
-          failSilently : true
-        });
-        validator.addItem({
-          element:'#class_name',
-          required:true,
-          rule:'text'
-        });
-        var i=0;
-        var validateItems=[];
-        $('#newprop').click(function(){
-          $('#props').append('<li class="span4"><div class="thumbnail">' +
-        '<label>属性名称</label>' +
-        '<input name="PROP_NAME" type="text" PLACEHOLDER="属性名称">' +
-        '<label>属性列名</label>' +
-        '<input name="PROP_COL" type="text">' +
-        '<label>属性列属性</label>' +
-        '<input name="PROP_DBMS_TYPE" type="text">' +
-        '<label>属性长度</label>' +
-        '<input name="PROP_LENGTH" type="text">' +
-        '</div></li>');
-          //TODO
-          validateItems[i]={
-            element:'#class_prop_"+i+"',
-            required:true,
-            rule:'email'
-          }
-          validator.addItem(validateItems[i]);
-          i++;
-        });
-      })
-    });
   div.container
     div#addclass_name.pull-left
       ul#treeDemo.ztree

@@ -22,23 +22,22 @@ exports.newModel = function (modelName, modelContent) {
  */
 exports.newModelContent = function (fm) {
     var modelStr = 'module.exports = function(orm,db){' + '\n' +
-        '   var ' + fm.class_name + ' = db.define("' + fm.class_name + '",{' + '\n' +
+        '   var ' + fm.class_tab_name + ' = db.define("' + fm.class_tab_name + '",{' + '\n' +
         '       INST_ID:Number,' + '\n' +
-        '       INST_NAME:String,' + '\n' +
         printClassProps(fm) +
         '},{' + '\n' +
         '       id:"INST_ID"' + '\n' +
         '   });' + '\n' +
-        '   ' + fm.class_name + '.sync(function(err){' + '\n' +
-        '   console.log("create ' + fm.class_name + ' table successfully.")' + '\n' +
+        '   ' + fm.class_tab_name + '.sync(function(err){' + '\n' +
+        '   console.log("create ' + fm.class_tab_name + ' table successfully.")' + '\n' +
         '   });' + '\n' +
         '};';
 
     function printClassProps(fm) {
         var str = "";
-        var props = fm.class_prop;
-        for (var e = 0; e < fm.class_prop.length; e++) {
-            if (e == fm.class_prop.length - 1) {
+        var props = fm.PROP_COL;
+        for (var e = 0; e < fm.PROP_COL.length; e++) {
+            if (e == fm.PROP_COL.length - 1) {
                 str += '       ' + props[e] + ':String' + '\n';
             } else {
                 str += '       ' + props[e] + ':String,' + '\n';
@@ -79,3 +78,30 @@ function addClassProp(props, table, classid, i) {
     }
 }
 exports.addClassProp = addClassProp;
+exports.checkParentClassProp = function (currentclassid, db_class, db_prop) {
+    var allProp = [];
+    var classes = [];
+    var i = 1;
+    var nextclassid = currentclassid;
+    consolecheckParentClass(currentclassid, classes, nextclassid, db_class, i);
+
+
+};
+
+function checkParentClass(classid, classes, nextclassid, db_class, i) {
+    classes[0] = classid;
+    if (nextclassid == 0) {
+        return classes;
+    } else {
+        db_class.find({CLS_ID: nextclassid}, function (err, data) {
+            if (data.length != 0) {
+                nextclassid = data[0].PARENT_CLS_ID;
+                classes[i] = data[0].PARENT_CLS_ID;
+                i++;
+                checkParentClass(classid, classes, nextclassid, db_class, i);
+            } else {
+                return false;
+            }
+        })
+    }
+}
