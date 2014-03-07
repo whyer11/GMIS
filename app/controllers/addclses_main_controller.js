@@ -7,7 +7,8 @@ module.exports = function (req, res, err) {
         res.render('add_classes', {
             title: '添加类型',
             rootClass: data[0]
-        })
+        });
+        res.end();
 
     });
 };

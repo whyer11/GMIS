@@ -13,7 +13,6 @@ module.exports = function (req, res) {
     var currentPropId = 0;
     var modelContent = opt_db.newModelContent(form);
     opt_db.newModel(form.class_tab_name, modelContent);
-
     gom_clses.find(['CLS_ID', 'Z']).run(function (err, data) {
         currentClassId = data[0].CLS_ID + 1;
         gom_clses.create({
@@ -32,8 +31,6 @@ module.exports = function (req, res) {
             }
 
         });
-
-
         gom_props.find(['PROP_ID', 'Z']).run(function (err, data) {
             currentPropId = data[0].PROP_ID + 1;
             for (var i = 0; i < form.PROP_NAME.length; i++) {
@@ -49,7 +46,7 @@ module.exports = function (req, res) {
                     PROP_CAN_MODIFY: "T",
                     PROP_CAN_DELETE: "T",
                     PROP_DISP_IND: 1,
-                    PROP_CODE: "*********"
+                    PROP_CODE: form.PROP_COL[i]
                 }, function (err, items) {
                     if (err) {
                         console.log(err)
@@ -62,13 +59,6 @@ module.exports = function (req, res) {
             }
 
         })
-
-
     });
-
-
-    console.log(currentClassId);
-
-
     res.end();
 };

@@ -78,30 +78,3 @@ function addClassProp(props, table, classid, i) {
     }
 }
 exports.addClassProp = addClassProp;
-exports.checkParentClassProp = function (currentclassid, db_class, db_prop) {
-    var allProp = [];
-    var classes = [];
-    var i = 1;
-    var nextclassid = currentclassid;
-    consolecheckParentClass(currentclassid, classes, nextclassid, db_class, i);
-
-
-};
-
-function checkParentClass(classid, classes, nextclassid, db_class, i) {
-    classes[0] = classid;
-    if (nextclassid == 0) {
-        return classes;
-    } else {
-        db_class.find({CLS_ID: nextclassid}, function (err, data) {
-            if (data.length != 0) {
-                nextclassid = data[0].PARENT_CLS_ID;
-                classes[i] = data[0].PARENT_CLS_ID;
-                i++;
-                checkParentClass(classid, classes, nextclassid, db_class, i);
-            } else {
-                return false;
-            }
-        })
-    }
-}

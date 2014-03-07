@@ -7,30 +7,34 @@ block content
   script(src='../javascripts/jquery.ztree.core-3.5.js')
   script(src='../javascripts/jquery.ztree.excheck-3.5.js')
   script(src='../javascripts/jquery.ztree.exedit-3.5.js')
+  div.container-fluid
+    div.row-fluid
+      div.span3
+        div#addclass_name.pull-left
+        ul#treeDemo.ztree
+      div.span9
+        div#addclass_props.pull-left
+        ul.thumbnails#class_props
+        form.form-horizontal#election(action="/add_child_classes",method="post")
+          div.modal.fade.mymodal#myModal(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden="true")
+            div.modal-header
+              button.close(type="button",data-dismiss="modal",aria-hidden="true") &times;
+              h3 新建子类型
+            div.modal-body
+              div.row-fluid
+                div.span4
+                  label 类型名称
+                  input#class_name(name="class_name",type="text",placeholder="类型名称")
+                  label 类型表名称
+                  input#class_tab_name(name="class_tab_name",type="text",placeholder="类型表名称")
+                  input#parent_class_id(name="parent_class_id",type="hidden")
+                div.span8.pull-left
+                  h3 属性
+                  ul.thumbnails#props
+                  a.btn.btn-info#newprop 新建属性
+            div.modal-footer
+              input.btn(type="submit")
+              button.btn 关闭
 
-  div.container
-    div#addclass_name.pull-left
-      ul#treeDemo.ztree
-    div#addclass_props.pull-left
-  form.form-horizontal#election(action="/add_child_classes",method="post")
-    input#parent_class_id(name="parent_class_id",type="hidden")
-    div.modal.fade.mymodal#myModal(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden="true")
-      div.modal-header
-        button.close(type="button",data-dismiss="modal",aria-hidden="true") &times;
-        h3 新建子类型
-      div.modal-body
-        div.row-fluid
-          div.span4
-            label 类型名称
-            input#class_name(name="class_name",type="text",placeholder="类型名称")
-            label 类型表名称
-            input#class_tab_name(name="class_tab_name",type="text",placeholder="类型表名称")
-          div.span8.pull-left
-            h3 属性
-            ul.thumbnails#props
-            a.btn.btn-info#newprop 新建属性
-      div.modal-footer
-        input.btn(type="submit")
-        button.btn 关闭
 
 

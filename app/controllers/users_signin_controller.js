@@ -10,11 +10,13 @@ module.exports = function (req, res) {
         if (data == 1) {
             res.render('add_classes', {
                 title: '添加类型'
-            })
+            });
+            res.end();
         } else {
             res.render('index', {
                 title: '主页'
             })
+            res.end();
         }
     })
 }

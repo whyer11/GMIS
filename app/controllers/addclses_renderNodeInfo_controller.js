@@ -11,17 +11,6 @@ module.exports = function (req, res, err) {
     var classes = [];
     var nodeinfo = [];
     var i = 1;
-    //使用Eventproxy
-    /*
-     gom_clses.find({CLS_ID:currentNodeID},function(err,data){
-     ep.emit('getcurrentclassCOL',data);
-     });
-     ep.all('getcurrentclassCOL',function(data){
-
-     });
-     */
-
-
     function checkParentClass(classid, classes, nextclassid, db_class, i) {
         classes[0] = classid;
         //console.log('classes :'+classes[0]);
@@ -65,7 +54,15 @@ module.exports = function (req, res, err) {
 
                         var propObj = {
                             name: data[i].PROP_NAME,
-                            id: data[i].CLS_ID
+                            type: data[i].PROP_TYPE,
+                            col: data[i].PROP_COL,
+                            dbms_type: data[i].PROP_DBMS_TYPE,
+                            length: data[i].PROP_LENGTH,
+                            can_visible: data[i].PROP_CAN_VISIBLE,
+                            can_modify: data[i].PROP_CAN_MODIFY,
+                            can_delete: data[i].PROP_CAN_DELETE,
+                            code: data[i].PROP_CODE,
+                            classid: data[i].CLS_ID
                         };
                         nodeinfo[a] = propObj;
                         a++;
