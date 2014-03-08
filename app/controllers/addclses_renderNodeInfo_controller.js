@@ -11,17 +11,12 @@ module.exports = function (req, res, err) {
     var classes = [];
     var nodeinfo = [];
     var i = 1;
+
+
     function checkParentClass(classid, classes, nextclassid, db_class, i) {
         classes[0] = classid;
-        //console.log('classes :'+classes[0]);
-        for (var q = 0; q < classes.length; q++) {
-            console.log('classes:' + classes[q]);
-        }
-        console.log('nextclassid:' + nextclassid);
-        console.log('i:' + i);
         if (nextclassid == 0) {
-            console.log(classes);
-            ep.emit('backallclasses', classes);
+            ep.emit('returnallclasses', classes);
         } else {
             db_class.find({CLS_ID: nextclassid}, function (err, data) {
                 if (data.length != 0) {
@@ -35,16 +30,6 @@ module.exports = function (req, res, err) {
             })
         }
     }
-
-    checkParentClass(currentNodeID, classes, currentNodeID, gom_clses, i);
-    ep.all('backallclasses', function (classes) {
-        checkAllProps(classes, nodeinfo, classes[0], gom_props, 0, 0);
-    });
-    ep.all('next', function (nodeinfo) {
-        res.json({nodeInfo: nodeinfo});
-        res.end();
-    });
-
 
     function checkAllProps(classes, nodeinfo, nextclassid, db_props, a, classindex) {
         if (nextclassid >= 0) {
@@ -70,11 +55,22 @@ module.exports = function (req, res, err) {
                 }
                 classindex++;
                 nextclassid = classes[classindex];
-
                 checkAllProps(classes, nodeinfo, nextclassid, db_props, a, classindex);
             })
         } else {
             ep.emit('next', nodeinfo);
         }
     }
+
+
+    checkParentClass(currentNodeID, classes, currentNodeID, gom_clses, i);
+    ep.all('returnallclasses', function (classes) {
+        checkAllProps(classes, nodeinfo, classes[0], gom_props, 0, 0);
+    });
+    ep.all('next', function (nodeinfo) {
+        res.json({nodeInfo: nodeinfo});
+        res.end();
+    });
+
+
 };

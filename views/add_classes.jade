@@ -7,14 +7,31 @@ block content
   script(src='../javascripts/jquery.ztree.core-3.5.js')
   script(src='../javascripts/jquery.ztree.excheck-3.5.js')
   script(src='../javascripts/jquery.ztree.exedit-3.5.js')
-  div.container-fluid
+  div.navbar.navbar-fixed-top.navbar-inverse
+    div.navbar-inner
+      div.container-fluid
+        a.brand 类型管理器
+  div.container-fluid(style="margin-top:40px")
     div.row-fluid
-      div.span3
-        div#addclass_name.pull-left
-        ul#treeDemo.ztree
+      div.span2
+        div.siderbar
+          ul#treeDemo.ztree
+      div.span1#class_opts
       div.span9
-        div#addclass_props.pull-left
-        ul.thumbnails#class_props
+        table.table
+          thead
+            tr
+              th 属性名
+              th 属性类型
+              th 列名
+              th 列类型
+              th 类型长度
+              th 是否可见
+              th 是否可改
+              th 是否可删
+              th 属性代码
+          tbody#class_props
+
         form.form-horizontal#election(action="/add_child_classes",method="post")
           div.modal.fade.mymodal#myModal(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden="true")
             div.modal-header

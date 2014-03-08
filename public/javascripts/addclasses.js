@@ -15,8 +15,8 @@ $(function () {
             selectedMulti: false
         },
         edit: {
-            enable: true,
-            editNameSelectAll: true
+            enable: false,
+            editNameSelectAll: false
 
         },
         data: {
@@ -25,11 +25,17 @@ $(function () {
             }
         },
         callback: {
-            onClick: onClick
+            onClick: onClick,
+            beforeRemove: beforeRemove
 
         }
 
     };
+
+    function beforeRemove(event, treeId, treeNode) {
+
+
+    }
 
     function onClick(event, treeId, treeNode) {
         $.post('/render_current_node.json', {'id': treeNode.id}, function (data) {
@@ -38,35 +44,41 @@ $(function () {
                 var self = $('.getparentID');
                 $('#parent_class_id').val(self.data('classid'));
             });
-            $('#delclass').click(function () {
-                $.post('', {}, function () {
-
-                })
+            $('.delclass').bind('click', function () {
+                if (confirm('确定要删除该类型？')) {
+                    $.post('/delclass.json', {'id': treeNode.id}, function (data) {
+                        console.log(data + 'I am here');
+                    });
+                }
             })
+
         });
+
 
     }
 
     //TODO
     function renderNodeInfo(nodeInfos) {
-        $('#addclass_props').html('<h1>属性：</h1>' +
-            '<a class="btn-primary btn" id="delclass">删除该类型</a>' +
-            '<a class="btn btn-primary getparentID" id="classID_' + nodeInfos[0].classid + '" data-classid = "' + nodeInfos[0].classid + '" data-target="#myModal" data-toggle="modal">新建子类型</a>');
+        $('#class_opts').html('<div class="optionsbar">' +
+            '<a class="classopts delclass">删除</a>' +
+            '<a class="classopts">修改</a>' +
+            '<a class="classopts getparentID" id="classID_' + nodeInfos[0].classid + '" data-classid = "' + nodeInfos[0].classid + '" data-target="#myModal" data-toggle="modal">新建</a>' +
+            '</div>'
+        );
         $('#class_props').html('');
         for (var i = 0; i < nodeInfos.length; i++) {
-            $('#class_props').append('<li class="span3">' +
-                '<div class="thumbnail">' +
-                '<h3>属性详情</h3>' +
-                '<p>属性名：<a>' + nodeInfos[i].name + '</a></p>' +
-                '<p>属性类型：<a>' + nodeInfos[i].type + '</a></p>' +
-                '<p>属性列名：<a>' + nodeInfos[i].col + '</a></p>' +
-                '<p>属性列类型：<a>' + nodeInfos[i].dbms_type + '</a></p>' +
-                '<p>属性长度：<a>' + nodeInfos[i].length + '</a></p>' +
-                '<p>该属性是否可见：<a>' + nodeInfos[i].can_visible + '</a></p>' +
-                '<p>该属性是否可修改：<a>' + nodeInfos[i].can_modify + '</a></p>' +
-                '<p>该属性是否可删：<a>' + nodeInfos[i].can_delete + '</a></p>' +
-                '<p>属性代码：<a>' + nodeInfos[i].code + '</a></p>' +
-                '</div></li>');
+            $('#class_props').append(
+                '<tr>' +
+                    '<th>' + nodeInfos[i].name + '</th>' +
+                    '<th>' + nodeInfos[i].type + '</th>' +
+                    '<th>' + nodeInfos[i].col + '</th>' +
+                    '<th>' + nodeInfos[i].dbms_type + '</th>' +
+                    '<th>' + nodeInfos[i].length + '</th>' +
+                    '<th>' + nodeInfos[i].can_visible + '</th>' +
+                    '<th>' + nodeInfos[i].can_modify + '</th>' +
+                    '<th>' + nodeInfos[i].can_delete + '</th>' +
+                    '<th>' + nodeInfos[i].code + '</th>' +
+                    '</tr>');
         }
 
     }
@@ -78,6 +90,7 @@ $(function () {
             maketree(allclasses.data);
             $.fn.zTree.init($('#treeDemo'), viewtreesettings, rootnode);
         });
+
     };
     var maketree = function (data) {
         for (var i = 0; i < data.length; i++) {

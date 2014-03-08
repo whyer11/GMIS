@@ -2,6 +2,8 @@
  * Created by whyer on 14-2-25.
  */
 var fs = require('fs');
+var EventProxy = require('eventproxy');
+var ep = new EventProxy();
 /*
  */
 exports.newModel = function (modelName, modelContent) {

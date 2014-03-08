@@ -11,4 +11,5 @@ module.exports = function (app) {
     app.post('/render_current_node.json', controllers.rendercurrentnode);
     app.post('/add_child_classes', controllers.addclsesname);
     app.post('/users_signin', controllers.userssignin);
+    app.post('/delclass.json', controllers.delclass);
 };
