@@ -31,6 +31,7 @@ module.exports = function (req, res, err) {
         }
     }
 
+
     function checkAllProps(classes, nodeinfo, nextclassid, db_props, a, classindex) {
         if (nextclassid >= 0) {
             db_props.find({CLS_ID: nextclassid}, function (err, data) {

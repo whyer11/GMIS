@@ -1,7 +1,6 @@
 /**
- * Created by whyer on 14-2-7.
+ * Created by whyer on 14-3-9.
  */
-
 module.exports = function (orm, db) {
     var gom_insts = db.define('gom_insts', {
         INST_ID: Number,
