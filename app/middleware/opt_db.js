@@ -7,7 +7,7 @@ var ep = new EventProxy();
 /*
  */
 exports.newModel = function (modelName, modelContent) {
-    fs.open('./app/models/' + modelName + '.js', 'a', 0644, function (e, fd) {
+    fs.open('./app/models/' + modelName + '.js', 'w', 0644, function (e, fd) {
         if (e) throw e;
         fs.write(fd, '//' + modelName + '\n' +
             modelContent, 0, 'utf8', function (e) {

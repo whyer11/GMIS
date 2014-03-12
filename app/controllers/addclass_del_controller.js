@@ -21,10 +21,14 @@ module.exports = function (req, res) {
     });
 
     ep.tail('returnChildClass', function (data) {
-        gom_props.find({CLS_ID: data}).each(function (prop) {
-            prop.remove();
-            ep.emit('delChildClass', data);
-        });
+        if (data == 0) {
+            console.log("无法对根类型进行操作");
+        } else {
+            gom_props.find({CLS_ID: data}).each(function (prop) {
+                prop.remove();
+                ep.emit('delChildClass', data);
+            });
+        }
 
     });
     ep.tail('delChildClass', function (data) {
@@ -35,18 +39,28 @@ module.exports = function (req, res) {
             ep.emit('delChildTab', classTabName);
         })
     });
+
     ep.tail('delChildTab', function (data) {
-        db.driver.execQuery('DROP TABLE `gmis`.`' + data + '`', function (err, result) {
+        db.driver.execQuery("DROP TABLE `gmis`.`" + data + "`", function (err, result) {
             ep.emit('delclassmodel', data);
         })
     });
+
     ep.tail('delclassmodel', function (data) {
-        fs.unlinkSync('./app/models/' + data + '.js');
+        var modelsPath = './app/models/' + data + '.js';
+        fs.exists(modelsPath, function (result) {
+            if (result) {
+                fs.unlinkSync(modelsPath);
+            } else {
+                console.log(modelsPath + ' have been del!');
+            }
+        });
     });
     function checkIfParentClass(parentid, childclassid, nextclassid, db_class) {
 
         if (parentid == nextclassid) {
             ep.emit('returnChildClass', childclassid);
+            console.log(childclassid);
         } else {
             db_class.find({CLS_ID: nextclassid}, function (err, data) {
                 if (data.length != 0) {
@@ -55,8 +69,8 @@ module.exports = function (req, res) {
                 } else {
                     return false;
                 }
-                })
-            }
+            })
+        }
 
     }
 
