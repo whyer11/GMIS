@@ -2,14 +2,9 @@
  * Created by whyer on 14-2-9.
  */
 $(function () {
-
-    //TODO
-    function addclassprop(propkey, propvalue) {
-
-    }
-
     var allclasses;
     var rootnode = [];
+    var modalid = 2009;
     var viewtreesettings = {
         view: {
             selectedMulti: false
@@ -40,9 +35,42 @@ $(function () {
     function onClick(event, treeId, treeNode) {
         $.post('/render_current_node.json', {'id': treeNode.id}, function (data) {
             renderNodeInfo(data.nodeInfo);
+            var newprop = 'prop_' + modalid;
+            var ulprop = 'ulprop_' + modalid;
+            var parentClassId = 'parent_class_id_' + modalid;
             $('.getparentID').bind('click', function () {
                 var self = $('.getparentID');
-                $('#parent_class_id').val(self.data('classid'));
+                var contentStr = '<div class="row-fluid">' +
+                    '<div class="span4">' +
+                    '<label>类型名称</label>' +
+                    '<input name="class_name" type="text" placeholder="类型名称">' +
+                    '<label>类型表名称</label>' +
+                    '<input name="class_tab_name" type="text" placeholder="类型表名称">' +
+                    '<input name="parent_class_id" type="hidden" id="' + parentClassId + '"></div>' +
+                    '<div class="span8 pull-left">' +
+                    '<h3>属性</h3>' +
+                    '<ul class="thumbnails" id="' + ulprop + '">' +
+                    '' +
+                    '</ul>' +
+                    '<a class="btn btn-info" id="' + newprop + '">新建类型</a>' +
+                    '</div>' +
+                    '</div>';
+                var id = newModalForm('新建子类型', '/add_child_classes', contentStr);
+
+                $('#' + parentClassId + '').val(self.data('classid'));
+                $('#' + newprop + '').bind('click', function () {
+                    $('#' + ulprop + '').append('<li class="span4"><div class="thumbnail">' +
+                        '<label>属性名称</label>' +
+                        '<input name="PROP_NAME" type="text" PLACEHOLDER="属性名称">' +
+                        '<label>属性列名</label>' +
+                        '<input name="PROP_COL" type="text">' +
+                        '<label>属性列属性</label>' +
+                        '<input name="PROP_DBMS_TYPE" type="text">' +
+                        '<label>属性长度</label>' +
+                        '<input name="PROP_LENGTH" type="text">' +
+                        '</div></li>');
+                });
+                $('#' + id + '').modal();
             });
             $('.delclass').bind('click', function () {
                 if (confirm('确定要删除该类型？')) {
@@ -61,21 +89,29 @@ $(function () {
                             j++;
                         }
                     }
-                    renderPropsForAlter(childClassProps);
-                    $('#alterprops').modal();
+                    var id = newModalForm('修改类型属性', '/alterclass', renderPropsForAlter(childClassProps));
+                    alert(id);
+                    $('#' + id + '').modal();
                 }
-            })
-
+            });
         });
+    }
 
+    function newModalForm(title, action, modalbody) {
+        $('body').append('<form class="form-horizontal" method="post" action=' + action + '>' +
+            '<div class="modal fade mymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="' + modalid + '">' +
+            '<div class="modal-header">' +
+            '<button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>' +
+            '<h3>' + title + '</h3></div>' +
+            '<div class="modal-body">' + modalbody + '</div>' +
+            '<div class="modal-footer">' +
+            '<input class="btn" type="submit">' +
+            '<button class="btn">关闭</button></div>' +
+            '</div></form>');
+        return modalid++;
 
     }
 
-    function newModalForm(bomid, title, action) {
-
-    }
-
-    //TODO
     function renderNodeInfo(nodeInfos) {
         $('#class_opts').html('<div class="optionsbar">' +
             '<a class="classopts delclass">删除</a>' +
@@ -102,8 +138,9 @@ $(function () {
     }
 
     function renderPropsForAlter(childClassProps) {
+        var content = '';
         for (var i = 0; i < childClassProps.length; i++) {
-            $('#childprops').append('<li class="span4"><div class="thumbnail">' +
+            content += '<li class="span4"><div class="thumbnail">' +
                 '<label>属性名称</label>' +
                 '<input name="PROP_NAME" type="text" value="' + childClassProps[i].name + '">' +
                 '<label>属性列名</label>' +
@@ -112,8 +149,9 @@ $(function () {
                 '<input name="PROP_DBMS_TYPE" type="text" value="' + childClassProps[i].dbms_type + '">' +
                 '<label>属性长度</label>' +
                 '<input name="PROP_LENGTH" type="text" value="' + childClassProps[i].length + '">' +
-                '</div></li>');
+                '</div></li>';
         }
+        return content;
     }
 
     window.onload = function () {
@@ -122,6 +160,7 @@ $(function () {
             maketree(allclasses.data);
             $.fn.zTree.init($('#treeDemo'), viewtreesettings, rootnode);
         });
+
 
     };
     var maketree = function (data) {
@@ -135,17 +174,5 @@ $(function () {
         }
     };
 
-    $('#newprop').click(function () {
-        $('#props').append('<li class="span4"><div class="thumbnail">' +
-            '<label>属性名称</label>' +
-            '<input name="PROP_NAME" type="text" PLACEHOLDER="属性名称">' +
-            '<label>属性列名</label>' +
-            '<input name="PROP_COL" type="text">' +
-            '<label>属性列属性</label>' +
-            '<input name="PROP_DBMS_TYPE" type="text">' +
-            '<label>属性长度</label>' +
-            '<input name="PROP_LENGTH" type="text">' +
-            '</div></li>');
-    });
 
 });
