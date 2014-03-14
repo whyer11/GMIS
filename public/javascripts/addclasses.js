@@ -50,6 +50,20 @@ $(function () {
                         console.log(data + 'I am here');
                     });
                 }
+            });
+            $('.alterclass').bind('click', function () {
+                var childClassProps = [];
+                var j = 0;
+                if (confirm('确定要修改此类型？')) {
+                    for (var i = 0; i < data.nodeInfo.length; i++) {
+                        if (treeNode.id == data.nodeInfo[i].classid) {
+                            childClassProps[j] = data.nodeInfo[i];
+                            j++;
+                        }
+                    }
+                    renderPropsForAlter(childClassProps);
+                    $('#alterprops').modal();
+                }
             })
 
         });
@@ -57,11 +71,15 @@ $(function () {
 
     }
 
+    function newModalForm(bomid, title, action) {
+
+    }
+
     //TODO
     function renderNodeInfo(nodeInfos) {
         $('#class_opts').html('<div class="optionsbar">' +
             '<a class="classopts delclass">删除</a>' +
-            '<a class="classopts">修改</a>' +
+            '<a class="classopts alterclass">修改</a>' +
             '<a class="classopts getparentID" id="classID_' + nodeInfos[0].classid + '" data-classid = "' + nodeInfos[0].classid + '" data-target="#myModal" data-toggle="modal">新建</a>' +
             '</div>'
         );
@@ -83,6 +101,20 @@ $(function () {
 
     }
 
+    function renderPropsForAlter(childClassProps) {
+        for (var i = 0; i < childClassProps.length; i++) {
+            $('#childprops').append('<li class="span4"><div class="thumbnail">' +
+                '<label>属性名称</label>' +
+                '<input name="PROP_NAME" type="text" value="' + childClassProps[i].name + '">' +
+                '<label>属性列名</label>' +
+                '<input name="PROP_COL" type="text" value="' + childClassProps[i].col + '">' +
+                '<label>属性列属性</label>' +
+                '<input name="PROP_DBMS_TYPE" type="text" value="' + childClassProps[i].dbms_type + '">' +
+                '<label>属性长度</label>' +
+                '<input name="PROP_LENGTH" type="text" value="' + childClassProps[i].length + '">' +
+                '</div></li>');
+        }
+    }
 
     window.onload = function () {
         $.get('/display_class_name.json', {}, function (data) {

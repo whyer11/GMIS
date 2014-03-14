@@ -52,6 +52,19 @@ block content
             div.modal-footer
               input.btn(type="submit")
               button.btn 关闭
+        form.form-horizontal(action="/alterclass",method="post")
+          div.modal.fade.mymodal#alterprops(tabindex="-1",role="dialog",aria-hidden="true")
+            div.modal-header
+              button.close(type="button",data-dismiss="modal",aria-hidden="true") &times;
+              h3 修改类型属性
+            div.modal-body
+              div.row-fluid
+                div.span8
+                  h3 属性
+                  ul.thumbnails#childprops
+            div.modal-footer
+              input.btn(type="submit")
+              button.btn 关闭
 
 
 

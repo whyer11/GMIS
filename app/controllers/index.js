@@ -8,5 +8,6 @@ module.exports = {
     displayclsesname: require('./addclses_display_controller'),
     rendercurrentnode: require('./addclses_renderNodeInfo_controller'),
     userssignin: require('./users_signin_controller'),
-    delclass: require('./addclass_del_controller')
+    delclass: require('./addclass_del_controller'),
+    alterclass: require('./addclses_alter_controller')
 };

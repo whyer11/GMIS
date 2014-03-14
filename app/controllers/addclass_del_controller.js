@@ -74,5 +74,8 @@ module.exports = function (req, res) {
 
     }
 
+    res.render('add_classes', {
+        title: '添加类型'
+    });
     res.end();
 };
