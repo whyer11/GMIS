@@ -35,6 +35,7 @@ $(function () {
     function onClick(event, treeId, treeNode) {
         $.post('/render_current_node.json', {'id': treeNode.id}, function (data) {
             renderNodeInfo(data.nodeInfo);
+            console.log(data.nodeInfo);
             var newprop = 'prop_' + modalid;
             var ulprop = 'ulprop_' + modalid;
             var parentClassId = 'parent_class_id_' + modalid;
@@ -89,7 +90,7 @@ $(function () {
                             j++;
                         }
                     }
-                    var id = newModalForm('修改类型属性', '/alterclass', renderPropsForAlter(childClassProps));
+                    var id = newModalForm('修改类型属性', '/alterclass', renderPropsForAlter(childClassProps, treeNode.id));
                     alert(id);
                     $('#' + id + '').modal();
                 }
@@ -137,10 +138,11 @@ $(function () {
 
     }
 
-    function renderPropsForAlter(childClassProps) {
+    function renderPropsForAlter(childClassProps, treeid) {
         var content = '';
         for (var i = 0; i < childClassProps.length; i++) {
             content += '<li class="span4"><div class="thumbnail">' +
+                '<input name="PROP_ID" type="hidden" value="' + childClassProps[i].propid + '">' +
                 '<label>属性名称</label>' +
                 '<input name="PROP_NAME" type="text" value="' + childClassProps[i].name + '">' +
                 '<label>属性列名</label>' +
@@ -151,6 +153,7 @@ $(function () {
                 '<input name="PROP_LENGTH" type="text" value="' + childClassProps[i].length + '">' +
                 '</div></li>';
         }
+        content += '<input name="class_id" type="hidden" value="' + treeid + '">';
         return content;
     }
 

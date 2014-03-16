@@ -39,6 +39,7 @@ module.exports = function (req, res, err) {
                     if (data[i].PROP_CAN_VISIBLE == 'T') {
 
                         var propObj = {
+                            propid: data[i].PROP_ID,
                             name: data[i].PROP_NAME,
                             type: data[i].PROP_TYPE,
                             col: data[i].PROP_COL,
