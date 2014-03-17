@@ -103,6 +103,9 @@ $(function () {
                             '<input name="PROP_LENGTH" type="text">' +
                             '</div></li>');
                     });
+                    $('#' + id + ' .modal-body .delthisprop').bind('click', function () {
+                        $(this).parent().html('');
+                    });
                     $('#' + id + '').modal();
                 }
             });
@@ -162,6 +165,7 @@ $(function () {
                 '<input name="PROP_DBMS_TYPE" type="text" value="' + childClassProps[i].dbms_type + '">' +
                 '<label>属性长度</label>' +
                 '<input name="PROP_LENGTH" type="text" value="' + childClassProps[i].length + '">' +
+                '<a class="btn btn-danger delthisprop">删除该属性</a> ' +
                 '</div></li>';
         }
         content += '<input name="class_id" type="hidden" value="' + treeid + '">' +
