@@ -91,7 +91,18 @@ $(function () {
                         }
                     }
                     var id = newModalForm('修改类型属性', '/alterclass', renderPropsForAlter(childClassProps, treeNode.id));
-                    alert(id);
+                    $('#' + id + ' .modal-body .addpropinalter').bind('click', function () {
+                        $('#' + id + ' .modal-body').append('<li class="span4"><div class="thumbnail">' +
+                            '<label>属性名称</label>' +
+                            '<input name="PROP_NAME" type="text" PLACEHOLDER="属性名称">' +
+                            '<label>属性列名</label>' +
+                            '<input name="PROP_COL" type="text">' +
+                            '<label>属性列属性</label>' +
+                            '<input name="PROP_DBMS_TYPE" type="text">' +
+                            '<label>属性长度</label>' +
+                            '<input name="PROP_LENGTH" type="text">' +
+                            '</div></li>');
+                    });
                     $('#' + id + '').modal();
                 }
             });
@@ -153,7 +164,8 @@ $(function () {
                 '<input name="PROP_LENGTH" type="text" value="' + childClassProps[i].length + '">' +
                 '</div></li>';
         }
-        content += '<input name="class_id" type="hidden" value="' + treeid + '">';
+        content += '<input name="class_id" type="hidden" value="' + treeid + '">' +
+            '<a class="btn btn-danger addpropinalter">添加属性</a>';
         return content;
     }
 

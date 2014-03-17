@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="重构前端代码，点击“新建”和“修改”时，创建一个新的form表单，而不是调用之前的。简单测试完毕">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controllers/addclass_del_controller.js" afterPath="$PROJECT_DIR$/app/controllers/addclses_del_controller.js" />
+    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="类型修改完成，测试没有问题">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/addclasses.js" afterPath="$PROJECT_DIR$/public/javascripts/addclasses.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/addclses_alter_controller.js" afterPath="$PROJECT_DIR$/app/controllers/addclses_alter_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/addclses_renderNodeInfo_controller.js" afterPath="$PROJECT_DIR$/app/controllers/addclses_renderNodeInfo_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/index.js" afterPath="$PROJECT_DIR$/app/controllers/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GMIS.iws" />
@@ -43,6 +39,9 @@
           </file>
           <file leaf-file-name="README.markdown" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/node_modules/seq/README.markdown">
+              <provider editor-type-id="MarkdownPreviewEditor">
+                <state />
+              </provider>
               <provider selected="true" editor-type-id="text-editor">
                 <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6720">
                   <folding />
@@ -52,6 +51,9 @@
           </file>
           <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.md">
+              <provider editor-type-id="MarkdownPreviewEditor">
+                <state />
+              </provider>
               <provider selected="true" editor-type-id="text-editor">
                 <state line="3" column="7" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="285">
                   <folding />
@@ -59,37 +61,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="addclses_alter_controller.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="addclses_alter_controller.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/addclses_alter_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="56" column="18" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.8918206" vertical-offset="164" max-vertical-offset="960">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="dasd.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/dasd.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="lsdakjlks.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/lsdakjlks.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="afsdf.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/afsdf.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+                <state line="29" column="39" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="960">
                   <folding />
                 </state>
               </provider>
@@ -113,10 +88,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="addclasses.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="addclasses.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/javascripts/addclasses.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="44" column="43" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="2790">
+                <state line="106" column="17" selection-start="4470" selection-end="4470" vertical-scroll-proportion="2.075718" vertical-offset="0" max-vertical-offset="2970">
                   <folding />
                 </state>
               </provider>
@@ -138,7 +113,7 @@
           <file leaf-file-name="addclses_add_controller.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="20" selection-start="1286" selection-end="1814" vertical-scroll-proportion="0.39473686" vertical-offset="270" max-vertical-offset="1065">
+                <state line="37" column="20" selection-start="1286" selection-end="1814" vertical-scroll-proportion="0.37698412" vertical-offset="270" max-vertical-offset="1065">
                   <folding />
                 </state>
               </provider>
@@ -156,7 +131,7 @@
           <file leaf-file-name="addclses_renderNodeInfo_controller.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/addclses_renderNodeInfo_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="61" column="16" selection-start="2357" selection-end="2357" vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="1245">
+                <state line="61" column="16" selection-start="2358" selection-end="2358" vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="1245">
                   <folding />
                 </state>
               </provider>
@@ -269,9 +244,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/views/add_classes.jade" />
         <option value="$PROJECT_DIR$/app/controllers/addclses_renderNodeInfo_controller.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/addclasses.js" />
         <option value="$PROJECT_DIR$/app/models/undefined.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclses_alter_controller.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/addclasses.js" />
       </list>
     </option>
   </component>
@@ -494,6 +469,14 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -504,23 +487,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -710,7 +685,11 @@
       <created>1394806373745</created>
       <updated>1394806373745</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="类型修改完成，测试没有问题">
+      <created>1394980157671</created>
+      <updated>1394980157671</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -741,20 +720,20 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3689904" sideWeight="0.49964765" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32770744" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26004228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26004228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39783654" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15362932" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28433734" sideWeight="0.5003524" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.21754807" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" x="768" y="22" width="556" height="878" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.21754807" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" x="677" y="102" width="556" height="878" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28433734" sideWeight="0.49964765" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32650602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -772,9 +751,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26004228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.21754807" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" x="884" y="22" width="556" height="878" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.21754807" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" x="948" y="13" width="556" height="878" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -791,7 +770,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="正在尝试ajax，后端有问题" />
     <MESSAGE value="后端ajax获取到数据" />
     <MESSAGE value="添加Bootstrap支持，我发现我已经离开不了Bootstrap了" />
     <MESSAGE value="怒16小时（间断时间！！）。。" />
@@ -816,7 +794,8 @@
     <MESSAGE value="类型删除模块完成" />
     <MESSAGE value="开始类型修改" />
     <MESSAGE value="重构前端代码，点击“新建”和“修改”时，创建一个新的form表单，而不是调用之前的。简单测试完毕" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构前端代码，点击“新建”和“修改”时，创建一个新的form表单，而不是调用之前的。简单测试完毕" />
+    <MESSAGE value="类型修改完成，测试没有问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="类型修改完成，测试没有问题" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -979,9 +958,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/gom_insts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="2" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
+        <state line="15" column="2" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/zTreeStyle.css">
@@ -990,23 +967,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/seq/README.markdown">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6720">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="7" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="285">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
@@ -1030,13 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/addclasses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="43" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="2790">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="208" column="20" selection-start="3546" selection-end="3546" vertical-scroll-proportion="0.0" vertical-offset="1697" max-vertical-offset="3225">
@@ -1053,7 +1023,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/addclses_renderNodeInfo_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="16" selection-start="2357" selection-end="2357" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
+        <state line="61" column="16" selection-start="2358" selection-end="2358" vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="1245">
           <folding />
         </state>
       </provider>
@@ -1093,13 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="20" selection-start="1286" selection-end="1814" vertical-scroll-proportion="0.39473686" vertical-offset="270" max-vertical-offset="1065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/afsdf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
@@ -1123,7 +1086,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/addclses_alter_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="18" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.8918206" vertical-offset="164" max-vertical-offset="960">
+        <state line="29" column="39" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="20" selection-start="1286" selection-end="1814" vertical-scroll-proportion="0.37698412" vertical-offset="270" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/addclasses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="17" selection-start="4470" selection-end="4470" vertical-scroll-proportion="2.075718" vertical-offset="0" max-vertical-offset="2970">
           <folding />
         </state>
       </provider>
