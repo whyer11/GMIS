@@ -33,20 +33,20 @@ module.exports = function (req, res) {
         });
         gom_props.find(['PROP_ID', 'Z']).run(function (err, data) {
             currentPropId = data[0].PROP_ID + 1;
-            for (var i = 0; i < form.PROP_NAME.length; i++) {
+            if (typeof(form.PROP_NAME) == 'string') {
                 gom_props.create({
                     PROP_ID: currentPropId,
                     CLS_ID: currentClassId,
-                    PROP_NAME: form.PROP_NAME[i],
+                    PROP_NAME: form.PROP_NAME,
                     PROP_TYPE: "D",
-                    PROP_COL: form.PROP_COL[i],
-                    PROP_DBMS_TYPE: form.PROP_DBMS_TYPE[i],
-                    PROP_LENGTH: form.PROP_LENGTH[i],
+                    PROP_COL: form.PROP_COL,
+                    PROP_DBMS_TYPE: form.PROP_DBMS_TYPE,
+                    PROP_LENGTH: form.PROP_LENGTH,
                     PROP_CAN_VISIBLE: "T",
                     PROP_CAN_MODIFY: "T",
                     PROP_CAN_DELETE: "T",
                     PROP_DISP_IND: 1,
-                    PROP_CODE: form.PROP_COL[i]
+                    PROP_CODE: form.PROP_COL
                 }, function (err, items) {
                     if (err) {
                         console.log(err)
@@ -55,9 +55,32 @@ module.exports = function (req, res) {
                     }
 
                 });
-                currentPropId++;
-            }
+            } else {
+                for (var i = 0; i < form.PROP_NAME.length; i++) {
+                    gom_props.create({
+                        PROP_ID: currentPropId,
+                        CLS_ID: currentClassId,
+                        PROP_NAME: form.PROP_NAME[i],
+                        PROP_TYPE: "D",
+                        PROP_COL: form.PROP_COL[i],
+                        PROP_DBMS_TYPE: form.PROP_DBMS_TYPE[i],
+                        PROP_LENGTH: form.PROP_LENGTH[i],
+                        PROP_CAN_VISIBLE: "T",
+                        PROP_CAN_MODIFY: "T",
+                        PROP_CAN_DELETE: "T",
+                        PROP_DISP_IND: 1,
+                        PROP_CODE: form.PROP_COL[i]
+                    }, function (err, items) {
+                        if (err) {
+                            console.log(err)
+                        } else {
+                            console.log("insert successfully(table gom_props)");
+                        }
 
+                    });
+                    currentPropId++;
+                }
+            }
         })
     });
     res.render('add_classes', {title: '类型管理器'});

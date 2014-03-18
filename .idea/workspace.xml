@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="考虑到对类型属性的修改中还有改，删，加的操作。目前加和改的操作没有问题，删的操作等锻炼结束分分钟搞定，现在去锻炼l">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/addclasses.js" afterPath="$PROJECT_DIR$/public/javascripts/addclasses.js" />
+    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="果然分分钟搞定">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" afterPath="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GMIS.iws" />
@@ -25,7 +25,7 @@
     <favorites_list name="GMIS" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5542857">
+    <splitter split-orientation="horizontal" split-proportion="0.25977412">
       <split-first>
         <leaf>
           <file leaf-file-name="add_classes.jade" pinned="false" current="false" current-in-tab="false">
@@ -88,10 +88,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="addclasses.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="addclasses.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/javascripts/addclasses.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="99" column="52" selection-start="4084" selection-end="4152" vertical-scroll-proportion="0.3929504" vertical-offset="1184" max-vertical-offset="3030">
+                <state line="83" column="18" selection-start="3139" selection-end="3139" vertical-scroll-proportion="0.08472222" vertical-offset="1184" max-vertical-offset="3030">
                   <folding />
                 </state>
               </provider>
@@ -110,10 +110,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="addclses_add_controller.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="addclses_add_controller.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="20" selection-start="1286" selection-end="1814" vertical-scroll-proportion="0.39583334" vertical-offset="270" max-vertical-offset="1065">
+                <state line="48" column="44" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="1410">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fs.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/Library/Caches/WebStorm7/extLibs/nodejs-v0.10.24-src/core-modules-sources/lib/fs.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="759" column="0" selection-start="20025" selection-end="20025" vertical-scroll-proportion="0.0" vertical-offset="10841" max-vertical-offset="26190">
                   <folding />
                 </state>
               </provider>
@@ -173,10 +182,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="addclses_del_controller.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="addclses_del_controller.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/controllers/addclses_del_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="34" column="30" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1290">
+                <state line="52" column="19" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.4813864" vertical-offset="405" max-vertical-offset="1290">
                   <folding />
                 </state>
               </provider>
@@ -233,7 +242,6 @@
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/zTreeStyle.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" />
         <option value="$PROJECT_DIR$/app/models/ gom_insts.js" />
         <option value="$PROJECT_DIR$/app/models/gom_insts.js" />
         <option value="$PROJECT_DIR$/app/middleware/opt_db.js" />
@@ -247,6 +255,7 @@
         <option value="$PROJECT_DIR$/app/models/undefined.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclses_alter_controller.js" />
         <option value="$PROJECT_DIR$/public/javascripts/addclasses.js" />
+        <option value="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" />
       </list>
     </option>
   </component>
@@ -693,7 +702,11 @@
       <created>1395040140660</created>
       <updated>1395040140660</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="果然分分钟搞定">
+      <created>1395062888204</created>
+      <updated>1395062888204</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -718,18 +731,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282123" sideWeight="0.49848023" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3689904" sideWeight="0.49964765" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32770744" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26004228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18393235" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39783654" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15362932" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28433734" sideWeight="0.5003524" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.21754807" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" x="753" y="22" width="556" height="878" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.21754807" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" x="-17" y="103" width="556" height="878" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28433734" sideWeight="0.49964765" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -774,7 +787,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="添加Bootstrap支持，我发现我已经离开不了Bootstrap了" />
     <MESSAGE value="怒16小时（间断时间！！）。。" />
     <MESSAGE value="定时更新" />
     <MESSAGE value="传输对象没有问题，可能方法不大对" />
@@ -799,7 +811,8 @@
     <MESSAGE value="重构前端代码，点击“新建”和“修改”时，创建一个新的form表单，而不是调用之前的。简单测试完毕" />
     <MESSAGE value="类型修改完成，测试没有问题" />
     <MESSAGE value="考虑到对类型属性的修改中还有改，删，加的操作。目前加和改的操作没有问题，删的操作等锻炼结束分分钟搞定，现在去锻炼l" />
-    <option name="LAST_COMMIT_MESSAGE" value="考虑到对类型属性的修改中还有改，删，加的操作。目前加和改的操作没有问题，删的操作等锻炼结束分分钟搞定，现在去锻炼l" />
+    <MESSAGE value="果然分分钟搞定" />
+    <option name="LAST_COMMIT_MESSAGE" value="果然分分钟搞定" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1062,13 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_del_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="30" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1290">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/addclses_alter_controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="39" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="960">
@@ -1078,14 +1084,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="20" selection-start="1286" selection-end="1814" vertical-scroll-proportion="0.39583334" vertical-offset="270" max-vertical-offset="1065">
+        <state line="48" column="44" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="1410">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/addclasses.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="52" selection-start="4084" selection-end="4152" vertical-scroll-proportion="0.3929504" vertical-offset="1184" max-vertical-offset="3030">
+        <state line="83" column="18" selection-start="3139" selection-end="3139" vertical-scroll-proportion="0.08472222" vertical-offset="1184" max-vertical-offset="3030">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/WebStorm7/extLibs/nodejs-v0.10.24-src/core-modules-sources/lib/fs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="759" column="0" selection-start="20025" selection-end="20025" vertical-scroll-proportion="0.0" vertical-offset="10841" max-vertical-offset="26190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_del_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="19" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.4813864" vertical-offset="405" max-vertical-offset="1290">
           <folding />
         </state>
       </provider>
