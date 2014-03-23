@@ -16,32 +16,37 @@ module.exports = function (req, res) {
         gom_clses.find({PARENT_CLS_ID: pid}).count(function (err, count) {
             if (count != 0) {
                 gom_clses.find({PARENT_CLS_ID: pid}).each(function (cls) {
-                    cls.remove(function (err) {
-                        console.log('class remove err' + err);
-                    });
-                    gom_props.find({CLS_ID: cls.CLS_ID}).each(function (prop) {
-                        prop.remove();
+                    if (typeof (cls) == 'undefined') {
+                        return 0;
+                    } else {
+                        gom_props.find({CLS_ID: cls.CLS_ID}).each(function (prop) {
+                            prop.remove();
 
-                    });
-                    db.driver.execQuery("DROP TABLE `gmis`.`" + cls.CLS_TAB_NAME + "`", function (err, result) {
-                        if (err) {
-                            console.log(err);
-                        }
-                    });
-                    var modelpath = './app/models/' + cls.CLS_TAB_NAME + '.js';
-                    fs.exists(modelpath, function (result) {
-                        if (result) {
-                            fs.unlinkSync(modelpath);
-                        } else {
-                            console.log(modelpath + ' have been del!')
-                        }
-                    });
 
-                    a(cls.CLS_ID);
+                        });
+                        cls.remove(function (err) {
+                            console.log('class remove err' + err);
+                        });
+                        db.driver.execQuery("DROP TABLE `gmis`.`" + cls.CLS_TAB_NAME + "`", function (err, result) {
+                            if (err) {
+                                console.log(err);
+                            }
+                        });
+                        var modelpath = './app/models/' + cls.CLS_TAB_NAME + '.js';
+                        fs.exists(modelpath, function (result) {
+                            if (result) {
+                                fs.unlinkSync(modelpath);
+                            } else {
+                                console.log(modelpath + ' have been del!')
+                            }
+                        });
+
+                        a(cls.CLS_ID);
+                    }
                 })
             } else {
                 gom_clses.get(pid, function (err, cls) {
-                    cls.remove();
+                    //cls.remove();
                 });
             }
         })

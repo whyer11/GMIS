@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="解决类型管理器中新建类型时只创建一个属性时会默认当做数组来处理，添加了一层逻辑判断">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/app_index.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/app_main_controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/gom_apps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/addclasses.js" afterPath="$PROJECT_DIR$/public/javascripts/addclasses.js" />
+    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="添加gom_apps模型，下面继续做第一个对象浏览器">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/addclses_del_controller.js" afterPath="$PROJECT_DIR$/app/controllers/addclses_del_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/index.js" afterPath="$PROJECT_DIR$/app/controllers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/middleware/opt_db.js" afterPath="$PROJECT_DIR$/app/middleware/opt_db.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.js" afterPath="$PROJECT_DIR$/config/routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GMIS.iws" />
@@ -36,7 +29,7 @@
       <file leaf-file-name="app_main_controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/app_main_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="270">
+            <state line="8" column="25" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -63,7 +56,7 @@
       <file leaf-file-name="addclses_del_controller.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/addclses_del_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="73" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.5597015" vertical-offset="0" max-vertical-offset="2355">
+            <state line="24" column="0" selection-start="805" selection-end="805" vertical-scroll-proportion="0.32734275" vertical-offset="105" max-vertical-offset="2430">
               <folding />
             </state>
           </provider>
@@ -627,7 +620,11 @@
       <created>1395111614298</created>
       <updated>1395111614298</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="添加gom_apps模型，下面继续做第一个对象浏览器">
+      <created>1395538494655</created>
+      <updated>1395538494655</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -654,11 +651,12 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282123" sideWeight="0.49848023" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3689904" sideWeight="0.49964765" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32770744" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27202255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27202255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37259614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15362932" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28433734" sideWeight="0.5003524" order="8" side_tool="true" content_ui="tabs" />
@@ -668,7 +666,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32650602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -708,7 +705,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="定时更新" />
     <MESSAGE value="传输对象没有问题，可能方法不大对" />
     <MESSAGE value="创建ztreedemo成功" />
     <MESSAGE value="成功创建class viewtree &#10;要说的是，ztree真的很强大" />
@@ -733,12 +729,13 @@
     <MESSAGE value="考虑到对类型属性的修改中还有改，删，加的操作。目前加和改的操作没有问题，删的操作等锻炼结束分分钟搞定，现在去锻炼l" />
     <MESSAGE value="果然分分钟搞定" />
     <MESSAGE value="解决类型管理器中新建类型时只创建一个属性时会默认当做数组来处理，添加了一层逻辑判断" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决类型管理器中新建类型时只创建一个属性时会默认当做数组来处理，添加了一层逻辑判断" />
+    <MESSAGE value="添加gom_apps模型，下面继续做第一个对象浏览器" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加gom_apps模型，下面继续做第一个对象浏览器" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="18" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1005,7 +1002,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/app_main_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+        <state line="8" column="25" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="270">
           <folding />
         </state>
       </provider>
@@ -1026,7 +1023,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/addclses_del_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="73" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.5597015" vertical-offset="0" max-vertical-offset="2355">
+        <state line="24" column="0" selection-start="805" selection-end="805" vertical-scroll-proportion="0.32734275" vertical-offset="105" max-vertical-offset="2430">
           <folding />
         </state>
       </provider>
