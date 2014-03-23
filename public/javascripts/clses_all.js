@@ -70,7 +70,7 @@ $(function () {
             $('.delclass').bind('click', function () {
                 if (confirm('确定要删除该类型？')) {
                     $.post('/delclass.json', {'id': treeNode.id}, function (data) {
-                        console.log(data + 'I am here');
+                        window.location.reload();
                     });
                 }
             });
