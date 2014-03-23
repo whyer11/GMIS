@@ -25,6 +25,7 @@ $(function () {
         }
 
     };
+
     function onClick(event, treeId, treeNode) {
         $.post('/render_current_node.json', {'id': treeNode.id}, function (data) {
             renderNodeInfo(data.nodeInfo);

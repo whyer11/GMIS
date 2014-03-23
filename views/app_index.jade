@@ -1,5 +1,7 @@
 //
    Created by whyer on 14-3-20.
+extends layout
 
-#{appinfo[0].APP_NAME}
-#{appinfo[1].APP_NAME}
+block content
+  script(src='../javascripts/app_display.js')
+  a.btn.btn-danger #{appinfo[0].APP_NAME}

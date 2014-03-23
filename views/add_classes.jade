@@ -3,7 +3,7 @@
 extends layout
 
 block content
-  script(src='../javascripts/addclasses.js')
+  script(src='../javascripts/clses_all.js')
   script(src='../javascripts/jquery.ztree.core-3.5.js')
   script(src='../javascripts/jquery.ztree.excheck-3.5.js')
   script(src='../javascripts/jquery.ztree.exedit-3.5.js')
@@ -31,41 +31,6 @@ block content
               th 是否可删
               th 属性代码
           tbody#class_props
-      //
-        form.form-horizontal#election(action="/add_child_classes",method="post")
-          div.modal.fade.mymodal#myModal(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden="true")
-            div.modal-header
-              button.close(type="button",data-dismiss="modal",aria-hidden="true") &times;
-              h3 新建子类型
-            div.modal-body
-              div.row-fluid
-                div.span4
-                  label 类型名称
-                  input#class_name(name="class_name",type="text",placeholder="类型名称")
-                  label 类型表名称
-                  input#class_tab_name(name="class_tab_name",type="text",placeholder="类型表名称")
-                  input#parent_class_id(name="parent_class_id",type="hidden")
-                div.span8.pull-left
-                  h3 属性
-                  ul.thumbnails#props
-                  a.btn.btn-info#newprop 新建属性
-            div.modal-footer
-              input.btn(type="submit")
-              button.btn 关闭
-        //
-          form.form-horizontal(action="/alterclass",method="post")
-            div.modal.fade.mymodal#alterprops(tabindex="-1",role="dialog",aria-hidden="true")
-              div.modal-header
-                button.close(type="button",data-dismiss="modal",aria-hidden="true") &times;
-                h3 修改类型属性
-              div.modal-body
-                div.row-fluid
-                  div.span8
-                    h3 属性
-                    ul.thumbnails#childprops
-              div.modal-footer
-                input.btn(type="submit")
-                button.btn 关闭
 
 
 
