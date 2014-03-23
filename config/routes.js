@@ -12,5 +12,6 @@ module.exports = function (app) {
     app.post('/add_child_classes', controllers.addclsesname);
     app.post('/users_signin', controllers.userssignin);
     app.post('/delclass.json', controllers.delclass);
-    app.post('/alterclass', controllers.alterclass)
+    app.post('/alterclass', controllers.alterclass);
+    app.get('/app_index', controllers.appindex);
 };

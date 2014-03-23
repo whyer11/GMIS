@@ -38,13 +38,18 @@ exports.newModelContent = function (fm) {
     function printClassProps(fm) {
         var str = "";
         var props = fm.PROP_COL;
-        for (var e = 0; e < fm.PROP_COL.length; e++) {
-            if (e == fm.PROP_COL.length - 1) {
-                str += '       ' + props[e] + ':String' + '\n';
-            } else {
-                str += '       ' + props[e] + ':String,' + '\n';
+        if (typeof(fm.PROP_COL) == 'string') {
+            str += '        ' + props + ':String' + '\n';
+        } else {
+            for (var e = 0; e < fm.PROP_COL.length; e++) {
+                if (e == fm.PROP_COL.length - 1) {
+                    str += '       ' + props[e] + ':String' + '\n';
+                } else {
+                    str += '       ' + props[e] + ':String,' + '\n';
+                }
             }
         }
+
         return str;
     }
 

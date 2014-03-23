@@ -20,18 +20,11 @@ $(function () {
             }
         },
         callback: {
-            onClick: onClick,
-            beforeRemove: beforeRemove
+            onClick: onClick
 
         }
 
     };
-
-    function beforeRemove(event, treeId, treeNode) {
-
-
-    }
-
     function onClick(event, treeId, treeNode) {
         $.post('/render_current_node.json', {'id': treeNode.id}, function (data) {
             renderNodeInfo(data.nodeInfo);
