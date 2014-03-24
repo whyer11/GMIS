@@ -15,4 +15,5 @@ module.exports = function (app) {
     app.post('/delclass.json', controllers.delclass);
     app.post('/alterclass', controllers.alterclass);
     app.get('/app_index', controllers.appindex);
+    app.get('/app/:app_id/view', controllers.appview);
 };

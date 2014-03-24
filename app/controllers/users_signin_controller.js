@@ -15,7 +15,7 @@ module.exports = function (req, res) {
         } else {
             res.render('index', {
                 title: '主页'
-            })
+            });
             res.end();
         }
     })

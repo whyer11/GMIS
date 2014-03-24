@@ -10,5 +10,6 @@ module.exports = {
     userssignin: require('./users_signin_controller'),
     delclass: require('./addclses_del_controller'),
     alterclass: require('./addclses_alter_controller'),
-    appindex: require('./app_main_controller')
+    appindex: require('./app_main_controller'),
+    appview: require('./app_view_controller')
 };

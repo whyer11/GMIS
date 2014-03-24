@@ -4,4 +4,7 @@ extends layout
 
 block content
   script(src='../javascripts/app_display.js')
-  a.btn.btn-danger #{appinfo[0].APP_NAME}
+  ul
+    each val in appinfo
+      li
+        a.btn.btn-danger(href='/app/'+val.APP_ID+'/view')=val.APP_NAME
