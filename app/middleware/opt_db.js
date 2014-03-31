@@ -2,10 +2,6 @@
  * Created by whyer on 14-2-25.
  */
 var fs = require('fs');
-var EventProxy = require('eventproxy');
-var ep = new EventProxy();
-/*
- */
 exports.newModel = function (modelName, modelContent) {
     fs.open('./app/models/' + modelName + '.js', 'w', 0644, function (e, fd) {
         if (e) throw e;
@@ -15,13 +11,7 @@ exports.newModel = function (modelName, modelContent) {
             fs.closeSync(fd);
         });
     });
-};
-/* via the data of form from the frontend,
- * translate data obj 'fm' to the model for function newModel
- *
- * @param fm [obj]
- * @function public
- */
+}
 exports.newModelContent = function (fm) {
     var modelStr = 'module.exports = function(orm,db){' + '\n' +
         '   var ' + fm.class_tab_name + ' = db.define("' + fm.class_tab_name + '",{' + '\n' +
@@ -54,9 +44,8 @@ exports.newModelContent = function (fm) {
     }
 
     return modelStr;
-};
-
-function addClassProp(props, table, classid, i) {
+}
+exports.addClassProp = function (props, table, classid, i) {
     table.find(['PROP_ID', 'Z'], function (err, data) {
         var nextID = data[0].PROP_ID + 1;
         table.create({
@@ -84,4 +73,3 @@ function addClassProp(props, table, classid, i) {
         addClassProp(props, table, classid, i)
     }
 }
-exports.addClassProp = addClassProp;

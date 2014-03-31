@@ -175,8 +175,9 @@ $(function () {
         });
 
 
-    };
-    var maketree = function (data) {
+    }
+
+    function maketree(data) {
         for (var i = 0; i < data.length; i++) {
             var n = {
                 id: data[i].CLS_ID,
@@ -185,7 +186,7 @@ $(function () {
             };
             rootnode.push(n);
         }
-    };
+    }
 
 
 });
