@@ -9,7 +9,7 @@ module.exports = function (orm, db) {
         INSTACP_ID: Number,
         CLS_ID: Number,
         INST_NAME: String,
-        INST_NOTE: Screen
+        INST_NOTE: String
     }, {
         id: "INST_ID"
     })

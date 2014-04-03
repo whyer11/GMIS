@@ -1,3 +1,54 @@
 //
    Created by whyer on 14-3-24.
-askld
+extends layout
+
+block content
+  div.navbar.navbar-fixed-top.navbar-inverse
+    div.navbar-inner
+      div.container-fluid
+        a.brand #{appname}
+  div.container-fluid(style="margin-top:40px")
+    div.row-fluid
+      div.span2
+        div.siderbar
+          ul#treeDemo.ztree
+  script.
+    $(function(){
+      var viewtreesettings = {
+        view: {
+            selectedMulti: false
+        },
+        edit: {
+            enable: false,
+            editNameSelectAll: false
+
+        },
+        data: {
+            simpleData: {
+                enable: true
+            }
+        },
+        callback: {
+
+        }
+      };
+      var nodes=[];
+      window.onload=function(){
+        $.post('/app_display.json',{appid:#{appid}},function(data){
+    maketree(data.data);
+    console.log(nodes);
+    $.fn.zTree.init($('#treeDemo'),viewtreesettings,nodes);
+  })
+  }
+  function maketree(data){
+  for(var i = 0;i<data.length;i++){
+    var n = {
+      id:data[i].CLS_ID,
+      pId:data[i].PARENT_ID,
+      name:data[i].CLS_NAME
+    }
+  }
+  nodes.push(n);
+  }
+  })
+

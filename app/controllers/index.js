@@ -11,5 +11,6 @@ module.exports = {
     delclass: require('./addclses_del_controller'),
     alterclass: require('./addclses_alter_controller'),
     appindex: require('./app_main_controller'),
-    appview: require('./app_view_controller')
+    appview: require('./app_view_controller'),
+    appdisplay: require('./app_renderNodeInfo_controller')
 };

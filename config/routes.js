@@ -16,4 +16,5 @@ module.exports = function (app) {
     app.post('/alterclass', controllers.alterclass);
     app.get('/app_index', controllers.appindex);
     app.get('/app/:app_id/view', controllers.appview);
+    app.post('/app_display.json', controllers.appdisplay);
 };
