@@ -60,7 +60,11 @@ $(function () {
                         '<label>属性列名</label>' +
                         '<input name="PROP_COL" type="text">' +
                         '<label>属性列属性</label>' +
-                        '<input name="PROP_DBMS_TYPE" type="text">' +
+                        '<select name="PROP_DBMS_TYPE">' +
+                        '   <option value="VARCHAR">VARCHAR</option>' +
+                        '   <option value="INT">INT</option>' +
+                        '   <option value="BOOLEAN">BOOLEAN</option> ' +
+                        '</select>' +
                         '<label>属性长度</label>' +
                         '<input name="PROP_LENGTH" type="text">' +
                         '</div></li>');

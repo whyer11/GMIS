@@ -28,14 +28,38 @@ exports.newModelContent = function (fm) {
     function printClassProps(fm) {
         var str = "";
         var props = fm.PROP_COL;
+        var dbms_type = '';
+
         if (typeof(fm.PROP_COL) == 'string') {
-            str += '        ' + props + ':String' + '\n';
+            switch (fm.PROP_DBMS_TYPE) {
+                case 'VARCHAR':
+                    dbms_type = 'String';
+                    break;
+                case 'INT':
+                    dbms_type = 'Number';
+                    break;
+                case 'BOOLEAN':
+                    dbms_type = 'Boolean';
+                    break;
+            }
+            str += '        ' + props + ':' + dbms_type + '\n';
         } else {
             for (var e = 0; e < fm.PROP_COL.length; e++) {
+                switch (fm.PROP_DBMS_TYPE[e]) {
+                    case 'VARCHAR':
+                        dbms_type = 'String';
+                        break;
+                    case 'INT':
+                        dbms_type = 'Number';
+                        break;
+                    case 'BOOLEAN':
+                        dbms_type = 'Boolean';
+                        break;
+                }
                 if (e == fm.PROP_COL.length - 1) {
-                    str += '       ' + props[e] + ':String' + '\n';
+                    str += '       ' + props[e] + ':' + dbms_type + '\n';
                 } else {
-                    str += '       ' + props[e] + ':String,' + '\n';
+                    str += '       ' + props[e] + ':' + dbms_type + ',' + '\n';
                 }
             }
         }
