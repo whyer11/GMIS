@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="更改属性类型text为select">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/app_renderNodeInfo_controller.js" afterPath="$PROJECT_DIR$/app/controllers/app_renderNodeInfo_controller.js" />
+    <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="成功生成对象树">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/app_view.jade" afterPath="$PROJECT_DIR$/views/app_view.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/clses_all.js" afterPath="$PROJECT_DIR$/public/javascripts/clses_all.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GMIS.iws" />
@@ -82,10 +80,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_classes.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="add_classes.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="27" selection-start="110" selection-end="351" vertical-scroll-proportion="0.36082473" vertical-offset="0" max-vertical-offset="600">
+            <state line="14" column="27" selection-start="110" selection-end="351" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -94,16 +92,16 @@
       <file leaf-file-name="app_renderNodeInfo_controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/app_renderNodeInfo_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="25" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+            <state line="27" column="25" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app_view.jade" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app_view.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/app_view.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="33" selection-start="1147" selection-end="1147" vertical-scroll-proportion="-28.8" vertical-offset="0" max-vertical-offset="930">
+            <state line="51" column="5" selection-start="1130" selection-end="1130" vertical-scroll-proportion="1.3189656" vertical-offset="0" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -178,9 +176,9 @@
         <option value="$PROJECT_DIR$/app/controllers/addclses_del_controller.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/middleware/opt_db.js" />
-        <option value="$PROJECT_DIR$/views/app_view.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/clses_all.js" />
         <option value="$PROJECT_DIR$/app/controllers/app_renderNodeInfo_controller.js" />
+        <option value="$PROJECT_DIR$/views/app_view.jade" />
       </list>
     </option>
   </component>
@@ -696,7 +694,11 @@
       <created>1396746774347</created>
       <updated>1396746774347</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="成功生成对象树">
+      <created>1397010724264</created>
+      <updated>1397010724264</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -721,23 +723,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282123" sideWeight="0.49848023" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3689904" sideWeight="0.49964765" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32770744" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21634954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21634954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37259614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15362932" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28433734" sideWeight="0.5003524" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20913461" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" x="808" y="22" width="547" height="878" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20963855" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" x="808" y="22" width="547" height="878" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28433734" sideWeight="0.49964765" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32650602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -777,7 +779,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="在cls表中创建子类型记录出现问题" />
     <MESSAGE value="创建记录没有已经搞定，刚刚出现类似循环调用函数的报错，但是实际情况是操作数据库的错误。- -，吓尿" />
     <MESSAGE value="前端修改完成，增查的功能完成" />
     <MESSAGE value="按照客户需求，把前端稍稍改了一下" />
@@ -802,7 +803,8 @@
     <MESSAGE value="对象浏览器初有头绪" />
     <MESSAGE value="更新" />
     <MESSAGE value="更改属性类型text为select" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改属性类型text为select" />
+    <MESSAGE value="成功生成对象树" />
+    <option name="LAST_COMMIT_MESSAGE" value="成功生成对象树" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1087,21 +1089,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/app_renderNodeInfo_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="25" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/app_view.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="33" selection-start="1147" selection-end="1147" vertical-scroll-proportion="-28.8" vertical-offset="0" max-vertical-offset="930">
+        <state line="27" column="25" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="27" selection-start="110" selection-end="351" vertical-scroll-proportion="0.36082473" vertical-offset="0" max-vertical-offset="600">
+        <state line="14" column="27" selection-start="110" selection-end="351" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/app_view.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="5" selection-start="1130" selection-end="1130" vertical-scroll-proportion="1.3189656" vertical-offset="0" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
