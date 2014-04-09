@@ -5,6 +5,7 @@ $(function () {
     var allclasses;
     var rootnode = [];
     var modalid = 2009;
+    //配置ztree
     var viewtreesettings = {
         view: {
             selectedMulti: false
@@ -25,14 +26,14 @@ $(function () {
         }
 
     };
-
+    //  ztree节点单击事件回调函数
     function onClick(event, treeId, treeNode) {
         $.post('/render_current_node.json', {'id': treeNode.id}, function (data) {
             renderNodeInfo(data.nodeInfo);
-            console.log(data.nodeInfo);
             var newprop = 'prop_' + modalid;
             var ulprop = 'ulprop_' + modalid;
             var parentClassId = 'parent_class_id_' + modalid;
+
             $('.getparentID').bind('click', function () {
                 var self = $('.getparentID');
                 var contentStr = '<div class="row-fluid">' +
@@ -71,6 +72,7 @@ $(function () {
                 });
                 $('#' + id + '').modal();
             });
+
             $('.delclass').bind('click', function () {
                 if (confirm('确定要删除该类型？')) {
                     $.post('/delclass.json', {'id': treeNode.id}, function (data) {
@@ -78,6 +80,7 @@ $(function () {
                     });
                 }
             });
+
             $('.alterclass').bind('click', function () {
                 var childClassProps = [];
                 var j = 0;

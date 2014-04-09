@@ -35,7 +35,8 @@ block content
       var nodes=[];
       window.onload=function(){
         $.post('/app_display.json',{appid:#{appid}},function(data){
-    maketree(data.data);
+    console.log(data);
+    maketree(data);
     console.log(nodes);
     $.fn.zTree.init($('#treeDemo'),viewtreesettings,nodes);
   })
@@ -43,12 +44,13 @@ block content
   function maketree(data){
   for(var i = 0;i<data.length;i++){
     var n = {
-      id:data[i].CLS_ID,
-      pId:data[i].PARENT_ID,
-      name:data[i].CLS_NAME
+      id:data[i].REF_ID,
+      pId:data[i].PARENT_REF_ID,
+      name:data[i].REF_NAME
     }
+    nodes.push(n);
   }
-  nodes.push(n);
+
   }
   })
 
