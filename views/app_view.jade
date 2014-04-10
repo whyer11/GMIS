@@ -3,6 +3,7 @@
 extends layout
 
 block content
+  script(src='../../javascripts/app_display.js')
   div.navbar.navbar-fixed-top.navbar-inverse
     div.navbar-inner
       div.container-fluid
@@ -12,45 +13,7 @@ block content
       div.span2
         div.siderbar
           ul#treeDemo.ztree
+  input#app(value = '#{appid}',type='hidden')
   script.
-    $(function(){
-      var viewtreesettings = {
-        view: {
-            selectedMulti: false
-        },
-        edit: {
-            enable: false,
-            editNameSelectAll: false
 
-        },
-        data: {
-            simpleData: {
-                enable: true
-            }
-        },
-        callback: {
-
-        }
-      };
-      var nodes=[];
-      window.onload=function(){
-        $.post('/app_display.json',{appid:#{appid}},function(data){
-    console.log(data);
-    maketree(data);
-    console.log(nodes);
-    $.fn.zTree.init($('#treeDemo'),viewtreesettings,nodes);
-    })
-    }
-    function maketree(data){
-    for(var i = 0;i<data.length;i++){
-      var n = {
-        id:data[i].REF_ID,
-        pId:data[i].PARENT_REF_ID,
-        name:data[i].REF_NAME
-      }
-      nodes.push(n);
-    }
-
-    }
-    })
 
