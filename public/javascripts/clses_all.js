@@ -30,6 +30,7 @@ $(function () {
     function onClick(event, treeId, treeNode) {
         $.post('/render_current_node.json', {'id': treeNode.id}, function (data) {
             renderNodeInfo(data.nodeInfo);
+
             var newprop = 'prop_' + modalid;
             var ulprop = 'ulprop_' + modalid;
             var parentClassId = 'parent_class_id_' + modalid;
@@ -46,7 +47,6 @@ $(function () {
                     '<div class="span8 pull-left">' +
                     '<h3>属性</h3>' +
                     '<ul class="thumbnails" id="' + ulprop + '">' +
-                    '' +
                     '</ul>' +
                     '<a class="btn btn-info" id="' + newprop + '">新建类型</a>' +
                     '</div>' +
@@ -54,6 +54,7 @@ $(function () {
                 var id = newModalForm('新建子类型', '/add_child_classes', contentStr);
 
                 $('#' + parentClassId + '').val(self.data('classid'));
+
                 $('#' + newprop + '').bind('click', function () {
                     $('#' + ulprop + '').append('<li class="span4"><div class="thumbnail">' +
                         '<label>属性名称</label>' +
@@ -125,7 +126,6 @@ $(function () {
             '<button class="btn">关闭</button></div>' +
             '</div></form>');
         return modalid++;
-
     }
 
     function renderNodeInfo(nodeInfos) {
@@ -150,7 +150,6 @@ $(function () {
                     '<th>' + nodeInfos[i].code + '</th>' +
                     '</tr>');
         }
-
     }
 
     function renderPropsForAlter(childClassProps, treeid) {
@@ -180,8 +179,6 @@ $(function () {
             maketree(allclasses.data);
             $.fn.zTree.init($('#treeDemo'), viewtreesettings, rootnode);
         });
-
-
     }
 
     function maketree(data) {
@@ -194,6 +191,4 @@ $(function () {
             rootnode.push(n);
         }
     }
-
-
 });

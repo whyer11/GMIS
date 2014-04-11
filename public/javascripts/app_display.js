@@ -2,7 +2,9 @@
  * Created by whyer on 14-3-23.
  */
 $(function(){
+    //获取当前app的appid
     var curappid = $('#app').val();
+    //配置Ztree
     var viewtreesettings = {
         view: {
             selectedMulti: false
@@ -21,16 +23,21 @@ $(function(){
             onClick:onClick
         }
     };
-    var nodes=[];
+    /*
+     * 监听load事件
+     * 与后端交换信息，获取对象树的节点信息
+     * 初始化对象树
+     */
     window.onload=function(){
         $.post('/app_display.json',{appid:curappid},function(data){
-            console.log(data);
-            maketree(data);
-            console.log(nodes);
-            $.fn.zTree.init($('#treeDemo'),viewtreesettings,nodes);
+            $.fn.zTree.init($('#treeDemo'),viewtreesettings,maketree(data));
         })
     }
+    /* function maketree
+     * 将ajax回调的节点数据转为对象数组，并返回数组
+     */
     function maketree(data){
+        var nodes=[];
         for(var i = 0;i<data.length;i++){
             var n = {
                 id:data[i].REF_ID,
@@ -40,9 +47,34 @@ $(function(){
             }
             nodes.push(n);
         }
-
+        return nodes;
     }
+    /* Ztree节点的click事件
+     * treeId获取生成对象数组时设置的id
+     * treeNode获取当前节点的整个对象
+     */
     function onClick(event,treeId,treeNode){
+        renderOptBtn();
+        renderNodeInfo(treeNode);
 
     }
+
+    /*
+     生成操作按钮并绑定按钮类型
+
+     */
+    function renderNodeInfo(treenodeobj){
+
+    }
+
+    function renderOptBtn(treenodeobj){
+        $.post('',{},function(data){
+
+        });
+        $('#class_opts').html('<div class="optionsbar">' +
+            '<a class="classopts delclass">删除</a>' +
+            '<a class="classopts alterclass">修改</a>' +
+            '<a class="classopts ">新建</a></div>')
+    }
+
 })
