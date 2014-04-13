@@ -21,7 +21,10 @@ exports.newModelContent = function (fm) {
         '       id:"INST_ID"' + '\n' +
         '   });' + '\n' +
         '   ' + fm.class_tab_name + '.sync(function(err){' + '\n' +
-        '   console.log("create ' + fm.class_tab_name + ' table successfully.")' + '\n' +
+        '   if(err)' +
+        '   {' +
+        '       console.log(err)' +
+        '   }' + '\n' +
         '   });' + '\n' +
         '};';
 
@@ -96,4 +99,18 @@ exports.addClassProp = function (props, table, classid, i) {
         i++;
         addClassProp(props, table, classid, i)
     }
+}
+
+exports.addModelsMaps = function(content){
+    fs.open('./config/models_maps.json','w',0644,function(err,fd){
+        if(err) console.log(err);
+        fs.write(fd,'aaaa',0,'utf8',function(err){
+            if(err) console.log(err);
+            fs.closeSync(fd);
+        })
+    })
+}
+
+exports.generateModelsMapsContent = function(){
+
 }

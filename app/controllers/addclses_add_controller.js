@@ -83,6 +83,9 @@ module.exports = function (req, res) {
             }
         })
     });
+    gom_clses.find(['CLS_ID','Z'],function(err,data){
+        //opt_db.addModelsMaps(data);
+    })
     res.render('add_classes', {title: '类型管理器'});
     res.end();
 };

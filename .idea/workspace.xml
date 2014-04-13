@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/app_renderTreeNodeInfo_controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/models_maps.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controllers/app_renderNodeInfo_controller.js" afterPath="$PROJECT_DIR$/app/controllers/app_renderTreeView_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" afterPath="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/app_display.js" afterPath="$PROJECT_DIR$/public/javascripts/app_display.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/app_view.jade" afterPath="$PROJECT_DIR$/views/app_view.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/clses_all.js" afterPath="$PROJECT_DIR$/public/javascripts/clses_all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/app_js.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/app_js.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/index.js" afterPath="$PROJECT_DIR$/app/controllers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/middleware/opt_db.js" afterPath="$PROJECT_DIR$/app/middleware/opt_db.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.js" afterPath="$PROJECT_DIR$/config/routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GMIS.iws" />
@@ -27,40 +34,74 @@
     <favorites_list name="GMIS" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49119097">
+    <splitter split-orientation="horizontal" split-proportion="0.5633188">
       <split-first>
         <leaf>
-          <file leaf-file-name="app_view_controller.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/controllers/app_view_controller.js">
+          <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/routes.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="32" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="345">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
+          <file leaf-file-name="app_renderTreeNodeInfo_controller.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/app_renderTreeNodeInfo_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="2" selection-start="663" selection-end="663" vertical-scroll-proportion="0.2937337" vertical-offset="0" max-vertical-offset="766">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="gom_apps.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/gom_apps.js">
+          <file leaf-file-name="environment.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/environment.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="2" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="270">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="jquery.ztree.core-3.5.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.ztree.core-3.5.js">
+          <file leaf-file-name="opt_db.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/middleware/opt_db.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="25875">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1815">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="APARTMENT.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/models/APARTMENT.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="addclses_renderNodeInfo_controller.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/addclses_renderNodeInfo_controller.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="users_signin_controller.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/users_signin_controller.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -69,16 +110,8 @@
           <file leaf-file-name="clses_all.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/javascripts/clses_all.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="53" column="29" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="2985">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/index.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2985">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -87,16 +120,18 @@
           <file leaf-file-name="add_classes.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="15" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="600">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app_renderNodeInfo_controller.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/controllers/app_renderNodeInfo_controller.js">
+          <file leaf-file-name="app_renderTreeView_controller.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/app_renderTreeView_controller.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="25" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="585">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -109,7 +144,8 @@
           <file leaf-file-name="clses_all.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/javascripts/clses_all.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="169" column="9" selection-start="7720" selection-end="7720" vertical-scroll-proportion="0.0" vertical-offset="2173" max-vertical-offset="2985">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2985">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -118,16 +154,68 @@
           <file leaf-file-name="app_view.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/app_view.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="45" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="360">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app_display.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="app_display.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/javascripts/app_display.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="71" column="0" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.7413793" vertical-offset="463" max-vertical-offset="1275">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="addclses_del_controller.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/addclses_del_controller.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="addclses_add_controller.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="models_maps.json" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/config/models_maps.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="addclses_main_controller.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/addclses_main_controller.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -156,10 +244,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/app/models/gom_props.js" />
-        <option value="$PROJECT_DIR$/config/environment.js" />
-        <option value="$PROJECT_DIR$/config/settings.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclses_controller.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclsesname_controller.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclses_display_controller.js" />
@@ -183,7 +267,6 @@
         <option value="$PROJECT_DIR$/app/controllers/addclses_renderNodeInfo_controller.js" />
         <option value="$PROJECT_DIR$/app/models/undefined.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclses_alter_controller.js" />
-        <option value="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" />
         <option value="$PROJECT_DIR$/app/models/adfsdf.js" />
         <option value="$PROJECT_DIR$/app/models/gom_apps.js" />
         <option value="$PROJECT_DIR$/app/controllers/app_main_controller.js" />
@@ -195,24 +278,31 @@
         <option value="$PROJECT_DIR$/app/models/gom_refs.js" />
         <option value="$PROJECT_DIR$/app/models/gom_clslinks.js" />
         <option value="$PROJECT_DIR$/app/models/gom_insts.js" />
-        <option value="$PROJECT_DIR$/app/controllers/index.js" />
-        <option value="$PROJECT_DIR$/config/routes.js" />
         <option value="$PROJECT_DIR$/views/add_classes.jade" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/app/controllers/app_view_controller.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclses_del_controller.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/app/middleware/opt_db.js" />
         <option value="$PROJECT_DIR$/app/controllers/app_renderNodeInfo_controller.js" />
         <option value="$PROJECT_DIR$/views/app_view.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/clses_all.js" />
+        <option value="$PROJECT_DIR$/app/controllers/index.js" />
+        <option value="$PROJECT_DIR$/config/routes.js" />
         <option value="$PROJECT_DIR$/public/javascripts/app_display.js" />
+        <option value="$PROJECT_DIR$/app/controllers/app_renderTreeView_controller.js" />
+        <option value="$PROJECT_DIR$/app/middleware/models_maps.js" />
+        <option value="$PROJECT_DIR$/config/models_maps.json" />
+        <option value="$PROJECT_DIR$/app/controllers/addclses_add_controller.js" />
+        <option value="$PROJECT_DIR$/app/controllers/app_renderTreeNodeInfo_controller.js" />
+        <option value="$PROJECT_DIR$/app/middleware/opt_db.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="1" />
+    <option name="y" value="22" />
+    <option name="width" value="1428" />
+    <option name="height" value="840" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -253,7 +343,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -421,7 +511,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="SearchEverywhereHistory" value="&#10;class&#10;you&#10;setti&#10;settings&#10;sett" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="138" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="146" />
@@ -445,6 +535,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/public/stylesheets" />
       <recent name="$PROJECT_DIR$/public/javascripts" />
     </key>
@@ -468,7 +559,7 @@
       <option name="testName" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
       <envs />
       <method />
     </configuration>
@@ -476,14 +567,13 @@
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
-      <setting name="preferredDebugBrowser" value="CHROME" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <list size="1">
@@ -734,7 +824,11 @@
       <created>1397091035523</created>
       <updated>1397091035523</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="昨天讨论发现的新问题，对象信息的显示问题，其实我再考虑，每个Model好像都用不起来的样子，我看是不是还要做一个字符Model映射才行">
+      <created>1397195870814</created>
+      <updated>1397195870814</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -758,18 +852,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="1" y="22" width="1428" height="840" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282123" sideWeight="0.49848023" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3689904" sideWeight="0.49964765" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32770744" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2048611" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20658264" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37259614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15362932" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28433734" sideWeight="0.5003524" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21185371" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" x="808" y="22" width="547" height="878" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17350528" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" x="808" y="22" width="547" height="878" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28433734" sideWeight="0.49964765" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -795,14 +889,17 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32770744" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20648344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2048611" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.203125" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" x="808" y="22" width="547" height="878" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17350528" sideWeight="0.49964765" order="2" side_tool="false" content_ui="tabs" x="808" y="22" width="547" height="878" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USERS">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -815,7 +912,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="前端修改完成，增查的功能完成" />
     <MESSAGE value="按照客户需求，把前端稍稍改了一下" />
     <MESSAGE value="类型继承的问题解决，感谢朴灵大大的书@JacksonTian" />
     <MESSAGE value="正在着手于类型的删除问题" />
@@ -840,7 +936,8 @@
     <MESSAGE value="更改属性类型text为select" />
     <MESSAGE value="成功生成对象树" />
     <MESSAGE value="成功生成对象树&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="成功生成对象树&#10;" />
+    <MESSAGE value="昨天讨论发现的新问题，对象信息的显示问题，其实我再考虑，每个Model好像都用不起来的样子，我看是不是还要做一个字符Model映射才行" />
+    <option name="LAST_COMMIT_MESSAGE" value="昨天讨论发现的新问题，对象信息的显示问题，其实我再考虑，每个Model好像都用不起来的样子，我看是不是还要做一个字符Model映射才行" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -851,283 +948,376 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/app_index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="35" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="225" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/zTreeStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="0" selection-start="2598" selection-end="2598" vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="5610" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/seq/README.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6720" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="208" column="20" selection-start="3546" selection-end="3546" vertical-scroll-proportion="0.0" vertical-offset="1697" max-vertical-offset="3225" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/WebStorm7/extLibs/nodejs-v0.10.24-src/core-modules-sources/lib/fs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="759" column="3" selection-start="20028" selection-end="20028" vertical-scroll-proportion="0.0" vertical-offset="10841" max-vertical-offset="26190" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0" vertical-offset="37" max-vertical-offset="510" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap-responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="20265" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5233" column="13" selection-start="106518" selection-end="106518" vertical-scroll-proportion="0.0" vertical-offset="78270" max-vertical-offset="92760" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_signin_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="15" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="25" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/orm/lib/ORM.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="27" selection-start="3675" selection-end="3675" vertical-scroll-proportion="0.0" vertical-offset="1682" max-vertical-offset="6165" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/gom_users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="21" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="645" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="10" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="27" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/gom_appclses.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="253" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/gom_clses.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/gom_insts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.ztree.excheck-3.5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9630" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.ztree.exedit-3.5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18195" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="31860" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/gom_refs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/gom_props.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="25" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/gom_clslinks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery-1.11.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="34380" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="997" column="0" selection-start="15324" selection-end="15324" vertical-scroll-proportion="0.35992908" vertical-offset="14752" max-vertical-offset="57195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="820" selection-end="837" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/jade/lib/lexer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="803" column="10" selection-start="18565" selection-end="18565" vertical-scroll-proportion="0.3180212" vertical-offset="11865" max-vertical-offset="13065" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="62" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="375" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/middleware/opt_db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="31" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1560" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/APARTMENT.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="2" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="39" selection-start="2371" selection-end="2371" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1410" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/addclses_alter_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="39" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_del_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="29" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1500" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/addclses_display_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_main_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_renderNodeInfo_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="16" selection-start="2358" selection-end="2358" vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1245" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/app_main_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="14" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/gom_apps.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="2" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="315" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/app_view_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.ztree.core-3.5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="25710">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="14" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/app_index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="45" selection-start="67" selection-end="110" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="225" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/app_renderNodeInfo_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="25" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/add_classes.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/app_view.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="45" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/clses_all.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="9" selection-start="7720" selection-end="7720" vertical-scroll-proportion="0.0" vertical-offset="2173" max-vertical-offset="2985">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_signin_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_renderNodeInfo_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="2" selection-start="663" selection-end="663" vertical-scroll-proportion="0.2937337" vertical-offset="0" max-vertical-offset="766">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/app_display.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.7413793" vertical-offset="463" max-vertical-offset="1275">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/app_renderTreeView_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_main_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/APARTMENT.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_del_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/app_renderTreeNodeInfo_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/addclses_add_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/middleware/opt_db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/models_maps.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

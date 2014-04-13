@@ -22,7 +22,7 @@ module.exports = function (req, res) {
                         refcol.REF_CLS_ID = inst.CLS_ID;
                         refs.push(refcol);
                         if (allnum == refs.length) {
-                            console.log(refs);
+                            //console.log(refs);
                             res.json(refs);
                             res.end();
                         }

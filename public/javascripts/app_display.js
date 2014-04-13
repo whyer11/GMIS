@@ -54,7 +54,7 @@ $(function(){
      * treeNode获取当前节点的整个对象
      */
     function onClick(event,treeId,treeNode){
-        renderOptBtn();
+        renderOptBtn(treeNode);
         renderNodeInfo(treeNode);
 
     }
@@ -68,7 +68,8 @@ $(function(){
     }
 
     function renderOptBtn(treenodeobj){
-        $.post('',{},function(data){
+        console.log('I am here');
+        $.post('/app_render_node_info.json',treenodeobj,function(data){
 
         });
         $('#class_opts').html('<div class="optionsbar">' +
