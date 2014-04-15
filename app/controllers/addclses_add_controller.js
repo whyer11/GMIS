@@ -29,6 +29,10 @@ module.exports = function (req, res) {
             } else {
                 console.log("insert successfully(table gom_clses)");
             }
+            gom_clses.find(['CLS_ID','Z'],function(err,data){
+                //console.log(data);
+                opt_db.addModelsMaps(data);
+            });
 
         });
         gom_props.find(['PROP_ID', 'Z']).run(function (err, data) {
@@ -83,9 +87,7 @@ module.exports = function (req, res) {
             }
         })
     });
-    gom_clses.find(['CLS_ID','Z'],function(err,data){
-        //opt_db.addModelsMaps(data);
-    })
+
     res.render('add_classes', {title: '类型管理器'});
     res.end();
 };

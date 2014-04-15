@@ -21,11 +21,7 @@ module.exports = function (req, res) {
                         gom_props.find({CLS_ID: cls.CLS_ID}).each(function (prop) {
                             prop.remove();
                         });
-                        gom_clslinks.get(CLS_ID, function (err, col) {
-                            col.remove(function (err) {
-                                if (err) console.log(err);
-                            });
-                        })
+
                         cls.remove(function (err) {
                             console.log('class remove err' + err);
                         });
@@ -55,16 +51,7 @@ module.exports = function (req, res) {
     gom_props.find({CLS_ID: currentClassId}).each(function (prop) {
         prop.remove();
     });
-    gom_clslinks.find({CLS_ID: currentClassId}).each(function (col) {
-        col.remove(function (err) {
-            console.log(err);
-        });
-        gom_clslinks.find({GOM_CLS_ID: currentClassId}).each(function (gomcls) {
-            gomcls.remove(function (err) {
-                console.log(err);
-            })
-        })
-    })
+
     gom_clses.get(currentClassId, function (err, cls) {
         console.log(cls);
         cls.remove(function (err) {

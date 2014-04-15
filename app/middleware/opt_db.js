@@ -101,16 +101,32 @@ exports.addClassProp = function (props, table, classid, i) {
     }
 }
 
-exports.addModelsMaps = function(content){
-    fs.open('./config/models_maps.json','w',0644,function(err,fd){
+exports.addModelsMaps = function(clscols){
+    var date = Date();
+    console.log('i am here');
+    fs.open('./app/middleware/models_maps.js','w',0644,function(err,fd){
         if(err) console.log(err);
-        fs.write(fd,'aaaa',0,'utf8',function(err){
+        fs.write(fd,'// update at '+date+'\n' +
+            'exports.modelsmaps = function (req,tab_name) {' +'\n'+
+            '   var models = {' +'\n'+
+            generateModelsMapsContent(clscols)+
+            '   }' +'\n'+
+            '   return models[tab_name];' +
+            '}',0,'utf8',function(err){
             if(err) console.log(err);
             fs.closeSync(fd);
         })
     })
 }
 
-exports.generateModelsMapsContent = function(){
-
+function generateModelsMapsContent (clscols){
+    var contentstr = '';
+    for(var i = 0;i<clscols.length;i++){
+        if(i==clscols.length-1){
+            contentstr += '     "'+clscols[i].CLS_TAB_NAME+'" : req.models.'+clscols[i].CLS_TAB_NAME+'\n';
+        }else{
+            contentstr += '     "'+clscols[i].CLS_TAB_NAME+'" : req.models.'+clscols[i].CLS_TAB_NAME+','+'\n';
+        }
+    }
+    return contentstr;
 }
