@@ -19,6 +19,7 @@ module.exports = function (req, res) {
                 models.gom_refs.find({INST_ID: instcol.INST_ID}).each(function (refcol) {
                     models.gom_insts.get(refcol.INST_ID, function (err, inst) {
                         refcol.REF_NAME = inst.INST_NAME;
+                        refcol.REF_INST_ID = inst.INST_ID;
                         refcol.REF_CLS_ID = inst.CLS_ID;
                         refs.push(refcol);
                         if (allnum == refs.length) {

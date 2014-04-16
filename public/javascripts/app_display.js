@@ -43,7 +43,8 @@ $(function(){
                 id:data[i].REF_ID,
                 pId:data[i].PARENT_REF_ID,
                 name:data[i].REF_NAME,
-                clsid:data[i].REF_CLS_ID
+                clsid:data[i].REF_CLS_ID,
+                instid:data[i].REF_INST_ID
             }
             nodes.push(n);
         }
@@ -68,7 +69,7 @@ $(function(){
     }
 
     function renderOptBtn(treenodeobj){
-        console.log('I am here');
+        //console.log('I am here');
         $.post('/app_render_node_info.json',treenodeobj,function(data){
 
         });

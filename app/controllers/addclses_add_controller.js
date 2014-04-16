@@ -29,6 +29,17 @@ module.exports = function (req, res) {
             } else {
                 console.log("insert successfully(table gom_clses)");
             }
+            if(form.parent_class_id == 0){
+                req.models.gom_clslinks.create({
+                    CLS_ID : currentClassId,
+                    GOM_CLS_ID : form.parent_class_id,
+                    LINK_TYPE : 'L'
+                },function(err,items){
+                    if(err){
+                        console.log(err);
+                    }
+                });
+            }
             gom_clses.find(['CLS_ID','Z'],function(err,data){
                 //console.log(data);
                 opt_db.addModelsMaps(data);

@@ -11,7 +11,7 @@ module.exports = function (req, res) {
         gom_props = req.models.gom_props,
         gom_clslinks = req.models.gom_clslinks;
 
-    function a(pid) {
+    function del(pid) {
         gom_clses.find({PARENT_CLS_ID: pid}).count(function (err, count) {
             if (count != 0) {
                 gom_clses.find({PARENT_CLS_ID: pid}).each(function (cls) {
@@ -40,14 +40,14 @@ module.exports = function (req, res) {
                             }
                         });
 
-                        a(cls.CLS_ID);
+                        del(cls.CLS_ID);
                     }
                 })
             }
         })
     }
 
-    a(currentClassId);
+    del(currentClassId);
     gom_props.find({CLS_ID: currentClassId}).each(function (prop) {
         prop.remove();
     });
