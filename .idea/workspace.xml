@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="511b63a3-2441-4d7b-9839-178821fae479" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/addclses_alter_controller.js" afterPath="$PROJECT_DIR$/app/controllers/addclses_alter_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/app_display.js" afterPath="$PROJECT_DIR$/public/javascripts/app_display.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/app_renderTreeNodeInfo_controller.js" afterPath="$PROJECT_DIR$/app/controllers/app_renderTreeNodeInfo_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/app_view.jade" afterPath="$PROJECT_DIR$/views/app_view.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/middleware/models_maps.js" afterPath="$PROJECT_DIR$/app/middleware/models_maps.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GMIS.iws" />
@@ -51,16 +46,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addclses_alter_controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/addclses_alter_controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1905">
-              <caret line="111" column="69" selection-start-line="111" selection-start-column="69" selection-end-line="111" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app_renderTreeView_controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/app_renderTreeView_controller.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,8 +59,8 @@
       <file leaf-file-name="app_renderTreeNodeInfo_controller.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/app_renderTreeNodeInfo_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51194537" vertical-offset="195" max-vertical-offset="810">
-              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.27378964" vertical-offset="91" max-vertical-offset="690">
+              <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -203,9 +188,9 @@
         <option value="$PROJECT_DIR$/app/models/gtgtg.js" />
         <option value="$PROJECT_DIR$/app/controllers/addclses_alter_controller.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/app/controllers/app_renderTreeNodeInfo_controller.js" />
         <option value="$PROJECT_DIR$/views/app_view.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/app_display.js" />
+        <option value="$PROJECT_DIR$/app/controllers/app_renderTreeNodeInfo_controller.js" />
       </list>
     </option>
   </component>
@@ -459,6 +444,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/whyer/Project/GMIS/app/controllers/addclses_alter_controller.js" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -759,7 +745,11 @@
       <created>1397651942143</created>
       <updated>1397651942143</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="对象浏览器,对象信息渲染基本实现">
+      <created>1397717787560</created>
+      <updated>1397717787560</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -843,7 +833,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="修改前端模块" />
     <MESSAGE value="删除模块基本完成，个别bug有待发现，删除模块真是太恐怖啦！！！" />
     <MESSAGE value="类型删除模块完成" />
     <MESSAGE value="开始类型修改" />
@@ -868,7 +857,8 @@
     <MESSAGE value="定时更新" />
     <MESSAGE value="完成模型关系映射方法，可以使用数据库中表对应的模型进行操作" />
     <MESSAGE value="目前代码很有问题,正在大面积的重构中" />
-    <option name="LAST_COMMIT_MESSAGE" value="目前代码很有问题,正在大面积的重构中" />
+    <MESSAGE value="对象浏览器,对象信息渲染基本实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="对象浏览器,对象信息渲染基本实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1217,14 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/middleware/models_maps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/APARTMENT.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="599">
@@ -1267,16 +1249,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/addclses_alter_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1905">
+        <state vertical-scroll-proportion="1.9148581" vertical-offset="518" max-vertical-offset="1905">
           <caret line="111" column="69" selection-start-line="111" selection-start-column="69" selection-end-line="111" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/middleware/models_maps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/app_renderTreeNodeInfo_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51194537" vertical-offset="195" max-vertical-offset="810">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.27378964" vertical-offset="91" max-vertical-offset="690">
+          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
           <folding />
         </state>
       </provider>
