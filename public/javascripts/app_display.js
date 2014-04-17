@@ -71,7 +71,11 @@ $(function(){
     function renderOptBtn(treenodeobj){
         //console.log('I am here');
         $.post('/app_render_node_info.json',treenodeobj,function(data){
-
+            var htmlstr = '';
+            for(val in data){
+                htmlstr+='<p>'+val+' : '+data[val]+'</p>';
+            }
+            $('.hero-unit').html(htmlstr);
         });
         $('#class_opts').html('<div class="optionsbar">' +
             '<a class="classopts delclass">删除</a>' +

@@ -15,21 +15,25 @@ var ep = EventProxy();
         function checkParentClass (classid,nextclassid,i,instid) {
 
 
-                req.models.gom_clses.find({CLS_ID : nextclassid},function(err,clscols){
+                req.models.gom_clses.get(nextclassid,function(err,clscols){
                         //
-
-                        //console.log(nextclassid);
-                        maps.modelsmaps(req,clscols[0].CLS_TAB_NAME).get(instid,function(err,data){
+                        //console.log(clscols.CLS_TAB_NAME);
+                        //console.log(maps.modelsmaps(req,clscols.CLS_TAB_NAME));
+                        maps.modelsmaps(req,clscols.CLS_TAB_NAME).get(instid,function(err,data){
+                            //console.log(instid+'::'+ data +'::'+err);
                             for (val in data){
+                                //console.log(val);
                                 if(val != 'GRANTOR_ID' && val != 'STATE_ID' && val != 'INSTACP_ID' && val != 'CLS_ID' && val != 'INST_NOTE' && val != 'INST_ID'){
                                     nodeArray[val] = data[val];
                                 }
                             }
                             i++;
                             if(nextclassid == 0){
-                                console.log(nodeArray);
+                                res.json(nodeArray);
+                                res.end();
+                                //console.log(nodeArray);
                             }else{
-                                nextclassid = clscols[0].PARENT_CLS_ID;
+                                nextclassid = clscols.PARENT_CLS_ID;
                                 checkParentClass(classid,nextclassid,i,instid);
                             }
 
@@ -41,5 +45,5 @@ var ep = EventProxy();
 
         }
     }
-    res.end();
+
 }
