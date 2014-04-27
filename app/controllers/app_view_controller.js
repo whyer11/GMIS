@@ -1,8 +1,6 @@
 /**
  * Created by whyer on 14-3-24.
  */
-var EventProxy = require('eventproxy');
-var ep = new EventProxy();
 module.exports = function (req, res) {
     var appId = req.params.app_id;
     var gom_apps = req.models.gom_apps;

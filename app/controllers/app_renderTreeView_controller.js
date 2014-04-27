@@ -1,14 +1,13 @@
 /**
  * Created by whyer on 14-4-3.
  */
-var EventProxy = require('eventproxy');
-var ep = new EventProxy();
 module.exports = function (req, res) {
     var appid = req.body.appid;
     var models = {
         gom_appclses: req.models.gom_appclses,
         gom_insts: req.models.gom_insts,
-        gom_refs: req.models.gom_refs
+        gom_refs: req.models.gom_refs,
+        gom_apps: req.models.gom_apps
     }
     var refs = [];
     var allnum = 0;
@@ -23,7 +22,7 @@ module.exports = function (req, res) {
                         refcol.REF_CLS_ID = inst.CLS_ID;
                         refs.push(refcol);
                         if (allnum == refs.length) {
-                            //console.log(refs);
+                            console.log(refs);
                             res.json(refs);
                             res.end();
                         }
@@ -32,4 +31,6 @@ module.exports = function (req, res) {
             });
         });
     });
+
+
 }

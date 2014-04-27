@@ -11,29 +11,28 @@ module.exports = function (req, res, err) {
     var nodeinfo = [];
 
 
-    function checkParentsClass (clsid) {
+    function checkParentsClass(clsid) {
         var classes = [];
         var i = 1;
-        checkParentClass(clsid,classes,clsid,i);
-        function checkParentClass (classid,classes,nextclassid,i) {
+        checkParentClass(clsid, classes, clsid, i);
+        function checkParentClass(classid, classes, nextclassid, i) {
             classes [0] = classid;
-            if(nextclassid == 0){
+            if (nextclassid == 0) {
                 ep.emit('returnallclasses', classes);
-            }else{
-                gom_clses.find({CLS_ID : nextclassid},function(err,data){
-                    if(data.length != 0){
+            } else {
+                gom_clses.find({CLS_ID: nextclassid}, function (err, data) {
+                    if (data.length != 0) {
                         nextclassid = data[0].PARENT_CLS_ID;
                         classes[i] = parseInt(data[0].PARENT_CLS_ID);
                         i++;
-                        checkParentClass(classid,classes,nextclassid,i);
-                    }else{
+                        checkParentClass(classid, classes, nextclassid, i);
+                    } else {
                         return false;
                     }
                 })
             }
         }
     }
-
 
     function checkAllProps(classes, nodeinfo, nextclassid, db_props, a, classindex) {
         if (nextclassid >= 0) {

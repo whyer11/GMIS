@@ -20,7 +20,8 @@ $(function(){
             }
         },
         callback: {
-            onClick:onClick
+            onClick: onClick,
+            onRightClick: onRightClick
         }
     };
     /*
@@ -60,6 +61,11 @@ $(function(){
 
     }
 
+    function onRightClick(event, tree, treeNode) {
+        $.post('/app_rightclick.json', treeNode, function (cls) {
+            console.log(cls);
+        })
+    }
     /*
      生成操作按钮并绑定按钮类型
 
@@ -71,6 +77,7 @@ $(function(){
     function renderOptBtn(treenodeobj){
         //console.log('I am here');
         $.post('/app_render_node_info.json',treenodeobj,function(data){
+            console.log(data);
             var htmlstr = '';
             for(val in data){
                 htmlstr+='<p>'+val+' : '+data[val]+'</p>';
