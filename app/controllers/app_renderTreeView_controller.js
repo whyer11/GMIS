@@ -36,7 +36,6 @@ module.exports = function (req, res) {
     });
 
     ep.all('propertyall', function (tree) {
-        //console.log(tree[0].CLS_ID)
         res.json(tree);
         res.end();
     })
@@ -58,6 +57,7 @@ module.exports = function (req, res) {
                 tree[i].REF_NAME = inst.INST_NAME;
                 tree[i].REF_CLS_ID = inst.CLS_ID;
                 tree[i].REF_INST_ID = inst.INST_ID;
+                tree[i].REF_APP_ID = appid;
                 i++;
                 addProperties(i, tree);
             })

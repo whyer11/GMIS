@@ -45,7 +45,8 @@ $(function(){
                 pId:data[i].PARENT_REF_ID,
                 name:data[i].REF_NAME,
                 clsid:data[i].REF_CLS_ID,
-                instid:data[i].REF_INST_ID
+                instid: data[i].REF_INST_ID,
+                appid: data[i].REF_APP_ID
             }
             nodes.push(n);
         }
@@ -61,7 +62,11 @@ $(function(){
 
     }
 
+    /* 定义鼠标右击树节点的事件
+     *
+     */
     function onRightClick(event, tree, treeNode) {
+        console.log(treeNode);
         $.post('/app_rightclick.json', treeNode, function (cls) {
             console.log(cls);
         })
@@ -75,9 +80,8 @@ $(function(){
     }
 
     function renderOptBtn(treenodeobj){
-        //console.log('I am here');
         $.post('/app_render_node_info.json',treenodeobj,function(data){
-            console.log(data);
+            //console.log(data);
             var htmlstr = '';
             for(val in data){
                 htmlstr+='<p>'+val+' : '+data[val]+'</p>';
