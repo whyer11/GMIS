@@ -36,7 +36,6 @@ module.exports = function (req, res) {
     });
 
     ep.all('propertyall', function (tree) {
-        //console.log(tree[0].CLS_ID)
         res.json(tree);
         res.end();
     })
