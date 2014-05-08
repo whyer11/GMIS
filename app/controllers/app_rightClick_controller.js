@@ -4,15 +4,12 @@
 var EventProxy = require('eventproxy');
 var ep = new EventProxy();
 module.exports = function (req, res) {
-    //console.log(req.body.clsid+'clsid');
     req.models.gom_clslinks.find({GOM_CLS_ID: req.body.clsid}, function (err, clses) {
-        //console.log(clses);
         ep.emit('clslink', clses);
     });
     req.models.gom_appclses.find({APP_ID: req.body.appid}, function (err, appcls) {
-        //console.log(appcls);
         ep.emit('appcls', appcls);
-    })
+    });
     ep.all('clslink', 'appcls', function (clslink, appcls) {
         var clses = [];
         for (var i = 0; i < clslink.length; i++) {
@@ -26,8 +23,8 @@ module.exports = function (req, res) {
         req.models.gom_clses.find({CLS_ID: clses}, function (err, cls) {
             res.json(cls);
             res.end();
-        })
+        });
 
 
     });
-}
+};

@@ -10,7 +10,7 @@ module.exports = function (req, res) {
         gom_insts: req.models.gom_insts,
         gom_refs: req.models.gom_refs,
         gom_apps: req.models.gom_apps
-    }
+    };
 
     models.gom_refs.find(['REF_ID', 'A'], function (err, refcols) {
         ep.emit('returnallrefs', refcols);
@@ -38,7 +38,7 @@ module.exports = function (req, res) {
     ep.all('propertyall', function (tree) {
         res.json(tree);
         res.end();
-    })
+    });
     function isChild(pid, c_obj, next, ref_array, tree_array) {
         if (pid == next.REF_ID) {
             tree_array.push(c_obj);
@@ -66,4 +66,4 @@ module.exports = function (req, res) {
         }
     }
 
-}
+};

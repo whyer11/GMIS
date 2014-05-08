@@ -7,12 +7,12 @@ module.exports = function (req, res) {
     checkParentsClass(req.body.clsid, req.body.instid);
     function checkParentsClass(clsid, instid) {
         var nodeArray = {};
-        var i = 0;
-        checkParentClass(clsid, clsid, i, instid);
+        checkParentClass(clsid, clsid, 0, instid);
         function checkParentClass(classid, nextclassid, i, instid) {
             req.models.gom_clses.get(nextclassid, function (err, clscols) {
                 maps.modelsmaps(req, clscols.CLS_TAB_NAME).get(instid, function (err, data) {
                     req.models.gom_props.find({CLS_ID: nextclassid}, function (err, propcols) {
+
                         for (var i = 0; i < propcols.length; i++) {
                             for (val in data) {
                                 if (val == propcols[i].PROP_COL) {
