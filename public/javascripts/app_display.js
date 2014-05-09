@@ -24,6 +24,17 @@ $(function(){
             onRightClick: onRightClick
         }
     };
+
+    var contextMenuSettings = {
+        contextMenuClass: 'contextMenu',
+        contextSeperatorClass: 'contextDivider',
+        items: [
+            {label: 'alter'},
+            null,
+            {label: 'new'},
+            null
+        ]
+    };
     /*
      * 监听load事件
      * 与后端交换信息，获取对象树的节点信息
@@ -47,7 +58,7 @@ $(function(){
                 clsid:data[i].REF_CLS_ID,
                 instid: data[i].REF_INST_ID,
                 appid: data[i].REF_APP_ID
-            }
+            };
             nodes.push(n);
         }
         return nodes;
@@ -65,10 +76,23 @@ $(function(){
     /* 定义鼠标右击树节点的事件
      *
      */
-    function onRightClick(event, tree, treeNode) {
+    function onRightClick(e, tree, treeNode) {
         console.log(treeNode);
+        console.log(event);
         $.post('/app_rightclick.json', treeNode, function (cls) {
             console.log(cls);
+            var menu = createContextMenu(e).show();
+            var bg = $('<div></div>')
+                .css({left: 0, top: 0, width: '100%', height: '100%', position: 'absolute', zIndex: 9999})
+                .appendTo(document.body).bind('contextmenu click', function () {
+                    bg.remove();
+                    menu.remove();
+                    return false;
+                })
+            menu.find('a').click(function () {
+                menu.remove();
+                bg.remove();
+            })
         })
     }
     /*
@@ -94,4 +118,31 @@ $(function(){
             '<a class="classopts ">新建</a></div>')
     }
 
-})
+    /*
+     *
+     */
+    function createContextMenu(e) {
+        var left = e.pageX + 5;
+        var top = e.pageY;
+        var menu = $('<ul class="' + contextMenuSettings.contextMenuClass + '">' +
+            '</ul>').appendTo(document.body);
+        contextMenuSettings.items.forEach(function (item) {
+            if (item) {
+                var rowCode = '<li><a></a></li>';
+                var row = $(rowCode).appendTo(menu);
+                row.find('a').text(item.label);
+            } else {
+                $('<li class="' + contextMenuSettings.contextSeperatorClass + '"></li>').appendTo(menu);
+            }
+
+        });
+        if (top + menu.height() >= $(window).height()) {
+            top -= menu.height();
+        }
+        if (left + menu.width() >= $(window).width()) {
+            left -= menu.width();
+        }
+        menu.css({zIndex: 10000, left: left, top: top});
+        return menu
+    }
+});
