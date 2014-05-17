@@ -1,6 +1,6 @@
 /**
  * Created by whyer on 14-5-9.
  */
-models.exports = function (req, res) {
-
+module.exports = function (req, res) {
+    //function checkParentClass(clsid,nextclsid,i,)
 };

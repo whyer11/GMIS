@@ -19,7 +19,7 @@ module.exports = function (req, res) {
                 }
             }
         }
-        console.log(clses);
+        //console.log(clses);
         req.models.gom_clses.find({CLS_ID: clses}, function (err, cls) {
             res.json(cls);
             res.end();

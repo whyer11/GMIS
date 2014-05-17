@@ -14,5 +14,6 @@ module.exports = {
     appview: require('./app_view_controller'),
     appdisplay: require('./app_renderTreeView_controller'),
     apprendernode: require('./app_renderTreeNodeInfo_controller'),
-    apprightclick: require('./app_rightClick_controller')
+    apprightclick: require('./app_rightClick_controller'),
+    appaddobj:require('./app_addObject_controller')
 };

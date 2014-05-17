@@ -19,4 +19,5 @@ module.exports = function (app) {
     app.post('/app_display.json', controllers.appdisplay);
     app.post('/app_render_node_info.json', controllers.apprendernode);
     app.post('/app_rightclick.json', controllers.apprightclick);
+    app.post('/app_addobj.json',controllers.appaddobj);
 };

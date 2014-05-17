@@ -88,7 +88,6 @@ $(function () {
      * treeNode获取当前节点的整个对象
      */
     function onClick(event, treeId, treeNode) {
-        renderOptBtn(treeNode);
         renderNodeInfo(treeNode);
 
     }
@@ -134,22 +133,14 @@ $(function () {
 
      */
     function renderNodeInfo(treenodeobj) {
-
-    }
-
-    function renderOptBtn(treenodeobj) {
         $.post('/app_render_node_info.json', treenodeobj, function (data) {
-            //console.log(data);
+            console.log(data);
             var htmlstr = '';
             for (val in data) {
                 htmlstr += '<p>' + val + ' : ' + data[val] + '</p>';
             }
             $('.hero-unit').html(htmlstr);
         });
-        $('#class_opts').html('<div class="optionsbar">' +
-            '<a class="classopts delclass">删除</a>' +
-            '<a class="classopts alterclass">修改</a>' +
-            '<a class="classopts ">新建</a></div>')
     }
 
     /*
@@ -189,7 +180,9 @@ $(function () {
      *
      */
     function createTreeObj(item, treeNode) {
-        console.log(item.clsid);
+        $.post('/app_render_node_info.json',item,function(data){
+            console.log(data);
+        });
     }
 
 
