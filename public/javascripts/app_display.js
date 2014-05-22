@@ -45,6 +45,10 @@ $(function () {
         }
     };
 
+    /*
+
+     */
+    var operatearea = $('#operatearea');
     var contextMenuSettings = {
         contextMenuClass: 'contextMenu',
         contextSeperatorClass: 'contextDivider',
@@ -62,7 +66,8 @@ $(function () {
     window.onload = function () {
         $.post('/app_display.json', {appid: curappid}, function (data) {
             $.fn.zTree.init($('#treeDemo'), viewtreesettings, maketree(data));
-        })
+        });
+
     };
     /* function maketree
      * 将ajax回调的节点数据转为对象数组，并返回数组
@@ -110,7 +115,9 @@ $(function () {
                     clsid: cls[i].CLS_ID
                 };
                 contextMenuSettings.items.push(item);
+                //console.log(item);
             }
+
             var menu = createContextMenu(e, treeNode).show();
             var bg = $('<div></div>')
                 .css({left: 0, top: 0, width: '100%', height: '100%', position: 'absolute', zIndex: 9999})
@@ -133,13 +140,23 @@ $(function () {
 
      */
     function renderNodeInfo(treenodeobj) {
+        //console.log(treenodeobj);
         $.post('/app_render_node_info.json', treenodeobj, function (data) {
-            console.log(data);
-            var htmlstr = '';
-            for (val in data) {
-                htmlstr += '<p>' + val + ' : ' + data[val] + '</p>';
+            var objinfo = '';
+            for(val in data){
+                objinfo += '<li><span>'+val+' : '+data[val]+'</span></li>'
             }
-            $('.hero-unit').html(htmlstr);
+            var htmlstr = '' +
+                '<div class="well-edit clearfix">' +
+                '<button class="btn btn-danger pull-left" id="editnow">编辑</button>' +
+                '</div>' +
+                '<div class="obj-view">' +
+                '<ul>' +
+                objinfo +
+                '</ul>' +
+                '</div>';
+
+            operatearea.html(htmlstr);
         });
     }
 
@@ -180,9 +197,43 @@ $(function () {
      *
      */
     function createTreeObj(item, treeNode) {
-        $.post('/app_render_node_info.json',item,function(data){
-            console.log(data);
+        var items = {
+            clsid : item['clsid'],
+            instid : undefined
+        };
+        $.post('/app_render_node_info.json',items,function(data){
+            var objinfo = '';
+            for (val in data)
+            {
+                objinfo+='<li><span><label>'+data[val]+'</label></span><input id="new_'+val+'" type="text" placeholder="请输入'+data[val]+'"></li>'
+            }
+            var htmlstr = '' +
+                '<div class="well-cancel clearfix">' +
+                    '<button class="btn btn-danger pull-left" id="cancelnew">取消</button>' +
+                    '<button class="btn btn-success pull-right" id="savenew">保存</button>' +
+                '</div>' +
+                '<div class="obj-view">' +
+                    '<ul id="newobjarea">' +
+                        objinfo +
+                    '</ul>' +
+                '</div>';
+
+            operatearea.html(htmlstr);
+            $('#cancelnew').bind('click', function () {
+                operatearea.html('');
+            })
+            $('#savenew').bind('click', function () {
+                commitObj(data,'new');
+            })
         });
+    }
+
+    function commitObj (tablecols,type) {
+        var commit = {};
+        for(val in tablecols){
+            commit[val]=$('#'+type+'_'+val).val();
+        }
+
     }
 
 

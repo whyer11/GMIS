@@ -1,4 +1,7 @@
-
+body{
+    padding-top: 60px;
+    padding-bottom:40px ;
+}
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
     display: table;
@@ -174,7 +177,6 @@
 }
 
 .siderbar {
-    margin: 30px 0 0 0;
     border: 1px solid #e5e5e5;
     border-radius: 6px;
     background-color: #ffffff;
@@ -210,4 +212,19 @@
 }
 
 
+/*
+    app_view
+*/
+.well-cancel{
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
 
+}
+.obj-view > ul > li{
+    list-style: none;
+    padding-left:60px ;
+}
+.obj-view{
+    padding: 20px;
+}

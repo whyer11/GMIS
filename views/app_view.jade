@@ -6,14 +6,14 @@ block content
   script(src='../../javascripts/app_display.js')
   div.navbar.navbar-fixed-top.navbar-inverse
     div.navbar-inner
-      div.container-fluid
+      div.container
         a.brand #{appname}
-  div.container-fluid(style="margin-top:40px")
+  div.container
     div.row-fluid
-      div.span2
+      div.span3
         div.siderbar
           ul#treeDemo.ztree
-      div.span1#class_opts
       div.span9
-        div.hero-unit
+        div.well.well-large#operatearea
+
   input#app(value = '#{appid}',type='hidden')
