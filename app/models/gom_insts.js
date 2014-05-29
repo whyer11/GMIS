@@ -12,5 +12,8 @@ module.exports = function (orm, db) {
         INST_NOTE: String
     }, {
         id: "INST_ID"
+    });
+    gom_insts.sync(function (err) {
+        if(err) console.error(err);
     })
 }

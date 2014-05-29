@@ -10,4 +10,7 @@ module.exports = function (orm, db) {
     }, {
         id: "REF_ID"
     })
+    gom_refs.sync(function (err) {
+        if(err) console.error(err);
+    })
 }

@@ -9,4 +9,7 @@ module.exports = function (orm, db) {
     }, {
         id: 'id'
     });
+    gom_users.sync(function (err) {
+        if(err) console.error(err);
+    })
 };

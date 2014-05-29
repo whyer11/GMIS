@@ -10,4 +10,7 @@ module.exports = function (orm, db) {
     }, {
         id: "APP_ID"
     });
+    gom_apps.sync(function (err) {
+        if(err) console.error(err);
+    })
 };

@@ -16,5 +16,7 @@ module.exports = function (orm, db) {
     }, {
         id: "CLS_ID"
     });
-
+    gom_clses.sync(function (err) {
+        if(err) console.error(err);
+    })
 };

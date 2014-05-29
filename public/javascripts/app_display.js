@@ -2,10 +2,37 @@
  * Created by whyer on 14-3-23.
  */
 $(function () {
+
+
     //获取当前app的appid
     var curappid = $('#app').val();
+    var deleteObj = {
+        label: '删除',
+        action: function (item, treeNode) {
+            delTreeObj(item,treeNode);
+        }
+    };
+    var alterObj = {
+        label: '修改',
+        action: function (item, treeNode) {
+
+        }
+    };
+
+    var operatearea = $('#operatearea');
+    var contextMenuSettings = {
+        contextMenuClass: 'contextMenu',
+        contextSeperatorClass: 'contextDivider',
+        items: [
+            alterObj,
+            deleteObj,
+            null
+        ]
+    };
+    //将$中封装的Ztree插件赋给全局变量
+    var _tree = $.fn.zTree;
     //配置Ztree
-    var viewtreesettings = {
+    _tree.settings = {
         view: {
             selectedMulti: false
         },
@@ -24,55 +51,26 @@ $(function () {
             onRightClick: onRightClick
         }
     };
-
-    /*
-
-     */
-    var deleteObj = {
-        label: '删除',
-        action: function (item, treeNode) {
-
-        }
-    };
-
-    /*
-
-     */
-    var alterObj = {
-        label: '修改',
-        action: function (item, treeNode) {
-
-        }
-    };
-
-    /*
-
-     */
-    var operatearea = $('#operatearea');
-    var contextMenuSettings = {
-        contextMenuClass: 'contextMenu',
-        contextSeperatorClass: 'contextDivider',
-        items: [
-            alterObj,
-            deleteObj,
-            null
-        ]
-    };
     /*
      * 监听load事件
      * 与后端交换信息，获取对象树的节点信息
      * 初始化对象树
      */
     window.onload = function () {
-        $.post('/app_display.json', {appid: curappid}, function (data) {
-            $.fn.zTree.init($('#treeDemo'), viewtreesettings, maketree(data));
-        });
-
+        _tree.refreshall();
     };
+
+    _tree.refreshall = function () {
+        $.post('/app_display.json', {appid: curappid}, function (data) {
+            _tree.init($('#treeDemo'), _tree.settings, _tree.maketree(data));
+            _tree.getZTreeObj('treeDemo').expandAll(true);
+        });
+    }
+
     /* function maketree
      * 将ajax回调的节点数据转为对象数组，并返回数组
      */
-    function maketree(data) {
+    _tree.maketree = function (data) {
         var nodes = [];
         for (var i = 0; i < data.length; i++) {
             var n = {
@@ -86,7 +84,7 @@ $(function () {
             nodes.push(n);
         }
         return nodes;
-    }
+    };
 
     /* Ztree节点的click事件
      * treeId获取生成对象数组时设置的id
@@ -201,8 +199,10 @@ $(function () {
             clsid : item['clsid'],
             instid : undefined
         };
+        //console.log(treeNode);
         $.post('/app_render_node_info.json',items,function(data){
             var objinfo = '';
+            //console.log(data);
             for (val in data)
             {
                 objinfo+='<li><span><label>'+data[val]+'</label></span><input id="new_'+val+'" type="text" placeholder="请输入'+data[val]+'"></li>'
@@ -221,20 +221,47 @@ $(function () {
             operatearea.html(htmlstr);
             $('#cancelnew').bind('click', function () {
                 operatearea.html('');
-            })
+
+
+            });
             $('#savenew').bind('click', function () {
-                commitObj(data,'new');
+                if(commitObj(data,'new')){
+                    var commit = {};
+                    commit.clsid = item.clsid;
+                    commit.refid = treeNode.id;
+                    commit.props = commitObj(data,'new');
+                    //console.log(commit);
+                }
+                $.post('/app_addobj.json',commit, function (data) {
+                    if(data.length == 0){
+                        _tree.refreshall();
+                        operatearea.html('');
+                    }
+                })
             })
         });
     }
 
     function commitObj (tablecols,type) {
         var commit = {};
-        for(val in tablecols){
-            commit[val]=$('#'+type+'_'+val).val();
-        }
 
+        for(val in tablecols){
+            if($('#'+type+'_'+val).val()===''){
+                alert('a');
+                return
+            }else{
+                commit['_'+val]=$('#'+type+'_'+val).val();
+            }
+        }
+        //console.log(commit);
+            return commit
     }
 
+
+    function delTreeObj (item,treeNode) {
+        $.post('/app_delobj.json',treeNode, function (data) {
+
+        })
+    }
 
 });

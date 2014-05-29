@@ -10,4 +10,7 @@ module.exports = function (orm, db) {
         id: "CLS_ID",
         id: "GOM_CLS_ID"
     });
+    gom_clslinks.sync(function (err) {
+        if(err) console.error(err);
+    })
 }

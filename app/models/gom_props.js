@@ -24,4 +24,7 @@ module.exports = function (orm, db) {
     }, {
         id: "PROP_ID"
     });
+    gom_props.sync(function (err) {
+        if(err) console.error(err);
+    })
 };

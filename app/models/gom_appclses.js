@@ -9,5 +9,8 @@ module.exports = function (orm, db) {
     }, {
         id: "CLS_ID",
         id: "APP_ID"
+    });
+    gom_appclses.sync(function (err) {
+        if(err) console.error(err);
     })
 }
