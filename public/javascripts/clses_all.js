@@ -76,7 +76,7 @@ $(function () {
 
             $('.delclass').bind('click', function () {
                 if (confirm('确定要删除该类型？')) {
-                    $.post('/delclass.json', {'id': treeNode.id}, function (data) {
+                    $.post('/delclass.json',treeNode, function (data) {
                         window.location.reload();
                     });
                 }
