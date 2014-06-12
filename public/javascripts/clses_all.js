@@ -3,7 +3,6 @@
  */
 $(function () {
     var allclasses;
-    var rootnode = [];
     var modalid = 2009;
     //配置ztree
     var viewtreesettings = {
@@ -77,7 +76,7 @@ $(function () {
             $('.delclass').bind('click', function () {
                 if (confirm('确定要删除该类型？')) {
                     $.post('/delclass.json',treeNode, function (data) {
-                        window.location.reload();
+                        refreshTree();
                     });
                 }
             });
@@ -174,14 +173,20 @@ $(function () {
     }
 
     window.onload = function () {
+        refreshTree();
+    };
+
+    function refreshTree () {
         $.get('/display_class_name.json', {}, function (data) {
             allclasses = data;
             maketree(allclasses.data);
-            $.fn.zTree.init($('#treeDemo'), viewtreesettings, rootnode);
+            $.fn.zTree.init($('#treeDemo'), viewtreesettings, maketree(allclasses.data));
+            $.fn.zTree.getZTreeObj('treeDemo').expandAll(true);
         });
     }
 
     function maketree(data) {
+        var rootnode = [];
         for (var i = 0; i < data.length; i++) {
             var n = {
                 id: data[i].CLS_ID,
@@ -190,5 +195,6 @@ $(function () {
             };
             rootnode.push(n);
         }
+        return rootnode;
     }
 });

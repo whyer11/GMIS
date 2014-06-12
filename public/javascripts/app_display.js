@@ -199,7 +199,6 @@ $(function () {
             clsid : item['clsid'],
             instid : undefined
         };
-        //console.log(treeNode);
         $.post('/app_render_node_info.json',items,function(data){
             var objinfo = '';
             //console.log(data);

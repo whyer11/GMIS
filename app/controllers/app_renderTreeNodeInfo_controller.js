@@ -3,6 +3,7 @@
  */
 var maps = require('../middleware/models_maps');
 module.exports = function (req, res) {
+    console.log(req);
     console.log(req.body.clsid+'  im  '+req.body.instid);
     checkParentsClass(req.body.clsid, req.body.instid);
     function checkParentsClass(clsid, instid) {
