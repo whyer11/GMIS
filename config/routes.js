@@ -21,4 +21,5 @@ module.exports = function (app) {
     app.post('/app_rightclick.json', controllers.apprightclick);
     app.post('/app_addobj.json',controllers.appaddobj);
     app.post('/app_delobj.json',controllers.appdelobj);
+    app.post('/app_render_add_obj_form.json',controllers.apprenderaddobj);
 };

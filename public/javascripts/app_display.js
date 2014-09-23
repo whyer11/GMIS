@@ -197,9 +197,11 @@ $(function () {
     function createTreeObj(item, treeNode) {
         var items = {
             clsid : item['clsid'],
-            instid : undefined
+            instid : treeNode['instid']
         };
-        $.post('/app_render_node_info.json',items,function(data){
+        console.log(item);
+        console.log(treeNode);
+        $.post('/app_render_add_obj_form.json',items,function(data){
             var objinfo = '';
             //console.log(data);
             for (val in data)

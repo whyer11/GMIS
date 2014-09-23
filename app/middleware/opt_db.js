@@ -2,6 +2,11 @@
  * Created by whyer on 14-2-25.
  */
 var fs = require('fs');
+/**
+ *
+ * @param modelName
+ * @param modelContent
+ */
 exports.newModel = function (modelName, modelContent) {
     fs.open('./app/models/' + modelName + '.js', 'w', 0644, function (e, fd) {
         if (e) throw e;
@@ -11,7 +16,13 @@ exports.newModel = function (modelName, modelContent) {
             fs.closeSync(fd);
         });
     });
-}
+};
+
+/**
+ *
+ * @param fm
+ * @returns {string}
+ */
 exports.newModelContent = function (fm) {
     var modelStr = 'module.exports = function(orm,db){' + '\n' +
         '   var ' + fm.class_tab_name + ' = db.define("' + fm.class_tab_name + '",{' + '\n' +
@@ -71,7 +82,15 @@ exports.newModelContent = function (fm) {
     }
 
     return modelStr;
-}
+};
+
+/**
+ *
+ * @param props
+ * @param table
+ * @param classid
+ * @param i
+ */
 exports.addClassProp = function (props, table, classid, i) {
     table.find(['PROP_ID', 'Z'], function (err, data) {
         var nextID = data[0].PROP_ID + 1;
@@ -99,11 +118,15 @@ exports.addClassProp = function (props, table, classid, i) {
         i++;
         addClassProp(props, table, classid, i)
     }
-}
+};
 
+/**
+ *
+ * @param clscols
+ */
 exports.addModelsMaps = function(clscols){
     var date = Date();
-    console.log('i am here');
+    //console.log('i am here');
     fs.open('./app/middleware/models_maps.js','w',0644,function(err,fd){
         if(err) console.log(err);
         fs.write(fd,'// update at '+date+'\n' +
@@ -117,8 +140,13 @@ exports.addModelsMaps = function(clscols){
             fs.closeSync(fd);
         })
     })
-}
+};
 
+/**
+ *
+ * @param clscols
+ * @returns {string}
+ */
 function generateModelsMapsContent (clscols){
     var contentstr = '';
     for(var i = 0;i<clscols.length;i++){
@@ -130,3 +158,31 @@ function generateModelsMapsContent (clscols){
     }
     return contentstr;
 }
+
+/**
+ *
+ * @param req
+ * @param clsid
+ * @param cb
+ */
+var checkClass = function (req,clsid,cb) {
+    req.models.gom_clses.get(clsid, function (err,clscol) {
+        return cb(err,clscol);
+    });
+};
+
+/**
+ *
+ * @param req
+ * @param clsid
+ * @param cb
+ */
+var checkParentClass = function (req,clsid, cb) {
+    checkClass(req,clsid, function (err, clscol) {
+        req.models.gom_clses.get(clscol.PARENT_CLS_ID, function (err, pclscol) {
+            return cb(err,pclscol);
+        });
+    });
+};
+exports.checkClass = checkClass;
+exports.checkParentClass = checkParentClass;

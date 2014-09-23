@@ -4,7 +4,12 @@
 var maps = require('../middleware/models_maps');
 var EventProxy = require('eventproxy');
 var ep = new EventProxy();
+var opt_db = require('../middleware/opt_db');
 module.exports = function (req, res) {
+
+};
+
+    /*
     req.models.gom_insts.find(['INST_ID', 'Z'], function (err, data) {
         currentObjId = data[0].INST_ID + 1;
         ep.emit('returnobjid', currentObjId);
@@ -12,7 +17,6 @@ module.exports = function (req, res) {
     ep.all('returnobjid', function (coi) {
         checkParentsClass(req.body.clsid, coi);
         function checkParentsClass(clsid, instid) {
-
             req.models.gom_clses.get(clsid, function (err, clscols) {
                 if (clsid == 0) {
                     maps.modelsmaps(req, clscols.CLS_TAB_NAME).create({
@@ -40,18 +44,16 @@ module.exports = function (req, res) {
                         }
                         prop["INST_ID"] = instid;
                         //console.log(prop);
+                        console.log(clscols.CLS_TAB_NAME);
                         maps.modelsmaps(req, clscols.CLS_TAB_NAME).create(prop, function (err, item) {
                             if (err) {
-
                                 console.log(err);
                             }
                         });
                         checkParentsClass(clscols.PARENT_CLS_ID, instid);
                     })
                 }
-
             })
-
         }
     });
     ep.once('createinstend', function (item) {
@@ -63,21 +65,15 @@ module.exports = function (req, res) {
                 PARENT_REF_ID: req.body.refid,
                 INST_ID: currentObjId,
                 REF_DISP_IND: currentdis
-
             };
             req.models.gom_refs.create(ref, function (err, item) {
                 if (err) {
-
-                    console.log(err);
+                    console.error(err);
                 }
-
                 res.json([]);
                 res.end();
-
-
             })
         });
     });
+*/
 
-
-};
