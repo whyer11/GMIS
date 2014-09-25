@@ -184,5 +184,53 @@ var checkParentClass = function (req,clsid, cb) {
         });
     });
 };
+
+/**
+ *
+ * @param req
+ * @param refid
+ * @param cb
+ */
+var checkRef = function (req, refid, cb) {
+    req.models.gom_refs.get(refid, function (err, refcol) {
+        return cb(err,refcol);
+    });
+};
+
+/**
+ *
+ * @param req
+ * @param refid
+ * @param cb
+ */
+var checkParentRef = function (req, refid, cb) {
+    checkRef(req,refid, function (err, refcol) {
+        req.models.gom_refs.get(refcol.PARENT_REF_ID, function (err, prefcol) {
+            return cb(err,prefcol);
+        });
+    });
+};
+
+/**
+ *
+ * @param req
+ * @param instid
+ * @param cb
+ */
+var checkInst = function (req, instid, cb) {
+    req.models.gom_insts.get(instid, function (err, instcol) {
+        return cb(err,instcol);
+    });
+};
+
+var checkProp = function (req, propid, cb) {
+    req.models.gom_props.get(propid, function (err, propcol) {
+        return cb(err,propcol);
+    })
+}
 exports.checkClass = checkClass;
 exports.checkParentClass = checkParentClass;
+exports.checkRef= checkRef;
+exports.checkParentRef = checkParentRef;
+exports.checkInst = checkInst;
+exports.checkProp = checkProp;

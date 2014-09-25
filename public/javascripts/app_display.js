@@ -99,11 +99,7 @@ $(function () {
      *
      */
     function onRightClick(e, tree, treeNode) {
-        //console.log(treeNode);
-        //console.log(event);
         $.post('/app_rightclick.json', treeNode, function (cls) {
-            //console.log(cls);
-
             for (var i = 0; i < cls.length; i++) {
                 var item = {
                     label: '创建' + cls[i].CLS_NAME,
@@ -113,9 +109,7 @@ $(function () {
                     clsid: cls[i].CLS_ID
                 };
                 contextMenuSettings.items.push(item);
-                //console.log(item);
             }
-
             var menu = createContextMenu(e, treeNode).show();
             var bg = $('<div></div>')
                 .css({left: 0, top: 0, width: '100%', height: '100%', position: 'absolute', zIndex: 9999})
@@ -138,7 +132,7 @@ $(function () {
 
      */
     function renderNodeInfo(treenodeobj) {
-        //console.log(treenodeobj);
+        console.log(treenodeobj);
         $.post('/app_render_node_info.json', treenodeobj, function (data) {
             var objinfo = '';
             for(val in data){
@@ -191,22 +185,25 @@ $(function () {
         return menu
     }
 
-    /*
+    /**
      *
+     * @param item
+     * @param treeNode
      */
     function createTreeObj(item, treeNode) {
         var items = {
             clsid : item['clsid'],
-            instid : treeNode['instid']
+            refid : treeNode['id']
         };
-        console.log(item);
-        console.log(treeNode);
         $.post('/app_render_add_obj_form.json',items,function(data){
             var objinfo = '';
             //console.log(data);
-            for (val in data)
+            for (val in data.parentInfo)
             {
-                objinfo+='<li><span><label>'+data[val]+'</label></span><input id="new_'+val+'" type="text" placeholder="请输入'+data[val]+'"></li>'
+                objinfo+='<li><span><label>'+val+'</label></span><p>'+data.parentInfo[val]+'</p></li>';
+            }
+            for (val in data.selfInfo) {
+                objinfo+='<li><span><label>'+val+'</label></span><input id="new_'+val+'" type="text" placeholder="请输入'+val+'"></li>';
             }
             var htmlstr = '' +
                 '<div class="well-cancel clearfix">' +
@@ -243,6 +240,12 @@ $(function () {
         });
     }
 
+    /**
+     *
+     * @param tablecols
+     * @param type
+     * @returns {{}}
+     */
     function commitObj (tablecols,type) {
         var commit = {};
 
@@ -254,11 +257,15 @@ $(function () {
                 commit['_'+val]=$('#'+type+'_'+val).val();
             }
         }
-        //console.log(commit);
+        console.log(commit);
             return commit
     }
 
-
+    /**
+     * TODO
+     * @param item
+     * @param treeNode
+     */
     function delTreeObj (item,treeNode) {
         $.post('/app_delobj.json',treeNode, function (data) {
 

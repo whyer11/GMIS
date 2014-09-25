@@ -5,10 +5,11 @@ var maps = require('../middleware/models_maps');
 var EventProxy = require('eventproxy');
 var ep = new EventProxy();
 var opt_db = require('../middleware/opt_db');
+//TODO 创建对象的的时候不应该在父节点的表中创建新的实例,修改创建控制器后再来这边修改
 module.exports = function (req, res) {
     var nodeInfo = {
         clsid:req.body.clsid,
-        instid:req.body.instid
+        refid:req.body.id
     };
 
     opt_db.checkClass(req,nodeInfo.clsid, function (err,clscol) {
