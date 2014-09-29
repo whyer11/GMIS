@@ -6,7 +6,72 @@ var EventProxy = require('eventproxy');
 var ep = new EventProxy();
 var opt_db = require('../middleware/opt_db');
 module.exports = function (req, res) {
+    console.log(req.body);
+    opt_db.checkNewInstId(req, function (err, _newInstId) {
+        if(err){
+            console.error(err);
+        }else{
+            ep.emit('$ReturnNewInstId',_newInstId);
+        }
+    });
 
+    ep.all('$ReturnNewInstId', function (_newInstId) {
+        /**
+         * 在gom_inst中注册新的对象
+         */
+        var newInst = {
+            INST_ID:_newInstId,
+            STATE_ID:0,
+            INSTACP_ID:0,
+            CLS_ID:req.body.clsid,
+            INST_NAME:req.body.props._INST_NAME
+        };
+        req.models.gom_insts.create(newInst, function (err, item) {
+            if(err){
+                console.error(err);
+            }else{
+                //这里返回的item即为在gom_insts中已注册的新对象
+                //console.log(item.INST_NAME);
+                var prop = {};
+                opt_db.checkClass(req,req.body.clsid, function (err, clscol) {
+                    req.models.gom_props.find({CLS_ID:req.body.clsid}, function (err, propcols) {
+
+                        for(val in req.body.props){
+                            for(var i =0;i<propcols.length;i++){
+                                //console.log(propcols[i].PROP_COL)
+                                if(val == '_'+propcols[i].PROP_COL){
+                                    prop[propcols[i].PROP_COL] =req.body.props[val];
+                                }
+                            }
+                        }
+                        prop.INST_ID = item.INST_ID;
+                        //console.log(prop);
+                        maps.modelsmaps(req,clscol.CLS_TAB_NAME).create(prop, function (err, item) {
+                            console.log(item.INST_ID);
+                            req.models.gom_refs.find(['REF_ID', 'Z'], function (err, refcols) {
+                                currentRefId = refcols[0].REF_ID + 1;
+                                currentdis = refcols[0].REF_DISP_IND + 1;
+                                var ref = {
+                                    REF_ID: currentRefId,
+                                    PARENT_REF_ID: req.body.refid,
+                                    INST_ID: item.INST_ID,
+                                    REF_DISP_IND: currentdis
+                                };
+                                req.models.gom_refs.create(ref, function (err, item) {
+                                    if (err) {
+                                        console.error(err);
+                                    }else{
+                                        res.json({success:true});
+                                        res.end();
+                                    }
+                                })
+                            });
+                        });
+                    });
+                })
+            }
+        });
+    })
 };
 
     /*

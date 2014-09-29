@@ -6,7 +6,6 @@ var maps = require('../middleware/models_maps'),
     ep = new EventProxy(),
     opt_db = require('../middleware/opt_db');
 module.exports = function (req, res) {
-    console.log(req.body);
     var nodeInfo = req.body;
     opt_db.checkRef(req,nodeInfo.refid, function (err, refcol) {
         ep.emit('$GetParentAttr',refcol);
@@ -17,8 +16,9 @@ module.exports = function (req, res) {
         var _selfNodeDetail = {};
         req.models.gom_props.find({CLS_ID:clsid}, function (err, propcols) {
             for(var i = 0;i<propcols.length;i++){
-                _selfNodeDetail[propcols[i].PROP_NAME] = null;
+                _selfNodeDetail[propcols[i].PROP_COL] = propcols[i].PROP_NAME;
                 if(i==propcols.length-1){
+                    _selfNodeDetail.INST_NAME = '实例名称';
                     ep.emit('$ReturnSelfInfo',_selfNodeDetail);
                 }
             }
@@ -30,22 +30,6 @@ module.exports = function (req, res) {
         var _parentNodeDetail = {};
         if(refcol.REF_ID != 0){
             //TODO
-            /*
-            req.models.gom_insts.get(0, function (err, rootcol) {
-                req.models.gom_props.find({CLS_ID:0}, function (err, propcols) {
-                    for(var i = 0;i<propcols.length;i++){
-                        for(val in rootcol){
-                            if(val == propcols[i].PROP_COL){
-                                if(propcols[i].PROP_CAN_VISIBLE == 'T'){
-                                    _parentNodeDetail[propcols[i].PROP_NAME] = rootcol[val];
-                                }
-                            }
-                        }
-                    }
-                    console.log(_parentNodeDetail);
-                });
-            });
-            */
             var checkParentAttr = function (_refcol) {
                 opt_db.checkRef(req,_refcol.REF_ID, function (err, refcol) {
                     opt_db.checkInst(req,refcol.INST_ID, function (err, instcol) {
@@ -82,12 +66,12 @@ module.exports = function (req, res) {
                 });
             };
             checkParentAttr(refcol);
+        }else{
+            ep.emit('$ReturnParentInfo',_parentNodeDetail);
         }
     });
 
     ep.all('$ReturnParentInfo','$ReturnSelfInfo', function (_parentNodeDetail,_selfNodeDetail) {
-        console.log(_parentNodeDetail);
-        console.log(_selfNodeDetail);
         var node = {
             parentInfo:_parentNodeDetail,
             selfInfo:_selfNodeDetail

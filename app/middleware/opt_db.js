@@ -223,14 +223,39 @@ var checkInst = function (req, instid, cb) {
     });
 };
 
+/**
+ *
+ * @param req
+ * @param propid
+ * @param cb
+ */
 var checkProp = function (req, propid, cb) {
     req.models.gom_props.get(propid, function (err, propcol) {
         return cb(err,propcol);
     })
-}
+};
+
+/**
+ *
+ * @param req
+ * @param cb
+ */
+var checkNewInstId = function (req,cb) {
+    req.models.gom_insts.find(['INST_ID','Z'], function (err, instcols) {
+        return cb(err,instcols[0].INST_ID+1);
+    });
+};
+
+var checkNewRefId = function (req, cb) {
+    req.models.gom_refs.find(['REF_ID','Z'], function (err,refcols) {
+        return cb(err,refcols[0].REF_ID+1);
+    })
+};
 exports.checkClass = checkClass;
 exports.checkParentClass = checkParentClass;
 exports.checkRef= checkRef;
 exports.checkParentRef = checkParentRef;
 exports.checkInst = checkInst;
 exports.checkProp = checkProp;
+exports.checkNewInstId = checkNewInstId;
+exports.checkNewRefId = checkNewRefId;

@@ -203,7 +203,7 @@ $(function () {
                 objinfo+='<li><span><label>'+val+'</label></span><p>'+data.parentInfo[val]+'</p></li>';
             }
             for (val in data.selfInfo) {
-                objinfo+='<li><span><label>'+val+'</label></span><input id="new_'+val+'" type="text" placeholder="请输入'+val+'"></li>';
+                objinfo+='<li><span><label>'+data.selfInfo[val]+'</label></span><input id="new_'+val+'" type="text" placeholder="请输入'+data.selfInfo[val]+'"></li>';
             }
             var htmlstr = '' +
                 '<div class="well-cancel clearfix">' +
@@ -223,15 +223,16 @@ $(function () {
 
             });
             $('#savenew').bind('click', function () {
-                if(commitObj(data,'new')){
+
+                if(commitObj(data.selfInfo,'new')){
                     var commit = {};
                     commit.clsid = item.clsid;
                     commit.refid = treeNode.id;
-                    commit.props = commitObj(data,'new');
-                    //console.log(commit);
+                    commit.props = commitObj(data.selfInfo,'new');
+                    console.log(commit);
                 }
                 $.post('/app_addobj.json',commit, function (data) {
-                    if(data.length == 0){
+                    if(data.success == true){
                         _tree.refreshall();
                         operatearea.html('');
                     }
@@ -247,18 +248,22 @@ $(function () {
      * @returns {{}}
      */
     function commitObj (tablecols,type) {
+
         var commit = {};
 
         for(val in tablecols){
+
             if($('#'+type+'_'+val).val()===''){
                 alert('a');
-                return
+                return false;
             }else{
                 commit['_'+val]=$('#'+type+'_'+val).val();
             }
         }
-        console.log(commit);
+        //console.log(commit);
             return commit
+
+
     }
 
     /**
