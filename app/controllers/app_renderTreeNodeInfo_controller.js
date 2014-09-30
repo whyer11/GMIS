@@ -21,13 +21,13 @@ module.exports = function (req, res) {
     });
     ep.all('$ClassCol', function (clscols) {
         var nodeProps = {};
-        var checkAllProps = function (_class,_nextRef) {
-            opt_db.checkRef(req,_nextRef, function (err, refcol) {
+        var checkAllProps = function (_class) {
                 req.models.gom_props.find({CLS_ID:_class.CLS_ID}, function (err,propcols) {
-
-                    maps.modelsmaps(req,_class.CLS_TAB_NAME).get(refcol.INST_ID, function (err, instcol) {
+                    maps.modelsmaps(req,_class.CLS_TAB_NAME).get(nodeInfo.instid, function (err, instcol) {
                         if(err){
                             console.error(err);
+                            res.json(err);
+                            res.end();
                         }else{
                             for (var i = 0; i < propcols.length; i++) {
                                 for (val in instcol) {
@@ -39,18 +39,18 @@ module.exports = function (req, res) {
                                 }
                             }
                             if(_class.CLS_ID == 0){
-                                console.log(nodeProps);
+                                //console.log(nodeProps);
                                 res.json(nodeProps);
                                 res.end();
                             }else{
                                 opt_db.checkParentClass(req,_class.CLS_ID, function (err, parentClass) {
-                                    return checkAllProps(parentClass,refcol.PARENT_REF_ID);
+                                    return checkAllProps(parentClass);
                                 });
                             }
                         }
                     })
                 })
-            });
+
 
         };
         checkAllProps(clscols,nodeInfo.refid);

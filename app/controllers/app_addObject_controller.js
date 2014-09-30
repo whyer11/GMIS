@@ -16,9 +16,70 @@ module.exports = function (req, res) {
     });
 
     ep.all('$ReturnNewInstId', function (_newInstId) {
+
+        var insertInst = function (instid,nextclsid) {
+            opt_db.checkClass(req,nextclsid, function (err, clscol) {
+                req.models.gom_props.find({CLS_ID:nextclsid}, function (err, propcols) {
+                    var prop = {
+                        INST_ID:instid
+
+                    };
+                    for(val in req.body.props){
+                        for(var i =0;i<propcols.length;i++){
+                            //console.log(propcols[i].PROP_COL)
+                            if(val == '_'+propcols[i].PROP_COL){
+                                prop[propcols[i].PROP_COL] =req.body.props[val];
+                            }
+                        }
+                    }
+                    var genProp = function (clsid) {
+                        if(clsid == 0){
+                            prop.STATE_ID=0;
+                            prop.INSTACP_ID=0;
+                            prop.CLS_ID=req.body.clsid;
+                            return prop;
+                        }else{
+                            return prop;
+                        }
+                    };
+
+                    maps.modelsmaps(req,clscol.CLS_TAB_NAME).create(genProp(nextclsid), function (err, item) {
+                        if(err){
+                            console.error(err);
+                        }else{
+
+                            if(clscol.CLS_ID == 0){
+                                req.models.gom_refs.find(['REF_ID', 'Z'], function (err, refcols) {
+                                    currentRefId = refcols[0].REF_ID + 1;
+                                    currentdis = refcols[0].REF_DISP_IND + 1;
+                                    var ref = {
+                                        REF_ID: currentRefId,
+                                        PARENT_REF_ID: req.body.refid,
+                                        INST_ID: item.INST_ID,
+                                        REF_DISP_IND: currentdis
+                                    };
+                                    req.models.gom_refs.create(ref, function (err, item) {
+                                        if (err) {
+                                            console.error(err);
+                                        }
+                                    })
+                                });
+                                res.json({success:true});
+                                res.end();
+                            }else{
+                                return insertInst(instid,clscol.PARENT_CLS_ID);
+                            }
+                        }
+                    })
+                })
+            })
+        };
+        insertInst(_newInstId,req.body.clsid);
         /**
          * 在gom_inst中注册新的对象
          */
+
+        /*
         var newInst = {
             INST_ID:_newInstId,
             STATE_ID:0,
@@ -32,6 +93,7 @@ module.exports = function (req, res) {
             }else{
                 //这里返回的item即为在gom_insts中已注册的新对象
                 //console.log(item.INST_NAME);
+
                 var prop = {};
                 opt_db.checkClass(req,req.body.clsid, function (err, clscol) {
                     req.models.gom_props.find({CLS_ID:req.body.clsid}, function (err, propcols) {
@@ -46,6 +108,7 @@ module.exports = function (req, res) {
                         }
                         prop.INST_ID = item.INST_ID;
                         //console.log(prop);
+                        console.log(clscol.CLS_TAB_NAME);
                         maps.modelsmaps(req,clscol.CLS_TAB_NAME).create(prop, function (err, item) {
                             console.log(item.INST_ID);
                             req.models.gom_refs.find(['REF_ID', 'Z'], function (err, refcols) {
@@ -71,6 +134,7 @@ module.exports = function (req, res) {
                 })
             }
         });
+        */
     })
 };
 
