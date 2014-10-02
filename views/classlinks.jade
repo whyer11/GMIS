@@ -1,0 +1,18 @@
+//
+   Created by wanghuanyu on 14-9-30.
+
+extends layout
+
+block content
+  script(src='../javascripts/clses_links.js')
+  div.navbar.navbar-fixed-top.navbar-inverse
+    div.navbar-inner
+      div.container-fluid
+        a.brand 类型连接管理
+  div.container-fluid(style="margin-top:40px")
+    div.row-fluid
+      div.span2
+        div.siderbar
+          ul#treeDemo.ztree
+      div.span1#class_opts
+      div.span9

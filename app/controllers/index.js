@@ -17,5 +17,6 @@ module.exports = {
     apprightclick: require('./app_rightClick_controller'),
     appaddobj:require('./app_addObject_controller'),
     appdelobj:require('./app_delObject_controller'),
-    apprenderaddobj:require('./app_renderAddObjectForm_controller')
+    apprenderaddobj:require('./app_renderAddObjectForm_controller'),
+    clslinksview:require('./clslinks_view_controller')
 };
