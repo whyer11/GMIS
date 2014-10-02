@@ -11,8 +11,28 @@ block content
         a.brand 类型连接管理
   div.container-fluid(style="margin-top:40px")
     div.row-fluid
+      div.span1
       div.span2
         div.siderbar
           ul#treeDemo.ztree
-      div.span1#class_opts
-      div.span9
+      div.span3
+        h3 已连接的类型
+        div#linked.accordion
+          div.accordion-group
+            div.accordion-heading
+              a.accordion-toggle.collapsed(data-toggle='collapse' data-parent='#linked' href='#linkedOne') 阿士大夫似的发射
+            div#linkedOne.accordion-body.collapse
+              div.accordion-inner sadfasdfasdf
+          div.accordion-group
+            div.accordion-heading
+              a.accordion-toggle.collapsed(data-toggle='collapse' data-parent='#linked' href='#linkedtwo') 阿士大夫似的发射
+            div#linkedtwo.accordion-body.collapse
+              div.accordion-inner sadfasdfasdf
+          div.accordion-group
+            div.accordion-heading
+              a.accordion-toggle.collapsed(data-toggle='collapse' data-parent='#linked' href='#linkedthr') 阿士大夫似的发射
+            div#linkedthr.accordion-body.collapse
+              div.accordion-inner sadfasdfasdf
+      div.span3
+        h3 未连接的类型
+
