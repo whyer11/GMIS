@@ -20,5 +20,6 @@ module.exports = {
     apprenderaddobj:require('./app_renderAddObjectForm_controller'),
     clslinksview:require('./clslinks_view_controller'),
     clslinkslinked:require('./clslinks_linked_controller'),
-    clslinkslinkclses:require('./clslinks_linkclses_controller')
+    clslinkslinkclses:require('./clslinks_linkclses_controller'),
+    clslinksunlinkclses:require('./clslinks_unlinkclses_controller')
 };

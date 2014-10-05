@@ -5,7 +5,6 @@ var opt_db = require('../middleware/opt_db');
 var eventproxy = require('eventproxy');
 var ep = new eventproxy();
 module.exports = function (req, res) {
-    console.log(req.body);
     var linkedClses = [];
     var i = 0;
     req.models.gom_clslinks.find({CLS_ID:req.body.id}, function (err, clslinkcols) {

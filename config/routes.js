@@ -25,4 +25,5 @@ module.exports = function (app) {
     app.get('/clslinks_view',controllers.clslinksview);
     app.post('/clslinks_linked',controllers.clslinkslinked);
     app.post('/clslinks_linkclses',controllers.clslinkslinkclses);
+    app.post('/clslinks_unlinkclses',controllers.clslinksunlinkclses);
 };

@@ -58,6 +58,7 @@ $(function () {
 
     var currentTreeNode = {};
     var forLink = [];
+    var forUnlink = [];
     /**
      *
      * @param linked
@@ -82,6 +83,8 @@ $(function () {
     function onClick(event,treeId,treeNode) {
         currentTreeNode = treeNode;
         forLink = [];
+        forUnlink = [];
+
         if(currentTreeNode.id == 0){
             alert('您无法为根类型指定类型连接')
         }else{
@@ -89,6 +92,7 @@ $(function () {
                 refreshLinked(data.linked);
                 refreshUnlinked(data.unlinked);
                 bindUnlinkedClick();
+                bindLinkedClick();
             })
         }
     }
@@ -138,7 +142,9 @@ $(function () {
             linkedHtml += '' +
                 '<div class="accordion-group">' +
                 '   <div class="accordion-heading">' +
-                '       <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#linked" href="#linked_'+i+'">'+linked[i].CLS_NAME+'</a>' +
+                '       <a class="accordion-toggle collapsed" data-toggle="collapse" data-clsid="'+linked[i].CLS_ID+'" data-parent="#linked" href="#linked_'+i+'">'+linked[i].CLS_NAME+'' +
+                '           <span class="label label-success pull-right" style="display: none;">已选中</span>' +
+                '       </a>' +
                 '   </div>' +
                 '   <div id="linked_'+i+'" class="accordion-body collapse">' +
                 '       <div class="accordion-inner">'+generateAccBody(linked[i])+'</div>' +
@@ -187,7 +193,7 @@ $(function () {
     function bindUnlinkedClick (){
         $('#unlinked ul li a').bind('click', function (event) {
             var _self = $(this);
-            _self.find('.label').toggle(500, function () {
+            _self.find('.label').toggle(100, function () {
                 //console.log($(this).attr('style'));
                 if($(this).attr('style') == 'display: none;'){
                     /**
@@ -203,6 +209,32 @@ $(function () {
                 }
             });
         });
+    }
+
+    function bindLinkedClick () {
+        $('.accordion-toggle').bind('click', function (e) {
+            var _self = $(this);
+            if(_self.data('clsid') != 0) {
+                _self.find('.label').toggle(100, function () {
+                    //console.log($(this).attr('style'));
+                    if ($(this).attr('style') == 'display: none;') {
+                        /**
+                         * 取消选中
+                         */
+                        var index = forUnlink.getIndexByValue(_self.data('clsid'));
+                        forUnlink.remove(index);
+                    } else {
+                        /**
+                         * 选中
+                         */
+                        forUnlink.push(_self.data('clsid'));
+
+                    }
+                });
+            }else{
+                alert('无法取消根对象的链接');
+            }
+        })
     }
 
     $('#link').bind('click',function (e) {
@@ -232,36 +264,48 @@ $(function () {
 
     $('#unlink').bind('click', function (e) {
         var _self = $(this);
-        $.post('',{}, function (data) {
-            _self.addClass('disabled');
-            if(data.success){
-                alert('操作成功');
-                _self.removeClass('disabled');
-                optSuccess();
-            }else{
-                alert('操作失败,打开控制台查看错误信息');
-                optFail();
-                console.log(data.err);
-                console.log(data.node);
-            }
-        })
+        console.log(forUnlink);
+        if(_self.hasClass('disabled')) {
+
+        }else if(forUnlink.length != 0) {
+
+            $.post('/clslinks_unlinkclses', {clsid: currentTreeNode.id, gom_clsid: forUnlink}, function (data) {
+                _self.addClass('disabled');
+                if (data.success) {
+                    alert('操作成功');
+                    _self.removeClass('disabled');
+                    optSuccess();
+                } else {
+                    alert('操作失败,打开控制台查看错误信息');
+                    optFail();
+                    console.log(data.err);
+                    console.log(data.node);
+                }
+            })
+        }else{
+            alert('请选择已链接的类型');
+        }
     });
 
     function optSuccess () {
-        forLink = [];
+        forLink =[];
+        forUnlink = [];
         $.post('/clslinks_linked',currentTreeNode, function (data) {
             refreshLinked(data.linked);
             refreshUnlinked(data.unlinked);
             bindUnlinkedClick();
+            bindLinkedClick();
         })
     }
 
     function optFail () {
-        forLink = [];
+        forLink =[];
+        forUnlink = [];
         $.post('/clslinks_linked',currentTreeNode, function (data) {
             refreshLinked(data.linked);
             refreshUnlinked(data.unlinked);
             bindUnlinkedClick();
+            bindLinkedClick();
         })
     }
 });

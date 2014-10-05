@@ -2,7 +2,7 @@
  * Created by wanghuanyu on 14-10-5.
  */
 module.exports = function (req, res) {
-    console.log(req.body);
+    //console.log(req.body);
     var i = 0;
     var linkClass = function () {
         req.models.gom_clslinks.create({
