@@ -2,6 +2,42 @@
  * Created by wanghuanyu on 14-9-30.
  */
 $(function () {
+    /* 方法:Array.remove(dx)
+     * 功能:删除数组元素.
+     * 参数:dx删除元素的下标.
+     * 返回:在原数组上修改数组
+     */
+    //经常用的是通过遍历,重构数组.
+    Array.prototype.remove=function(dx)
+    {
+        //if(isNaN(dx)||dx>this.length){return false;}
+        for(var i=0,n=0;i<this.length;i++)
+        {
+            if(this[i]!=this[dx])
+            {
+                this[n++]=this[i]
+            }
+        }
+        this.length-=1
+    };
+
+    //在数组中获取指定值的元素索引
+    Array.prototype.getIndexByValue= function(value)
+    {
+        var index = -1;
+        for (var i = 0; i < this.length; i++)
+        {
+            if (this[i] == value)
+            {
+                index = i;
+                break;
+            }
+        }
+        return index;
+    };
+
+
+
     var viewTreeSettings = {
        view:{
            selectedMulti:false
@@ -20,7 +56,23 @@ $(function () {
        }
     };
 
-    var currentTreeNode;
+    var currentTreeNode = {};
+    var forLink = [];
+    /**
+     *
+     * @param linked
+     */
+    function refreshLinked (linked) {
+        $('#linked').html(generatelinked(linked));
+    }
+
+    /**
+     *
+     * @param unLinked
+     */
+    function refreshUnlinked (unLinked) {
+        $('#unlinked').html(generateUnlinked(unLinked));
+    }
     /**
      * zTree上节点Click事件的回调函数,监听Click事件
      * @param event Click事件中所有的信息
@@ -29,15 +81,14 @@ $(function () {
      */
     function onClick(event,treeId,treeNode) {
         currentTreeNode = treeNode;
-        refreshLinked(currentTreeNode);
-    }
-
-    function refreshLinked (treeNode) {
-        if(treeNode.id == 0){
+        forLink = [];
+        if(currentTreeNode.id == 0){
             alert('您无法为根类型指定类型连接')
         }else{
-            $.post('/clslinks_linked',treeNode, function (data) {
-                $('#linked').html(generatelinked(data.linked));
+            $.post('/clslinks_linked',currentTreeNode, function (data) {
+                refreshLinked(data.linked);
+                refreshUnlinked(data.unlinked);
+                bindUnlinkedClick();
             })
         }
     }
@@ -109,5 +160,108 @@ $(function () {
         }
         innerBody = '<ul>'+innerBody+'</ul>';
         return innerBody;
+    }
+
+    /**
+     *
+     * @param unlinked
+     * @returns {string}
+     */
+    function generateUnlinked (unlinked) {
+        var unLinkedHtml = '';
+        for(var i = 0;i<unlinked.length;i++){
+            unLinkedHtml += '' +
+                '<li class="unlinked-item">' +
+                '   <a data-clsid="'+unlinked[i].CLS_ID+'">'+unlinked[i].CLS_NAME+'' +
+                '       <span class="label label-success pull-right" style="display: none;">已选中</span>' +
+                '   </a>' +
+                '</li>';
+        }
+        unLinkedHtml = '<ul>'+unLinkedHtml+'</ul>';
+        return unLinkedHtml;
+    }
+
+    /**
+     *
+     */
+    function bindUnlinkedClick (){
+        $('#unlinked ul li a').bind('click', function (event) {
+            var _self = $(this);
+            _self.find('.label').toggle(500, function () {
+                //console.log($(this).attr('style'));
+                if($(this).attr('style') == 'display: none;'){
+                    /**
+                     * 取消选中
+                     */
+                    var index = forLink.getIndexByValue(_self.data('clsid'));
+                    forLink.remove(index);
+                }else{
+                    /**
+                     * 选中
+                     */
+                    forLink.push(_self.data('clsid'));
+                }
+            });
+        });
+    }
+
+    $('#link').bind('click',function (e) {
+        var _self = $(this);
+        if(_self.hasClass('disabled')){
+
+        }else if(forLink.length != 0){
+            $.post('/clslinks_linkclses',{clsid:currentTreeNode.id,gom_clsid:forLink}, function (data) {
+                _self.addClass('disabled');
+                if(data.success){
+                    alert('操作成功');
+                    _self.removeClass('disabled');
+                    optSuccess();
+
+                }else{
+                    alert('操作失败,打开控制台查看错误信息');
+                    optFail();
+                    console.log(data.err);
+                    console.log(data.node);
+                }
+            })
+        }else{
+            alert('操作错误');
+        }
+    });
+
+
+    $('#unlink').bind('click', function (e) {
+        var _self = $(this);
+        $.post('',{}, function (data) {
+            _self.addClass('disabled');
+            if(data.success){
+                alert('操作成功');
+                _self.removeClass('disabled');
+                optSuccess();
+            }else{
+                alert('操作失败,打开控制台查看错误信息');
+                optFail();
+                console.log(data.err);
+                console.log(data.node);
+            }
+        })
+    });
+
+    function optSuccess () {
+        forLink = [];
+        $.post('/clslinks_linked',currentTreeNode, function (data) {
+            refreshLinked(data.linked);
+            refreshUnlinked(data.unlinked);
+            bindUnlinkedClick();
+        })
+    }
+
+    function optFail () {
+        forLink = [];
+        $.post('/clslinks_linked',currentTreeNode, function (data) {
+            refreshLinked(data.linked);
+            refreshUnlinked(data.unlinked);
+            bindUnlinkedClick();
+        })
     }
 });

@@ -19,5 +19,6 @@ module.exports = {
     appdelobj:require('./app_delObject_controller'),
     apprenderaddobj:require('./app_renderAddObjectForm_controller'),
     clslinksview:require('./clslinks_view_controller'),
-    clslinkslinked:require('./clslinks_linked_controller')
+    clslinkslinked:require('./clslinks_linked_controller'),
+    clslinkslinkclses:require('./clslinks_linkclses_controller')
 };

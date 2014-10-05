@@ -18,21 +18,11 @@ block content
       div.span3
         h3 已连接的类型
         div#linked.accordion
-          div.accordion-group
-            div.accordion-heading
-              a.accordion-toggle.collapsed(data-toggle='collapse' data-parent='#linked' href='#linkedOne') 阿士大夫似的发射
-            div#linkedOne.accordion-body.collapse
-              div.accordion-inner sadfasdfasdf
-          div.accordion-group
-            div.accordion-heading
-              a.accordion-toggle.collapsed(data-toggle='collapse' data-parent='#linked' href='#linkedtwo') 阿士大夫似的发射
-            div#linkedtwo.accordion-body.collapse
-              div.accordion-inner sadfasdfasdf
-          div.accordion-group
-            div.accordion-heading
-              a.accordion-toggle.collapsed(data-toggle='collapse' data-parent='#linked' href='#linkedthr') 阿士大夫似的发射
-            div#linkedthr.accordion-body.collapse
-              div.accordion-inner sadfasdfasdf
+          a 这里将显示左侧已选中类型的已连接的类型
       div.span3
         h3 未连接的类型
-
+        div#unlinked.unlinked
+          a 这里将显示左侧已选中类型未连接的类型
+      div.span3
+        a#link.btn.btn-info 连接
+        a#unlink.btn.btn-danger 删除连接
