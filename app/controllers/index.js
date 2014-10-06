@@ -21,5 +21,9 @@ module.exports = {
     clslinksview:require('./clslinks_view_controller'),
     clslinkslinked:require('./clslinks_linked_controller'),
     clslinkslinkclses:require('./clslinks_linkclses_controller'),
-    clslinksunlinkclses:require('./clslinks_unlinkclses_controller')
+    clslinksunlinkclses:require('./clslinks_unlinkclses_controller'),
+    appmanager:require('./app_mange_controller'),
+    appclslink:require('./app_clslinks_controller'),
+    applinkclses:require('./app_linkclses_controller'),
+    appunlinkclses:require('./app_unlinkclses_controller')
 };

@@ -252,3 +252,31 @@ body{
     float: left;
     margin: 12px;
 }
+
+/*
+    appmanage
+*/
+#applist {
+    margin: 0;
+}
+
+#applist li{
+    list-style-type: none;
+
+}
+
+#applist li a {
+    display: block;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.app-selected {
+    background: #0088cc;
+    color: #ffffff;
+}
+
+.app-unselected {
+    background: #ffffff;
+    color: #0088cc;
+}

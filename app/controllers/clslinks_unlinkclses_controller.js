@@ -4,7 +4,7 @@
 module.exports = function (req, res) {
     var j = 0;
     req.models.gom_clslinks.count({CLS_ID:req.body.clsid},function (err,count) {
-        console.log(count);
+        //console.log(count);
         req.models.gom_clslinks.find({CLS_ID:req.body.clsid}).each(function (linkcls) {
             j++;
             for(var i = 0;i<req.body.gom_clsid.length;i++){
@@ -20,7 +20,7 @@ module.exports = function (req, res) {
                     })
                 }
             }
-            console.log(j);
+            //console.log(j);
         })
     })
-}
+};
