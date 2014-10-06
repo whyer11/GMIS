@@ -4,7 +4,23 @@
 module.exports = function (req, res) {
     var j = 0;
     console.log(req.body);
+    function unlinkClass () {
+        req.db.driver.execQuery("delete from gmis.gom_appclses where CLS_ID = '"+req.body.gom_clsid[j]+"' and APP_ID = '"+req.body.appid+"'", function (err, result) {
+            if(err){
+                res.json({success:false,err:err,node:null});
+                res.end();
+            }else if(j == req.body.gom_clsid.length-1){
+                res.json({success:true,err:null,node:null});
+                res.end();
+            }else{
+                j++;
+                return unlinkClass();
+            }
+        })
+    }
+    unlinkClass();
 
+    /*
     req.models.gom_appclses.find({APP_ID:req.body.appid,CLS_ID:req.body.gom_clsid[0]}, function (err,data) {
         console.log(data[0].CLS_ID);
         data[0].remove(function (error) {
