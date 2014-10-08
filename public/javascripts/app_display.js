@@ -273,7 +273,13 @@ $(function () {
      */
     function delTreeObj (item,treeNode) {
         $.post('/app_delobj.json',treeNode, function (data) {
-
+            if(data.success){
+                alert('操作成功');
+                _tree.refreshall();
+            }else{
+                alert('操作失败\n错误信息:'+data.err);
+                _tree.refreshall();
+            }
         })
     }
 

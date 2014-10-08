@@ -24,8 +24,18 @@ function addModelsToORM(file, db) {
     }
 }
 module.exports = function (cb) {
-    orm.connect(settings.database, function (err, db) {
-        db.settings.set('instance.returnAllErrors', true);
-        setup(db, cb);
-    });
+
+    function ormConnect () {
+        orm.connect(settings.database, function (err, db) {
+            if(db != undefined){
+                db.settings.set('instance.returnAllErrors', true);
+                setup(db, cb);
+                return 0;
+            }else{
+                console.log('等待mysql连接');
+                return ormConnect();
+            }
+        });
+    }
+    ormConnect();
 };
