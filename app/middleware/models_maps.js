@@ -1,6 +1,8 @@
-// update at Tue Sep 30 2014 09:22:36 GMT+0800 (CST)
+// update at Wed Oct 08 2014 21:02:28 GMT+0800 (CST)
 exports.modelsmaps = function (req,tab_name) {
    var models = {
+     "DPM" : req.models.DPM,
+     "BANGS" : req.models.BANGS,
      "TERC" : req.models.TERC,
      "STU" : req.models.STU,
      "PEO" : req.models.PEO,

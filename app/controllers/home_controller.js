@@ -4,8 +4,7 @@
 
 
 module.exports = function (req, res, next) {
-    res.render('index', {
+    return res.render('index', {
         title: '动态建模平台'
     });
-    res.end();
 };

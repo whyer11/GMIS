@@ -7,11 +7,9 @@ module.exports = function (req, res) {
     function unlinkClass () {
         req.db.driver.execQuery("delete from gmis.gom_appclses where CLS_ID = '"+req.body.gom_clsid[j]+"' and APP_ID = '"+req.body.appid+"'", function (err, result) {
             if(err){
-                res.json({success:false,err:err,node:null});
-                res.end();
+                return res.send(200,{success:false,err:err,node:null});
             }else if(j == req.body.gom_clsid.length-1){
-                res.json({success:true,err:null,node:null});
-                res.end();
+                return res.send(200,{success:true,err:null,node:null});
             }else{
                 j++;
                 return unlinkClass();

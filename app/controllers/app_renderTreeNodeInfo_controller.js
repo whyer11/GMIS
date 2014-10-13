@@ -22,36 +22,32 @@ module.exports = function (req, res) {
     ep.all('$ClassCol', function (clscols) {
         var nodeProps = {};
         var checkAllProps = function (_class) {
-                req.models.gom_props.find({CLS_ID:_class.CLS_ID}, function (err,propcols) {
-                    maps.modelsmaps(req,_class.CLS_TAB_NAME).get(nodeInfo.instid, function (err, instcol) {
-                        if(err){
-                            console.error(err);
-                            res.json(err);
-                            res.end();
-                        }else{
-                            for (var i = 0; i < propcols.length; i++) {
-                                for (val in instcol) {
-                                    if (val == propcols[i].PROP_COL) {
-                                        if (propcols[i].PROP_CAN_VISIBLE == "T") {
-                                            nodeProps[propcols[i].PROP_NAME] = instcol[val];
-                                        }
+            req.models.gom_props.find({CLS_ID:_class.CLS_ID}, function (err,propcols) {
+                maps.modelsmaps(req,_class.CLS_TAB_NAME).get(nodeInfo.instid, function (err, instcol) {
+                    if(err){
+                        console.error(err);
+                        return res.send(200,err);
+                    }else{
+                        for (var i = 0; i < propcols.length; i++) {
+                            for (val in instcol) {
+                                if (val == propcols[i].PROP_COL) {
+                                    if (propcols[i].PROP_CAN_VISIBLE == "T") {
+                                        nodeProps[propcols[i].PROP_NAME] = instcol[val];
                                     }
                                 }
                             }
-                            if(_class.CLS_ID == 0){
-                                //console.log(nodeProps);
-                                res.json(nodeProps);
-                                res.end();
-                            }else{
-                                opt_db.checkParentClass(req,_class.CLS_ID, function (err, parentClass) {
-                                    return checkAllProps(parentClass);
-                                });
-                            }
                         }
-                    })
+                        if(_class.CLS_ID == 0){
+                            //console.log(nodeProps);
+                            return res.send(200,nodeProps);
+                        }else{
+                            opt_db.checkParentClass(req,_class.CLS_ID, function (err, parentClass) {
+                                return checkAllProps(parentClass);
+                            });
+                        }
+                    }
                 })
-
-
+            })
         };
         checkAllProps(clscols,nodeInfo.refid);
     });

@@ -114,7 +114,6 @@ module.exports = function (req, res) {
             selfInfo:_selfNodeDetail
         };
         console.log(node);
-        res.json(node);
-        res.end();
+        return res.send(200,node);
     })
 };

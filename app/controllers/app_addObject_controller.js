@@ -64,8 +64,7 @@ module.exports = function (req, res) {
                                         }
                                     })
                                 });
-                                res.json({success:true});
-                                res.end();
+                                return res.send(200,{success:true});
                             }else{
                                 return insertInst(instid,clscol.PARENT_CLS_ID);
                             }

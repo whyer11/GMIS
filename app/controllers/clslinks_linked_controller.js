@@ -13,8 +13,7 @@ module.exports = function (req, res) {
             ep.all('$ReturnLinkedClass', function (data) {
                 req.models.gom_clses.find(['CLS_ID','Z'], function (err, clscols) {
                     splitClass(data,clscols,function(linked,unlinked){
-                        res.json({linked:linked,unlinked:unlinked});
-                        res.end();
+                        return res.send(200,{linked:linked,unlinked:unlinked});
                     })
                 })
 

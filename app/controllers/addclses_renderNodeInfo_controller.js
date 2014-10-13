@@ -65,16 +65,11 @@ module.exports = function (req, res, err) {
             ep.emit('next', nodeinfo);
         }
     }
-
-
     checkParentsClass(currentNodeID);
     ep.all('returnallclasses', function (classes) {
         checkAllProps(classes, nodeinfo, classes[0], gom_props, 0, 0);
     });
     ep.all('next', function (nodeinfo) {
-        res.json({nodeInfo: nodeinfo});
-        res.end();
+        return res.send(200,{nodeInfo: nodeinfo});
     });
-
-
 };

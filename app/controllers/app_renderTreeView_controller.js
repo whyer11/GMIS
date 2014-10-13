@@ -36,8 +36,7 @@ module.exports = function (req, res) {
     });
 
     ep.all('propertyall', function (tree) {
-        res.json(tree);
-        res.end();
+        return res.send(200,tree);
     });
     function isChild(pid, c_obj, next, ref_array, tree_array) {
         if (pid == next.REF_ID) {

@@ -119,7 +119,6 @@ module.exports = function (req, res) {
                 }
             }
         });
-        res.render('add_classes', {title: '类型管理器'});
-        res.end();
+        return res.render('add_classes', {title: '类型管理器'});
     })
-}
+};

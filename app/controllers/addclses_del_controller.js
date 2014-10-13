@@ -12,6 +12,7 @@ module.exports = function (req, res) {
         gom_clslinks = req.models.gom_clslinks;
 
     /**
+     * TODO
      * 删除某个类型:
      * 如果此类型下有子类型,提示无法删除
      * 检查是否为根节点

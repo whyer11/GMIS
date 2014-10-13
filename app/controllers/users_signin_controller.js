@@ -8,15 +8,13 @@ module.exports = function (req, res) {
     gom_users.find({USER_ID: form.userid, PWD: form.password}).count(function (err, data) {
         console.log(data);
         if (data == 1) {
-            res.render('platform_index', {
+            return res.render('platform_index', {
                 title: '平台主页'
             });
-            res.end();
         } else {
-            res.render('index', {
+            return res.render('index', {
                 title: '主页'
             });
-            res.end();
         }
     })
-}
+};

@@ -12,11 +12,9 @@ module.exports = function (req, res) {
         }, function (err, item) {
             if(err){
                 console.error(err);
-                res.json({success:false,err:err,node:req.body.gom_clsid[i]});
-                res.end();
+                return res.send(200,{success:false,err:err,node:req.body.gom_clsid[i]});
             }else if(i == req.body.gom_clsid.length-1){
-                res.json({success:true,err:null,node:null});
-                res.end();
+                return res.send(200,{success:true,err:null,node:null});
             }else{
                 i++;
                 return linkClass();
