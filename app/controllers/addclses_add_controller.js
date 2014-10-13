@@ -31,8 +31,8 @@ module.exports = function (req, res) {
             }
             if(form.parent_class_id == 0){
                 req.models.gom_clslinks.create({
-                    CLS_ID : currentClassId,
-                    GOM_CLS_ID : form.parent_class_id,
+                    CLS_ID : form.parent_class_id,
+                    GOM_CLS_ID : currentClassId,
                     LINK_TYPE : 'L'
                 },function(err,items){
                     if(err){

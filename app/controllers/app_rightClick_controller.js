@@ -4,7 +4,8 @@
 var EventProxy = require('eventproxy');
 var ep = new EventProxy();
 module.exports = function (req, res) {
-    req.models.gom_clslinks.find({GOM_CLS_ID: req.body.clsid}, function (err, clses) {
+    //console.log(req.body);
+    req.models.gom_clslinks.find({CLS_ID: req.body.clsid}, function (err, clses) {
         ep.emit('clslink', clses);
     });
     req.models.gom_appclses.find({APP_ID: req.body.appid}, function (err, appcls) {
@@ -14,12 +15,13 @@ module.exports = function (req, res) {
         var clses = [];
         for (var i = 0; i < clslink.length; i++) {
             for (var j = 0; j < appcls.length; j++) {
-                if (clslink[i].CLS_ID == appcls[j].CLS_ID) {
+                if (clslink[i].GOM_CLS_ID == appcls[j].CLS_ID) {
                     clses.push(appcls[j].CLS_ID);
                 }
             }
         }
         req.models.gom_clses.find({CLS_ID: clses}, function (err, cls) {
+
             return res.send(200,cls);
         });
     });
