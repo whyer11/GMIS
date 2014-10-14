@@ -30,4 +30,6 @@ module.exports = function (app) {
     app.post('/app_clslinks',controllers.appclslink);
     app.post('/app_linkclses',controllers.applinkclses);
     app.post('/app_unlinkclses',controllers.appunlinkclses);
+    app.get('/app_createapps',controllers.createapp);
+    app.post('/app_finishcreate',controllers.finishcreateapp);
 };

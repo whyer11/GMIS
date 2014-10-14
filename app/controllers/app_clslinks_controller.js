@@ -19,7 +19,9 @@ module.exports = function (req, res) {
                 })
             })
         }else{
-
+            req.models.gom_clses.find(['CLS_ID','Z'], function(err,clscols){
+                return res.send(200,{linked:linkedClses,unlinked:clscols});
+            })
         }
     });
 

@@ -1,0 +1,20 @@
+//
+   Created by wanghuanyu on 14-10-14.
+
+extends layout
+
+block content
+  script(src="../javascripts/app_create.js")
+  div.container-fluid
+    div.row-fluid
+      div.span4.offset4#cover
+        h3 请选择一个引用
+        p 选择一个引用,用以生成新应用的根节点.
+        div.well
+          div.container-fluid
+            ul#reflist
+              each val in ref
+                li
+                  a.ref-unselected(data-refid=val.REF_ID)=val.INST_NAME
+        div#refto
+        a#nextstep

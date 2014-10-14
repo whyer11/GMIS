@@ -25,5 +25,7 @@ module.exports = {
     appmanager:require('./app_mange_controller'),
     appclslink:require('./app_clslinks_controller'),
     applinkclses:require('./app_linkclses_controller'),
-    appunlinkclses:require('./app_unlinkclses_controller')
+    appunlinkclses:require('./app_unlinkclses_controller'),
+    createapp:require('./app_createApp_controller'),
+    finishcreateapp:require('./app_finishCreate_controller')
 };

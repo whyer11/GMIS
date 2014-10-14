@@ -1,25 +1,12 @@
 extends layout
 
 block content
-  div.site-wrapper
-    div.site-wrapper-inner
-      div.cover-container
-        div.masthead.clearfix
-          h3.masthead-brand Dynamic Modeling Platform
-          ul.nav.masthead-nav
-            li.active
-              a Login
-            li
-              a Feature
-            li
-              a Contact
-        div.inner.cover
-          h1.cover-heading Sign in
-          div.container-fluid
-            form.form-signin(action='/users_signin',method='post')
-              input.form-control(type='email',placeholder='Email address',required,autofocus,name='userid')
-              input.form-control(type='password',placeholder='Password',required,name='password')
-              button.btn.btn-lg.btn-block(type='submit') Sign in
-        div.mastfoot
-          div.inner
-            a why490078184@gmail.com
+  link(rel='stylesheet', href='/stylesheets/for_index.css')
+  div.container
+    div.inner.cover
+      h1.cover-heading Sign in
+      div.container-fluid
+        form.form-signin(action='/users_signin',method='post')
+          input.form-control(type='email',placeholder='Email address',required,autofocus,name='userid')
+          input.form-control(type='password',placeholder='Password',required,name='password')
+          button.btn.btn-lg.btn-block(type='submit') Sign in
