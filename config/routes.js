@@ -32,4 +32,6 @@ module.exports = function (app) {
     app.post('/app_unlinkclses',controllers.appunlinkclses);
     app.get('/app_createapps',controllers.createapp);
     app.post('/app_finishcreate',controllers.finishcreateapp);
+    app.post('/app_del.json',controllers.appdel);
+    app.post('/app_alertname.json',controllers.appaltername);
 };

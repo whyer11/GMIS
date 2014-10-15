@@ -12,9 +12,6 @@ block content
         p 选择一个引用,用以生成新应用的根节点.
         div.well
           div.container-fluid
-            ul#reflist
-              each val in ref
-                li
-                  a.ref-unselected(data-refid=val.REF_ID)=val.INST_NAME
+            ul#treeDemo.ztree
         div#refto
         a#nextstep

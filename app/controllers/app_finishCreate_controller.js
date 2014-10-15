@@ -17,7 +17,17 @@ module.exports = function (req, res) {
             if(err){
                 return res.send(200,{success:false,err:err});
             }else{
-                return res.send(200,{success:true,err:null});
+                req.models.gom_appclses.create({
+                    CLS_ID:req.body.clsid,
+                    APP_ID:item.APP_ID,
+                    IS_WEAK:'F'
+                }, function (err, item) {
+                    if(err){
+                        return res.send(200,{success:false,err:err});
+                    }else{
+                        return res.send(200,{success:true,err:null});
+                    }
+                });
             }
         })
     })

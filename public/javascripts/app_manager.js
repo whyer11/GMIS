@@ -71,14 +71,58 @@ $(function () {
             $('#applist').find('a').removeClass('app-selected').addClass('app-unselected');
             _self.removeClass('app-unselected').addClass('app-selected');
             currentApp.appid = _self.data('appid');
+            currentApp.appname = _self.text();
             forLink = [];
             forUnlink = [];
+            $('#delapp').addClass('btn btn-danger').text('删除');
+            $('#alterapp').addClass('btn btn-info').text('修改名称');
             $.post('/app_clslinks',currentApp, function (data) {
                 refreshLinked(data.linked);
                 refreshUnlinked(data.unlinked);
                 bindLinkedClick();
                 bindUnlinkedClick();
             })
+        }
+    });
+
+    /**
+     * 删除这个app的按钮事件
+     */
+    $('#delapp').bind('click', function (e) {
+        if(confirm('确定删除选中的App?')){
+            if(currentApp.appid == 0){
+                alert('无法删除全局对象浏览器');
+            }else {
+                $.post('/app_del.json', currentApp, function (data) {
+                    if (data.success) {
+                        alert('删除成功');
+                        window.location = '/app_manager';
+                    } else {
+                        alert(data.err);
+                    }
+                })
+            }
+        }
+    });
+
+    $('#alterapp').bind('click', function (e) {
+        if(currentApp.appid == 0){
+            alert('无法为全局对象浏览器重新命名');
+        }else {
+            var appname = prompt("请为这个App重新命名", currentApp.appname);
+            currentApp.appname = appname;
+            if (appname != null && appname != '') {
+                $.post('/app_alertname.json', currentApp, function (data) {
+                    if (data.success) {
+                        alert('修改成功');
+                        window.location = '/app_manager';
+                    } else {
+                        alert(data.err);
+                    }
+                })
+            } else {
+                alert('请输入新的名字.');
+            }
         }
     });
 

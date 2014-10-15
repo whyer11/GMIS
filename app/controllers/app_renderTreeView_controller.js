@@ -9,7 +9,8 @@ module.exports = function (req, res) {
         gom_appclses: req.models.gom_appclses,
         gom_insts: req.models.gom_insts,
         gom_refs: req.models.gom_refs,
-        gom_apps: req.models.gom_apps
+        gom_apps: req.models.gom_apps,
+        gom_clses:req.models.gom_clses
     };
 
     models.gom_refs.find(['REF_ID', 'A'], function (err, refcols) {
@@ -88,12 +89,17 @@ module.exports = function (req, res) {
     function addProperties(i, tree) {
         if (i < tree.length) {
             models.gom_insts.get(tree[i].INST_ID, function (err, inst) {
-                tree[i].REF_NAME = inst.INST_NAME;
-                tree[i].REF_CLS_ID = inst.CLS_ID;
-                tree[i].REF_INST_ID = inst.INST_ID;
-                tree[i].REF_APP_ID = appid;
-                i++;
-                return addProperties(i, tree);
+                models.gom_clses.get(inst.CLS_ID, function (err,cls) {
+
+
+                    tree[i].REF_CLS_NAME = cls.CLS_NAME;
+                    tree[i].REF_NAME = inst.INST_NAME;
+                    tree[i].REF_CLS_ID = inst.CLS_ID;
+                    tree[i].REF_INST_ID = inst.INST_ID;
+                    tree[i].REF_APP_ID = appid;
+                    i++;
+                    return addProperties(i, tree);
+                })
             })
         } else {
             ep.emit('propertyall', tree);
