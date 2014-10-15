@@ -3,7 +3,10 @@
 extends layout
 
 block content
-  ul
-    each val in appinfo
-      li
-        a.btn.btn-danger(href='/app/'+val.APP_ID+'/view')=val.APP_NAME
+  div.row-fluid
+    div.span4.offset4
+      h2 我的Apps
+      ul
+        each val in appinfo
+          li
+            a(href='/app/'+val.APP_ID+'/view')=val.APP_NAME

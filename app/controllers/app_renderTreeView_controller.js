@@ -36,8 +36,38 @@ module.exports = function (req, res) {
     });
 
     ep.all('propertyall', function (tree) {
-        return res.send(200,tree);
+        //console.log(tree);
+        var newTree = [];
+        var index = 0;
+        models.gom_appclses.find({APP_ID:appid}, function (err, appclses) {
+            if(err){
+                /**
+                 *
+                 */
+            }else{
+                for(var i =0;i<appclses.length;i++){
+                    for(var j = 0;j<tree.length;j++){
+                        if(tree[j].REF_CLS_ID == appclses[i].CLS_ID){
+                            newTree[index] = tree[j];
+                            index++;
+                        }
+                    }
+                }
+                return res.send(200,newTree);
+            }
+        });
+
+
     });
+
+    /**
+     *
+     * @param pid
+     * @param c_obj
+     * @param next
+     * @param ref_array
+     * @param tree_array
+     */
     function isChild(pid, c_obj, next, ref_array, tree_array) {
         if (pid == next.REF_ID) {
             tree_array.push(c_obj);
@@ -50,6 +80,11 @@ module.exports = function (req, res) {
         }
     }
 
+    /**
+     *
+     * @param i
+     * @param tree
+     */
     function addProperties(i, tree) {
         if (i < tree.length) {
             models.gom_insts.get(tree[i].INST_ID, function (err, inst) {
@@ -58,11 +93,10 @@ module.exports = function (req, res) {
                 tree[i].REF_INST_ID = inst.INST_ID;
                 tree[i].REF_APP_ID = appid;
                 i++;
-                addProperties(i, tree);
+                return addProperties(i, tree);
             })
         } else {
             ep.emit('propertyall', tree);
         }
     }
-
 };

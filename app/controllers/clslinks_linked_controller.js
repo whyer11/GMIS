@@ -22,6 +22,9 @@ module.exports = function (req, res) {
             /**
              * TODO 未找到一个已连接的class时
              */
+            req.models.gom_clses.find(['CLS_ID','Z'], function (err, clscols) {
+                return res.send(200,{linked:linkedClses,unlinked:clscols});
+            })
         }
     });
     function checkGomClses (clslinkcols) {
