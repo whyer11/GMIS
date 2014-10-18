@@ -26,7 +26,7 @@ exports.newModel = function (modelName, modelContent) {
 exports.newModelContent = function (fm) {
     var modelStr = 'module.exports = function(orm,db){' + '\n' +
         '   var ' + fm.class_tab_name + ' = db.define("' + fm.class_tab_name + '",{' + '\n' +
-        '       INST_ID:Number,' + '\n' +
+        '       INST_ID:Number' + '\n' +
         printClassProps(fm) +
         '},{' + '\n' +
         '       id:"INST_ID"' + '\n' +
@@ -56,8 +56,8 @@ exports.newModelContent = function (fm) {
                     dbms_type = 'Boolean';
                     break;
             }
-            str += '        ' + props + ':' + dbms_type + '\n';
-        } else {
+            str += '        ,' + props + ':' + dbms_type + '\n';
+        } else if (fm.PROP_COL){
             for (var e = 0; e < fm.PROP_COL.length; e++) {
                 switch (fm.PROP_DBMS_TYPE[e]) {
                     case 'VARCHAR':
@@ -71,11 +71,16 @@ exports.newModelContent = function (fm) {
                         break;
                 }
                 if (e == fm.PROP_COL.length - 1) {
-                    str += '       ' + props[e] + ':' + dbms_type + '\n';
+                    str += '       ,' + props[e] + ':' + dbms_type + '\n';
                 } else {
-                    str += '       ' + props[e] + ':' + dbms_type + ',' + '\n';
+                    str += '       ,' + props[e] + ':' + dbms_type + '\n';
                 }
             }
+        }else{
+            /**
+             * 没有prop_col时
+             */
+
         }
 
         return str;
@@ -245,12 +250,23 @@ var checkNewInstId = function (req,cb) {
         return cb(err,instcols[0].INST_ID+1);
     });
 };
-
+/**
+ *
+ * @param req
+ * @param cb
+ */
 var checkNewRefId = function (req, cb) {
     req.models.gom_refs.find(['REF_ID','Z'], function (err,refcols) {
         return cb(err,refcols[0].REF_ID+1);
     })
 };
+
+var checkNewPropId = function (req, cb) {
+    req.models.gom_props.find(['PROP_ID','Z'], function (err, propcols) {
+        return cb(err,propcols[0].PROP_ID+1);
+    })
+};
+
 exports.checkClass = checkClass;
 exports.checkParentClass = checkParentClass;
 exports.checkRef= checkRef;
@@ -259,3 +275,4 @@ exports.checkInst = checkInst;
 exports.checkProp = checkProp;
 exports.checkNewInstId = checkNewInstId;
 exports.checkNewRefId = checkNewRefId;
+exports.checkNewPropId = checkNewPropId;

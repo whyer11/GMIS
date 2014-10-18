@@ -3,9 +3,10 @@
  */
 module.exports = function (orm, db) {
     var gom_users = db.define('gom_users', {
-        id: Number,
-        USER_ID: String,
-        PWD: String
+        id: Number
+        ,USER_ID: String
+        ,USER_PWD: String
+        ,USER_ROLE: String
     }, {
         id: 'id'
     });

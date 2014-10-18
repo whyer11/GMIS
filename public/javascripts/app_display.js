@@ -15,7 +15,7 @@ $(function () {
     var alterObj = {
         label: '修改',
         action: function (item, treeNode) {
-
+            alterTreeObj(item,treeNode);
         }
     };
 
@@ -283,4 +283,16 @@ $(function () {
         })
     }
 
+    function alterTreeObj(item,treeNode) {
+        if(treeNode.id == 0){
+            alert('无法修改根对象');
+        }else{
+
+            /*
+            $.post('/app_alterobj.json',treeNode, function (data) {
+
+            })
+            */
+        }
+    }
 });
