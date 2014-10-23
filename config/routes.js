@@ -35,4 +35,5 @@ module.exports = function (app) {
     app.post('/app_del.json',controllers.appdel);
     app.post('/app_alertname.json',controllers.appaltername);
     app.post('/app_alterobj.json',controllers.appalterobj);
+    app.post('/app_savealter.json',controllers.appsavealteredobj);
 };

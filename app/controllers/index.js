@@ -30,5 +30,6 @@ module.exports = {
     finishcreateapp:require('./app_finishCreate_controller'),
     appdel:require('./app_del_controller'),
     appaltername:require('./app_alterName_controller'),
-    appalterobj:require('./app_alterObject_controller')
+    appalterobj:require('./app_alterObject_controller'),
+    appsavealteredobj:require('./app_saveAlteredObj_controller')
 };

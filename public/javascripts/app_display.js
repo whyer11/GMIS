@@ -191,6 +191,7 @@ $(function () {
      * @param treeNode
      */
     function createTreeObj(item, treeNode) {
+        console.log(item);
         var items = {
             clsid : item['clsid'],
             refid : treeNode['id']
@@ -219,11 +220,8 @@ $(function () {
             operatearea.html(htmlstr);
             $('#cancelnew').bind('click', function () {
                 operatearea.html('');
-
-
             });
             $('#savenew').bind('click', function () {
-
                 if(commitObj(data.selfInfo,'new')){
                     var commit = {};
                     commit.clsid = item.clsid;
@@ -284,16 +282,57 @@ $(function () {
     }
 
     function alterTreeObj(item,treeNode) {
+        console.log(item);
         if(treeNode.id == 0){
             alert('无法修改根对象');
         }else{
 
 
             $.post('/app_alterobj.json',treeNode, function (data) {
-                var htmlStr = '';
-                for(val in data){
 
+                console.log(data);
+                var alterinfo = '';
+                for(val in data){
+                    alterinfo += '<li><span><label>'+data[val]+'</label></span><input id="alter_'+val+'" type="text" placeholder="请输入'+data[val]+'"></li>'
                 }
+                var htmlStr = '' +
+                    '<div class="well-cancel clearfix">' +
+                    '<button class="btn btn-danger pull-left" id="cancelalter">取消</button>' +
+                    '<button class="btn btn-success pull-right" id="savealter">保存</button>' +
+                    '</div>' +
+                    '<div class="obj-view">' +
+                    '<ul id="newobjarea">' +
+                    alterinfo +
+                    '</ul>' +
+                    '</div>';
+                operatearea.html(htmlStr);
+
+                $('#cancelalter').bind('click', function (e) {
+                    operatearea.html('');
+                });
+
+
+                $('#savealter').bind('click', function (e) {
+                    if(commitObj(data,'alter')){
+                        var commit = {};
+                        commit.clsid = treeNode.clsid;
+                        commit.refid = treeNode.id;
+                        commit.props = commitObj(data,'alter');
+                        console.log(commit);
+                    }
+
+                    $.post('/app_savealter.json',commit, function (data) {
+                        if(data.success){
+                            alert('操作成功');
+                            _tree.refreshall();
+                            operatearea.html('');
+                        }else{
+                            alert('操作失败\n原因是:'+data.err);
+                        }
+                    })
+
+                })
+
             })
 
         }
