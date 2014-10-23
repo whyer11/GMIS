@@ -36,4 +36,7 @@ module.exports = function (app) {
     app.post('/app_alertname.json',controllers.appaltername);
     app.post('/app_alterobj.json',controllers.appalterobj);
     app.post('/app_savealter.json',controllers.appsavealteredobj);
+    app.get('/app_weakclass',controllers.appisweak);
+    app.post('/app_weakclassview',controllers.appisweakview);
+    app.post('/app_tobewors',controllers.apptobeweakorstrong);
 };

@@ -3,7 +3,6 @@
  */
 module.exports = function (req, res) {
     var i = 0;
-    console.log(req.body);
     var linkClass = function () {
         req.models.gom_appclses.create({
             CLS_ID:req.body.gom_clsid[i],
