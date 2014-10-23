@@ -99,16 +99,19 @@ $(function () {
      *
      */
     function onRightClick(e, tree, treeNode) {
-        $.post('/app_rightclick.json', treeNode, function (cls) {
-            for (var i = 0; i < cls.length; i++) {
-                var item = {
-                    label: '创建' + cls[i].CLS_NAME,
-                    action: function (item, treeNode) {
-                        createTreeObj(item, treeNode)
-                    },
-                    clsid: cls[i].CLS_ID
-                };
-                contextMenuSettings.items.push(item);
+        $.post('/app_rightclick.json', treeNode, function (data) {
+            console.log(data);
+            if(data.IS_WEAK == 'F'){
+                for (var i = 0; i < data.cls.length; i++) {
+                    var item = {
+                        label: '创建' + data.cls[i].CLS_NAME,
+                        action: function (item, treeNode) {
+                            createTreeObj(item, treeNode)
+                        },
+                        clsid: data.cls[i].CLS_ID
+                    };
+                    contextMenuSettings.items.push(item);
+                }
             }
             var menu = createContextMenu(e, treeNode).show();
             var bg = $('<div></div>')
@@ -132,7 +135,7 @@ $(function () {
 
      */
     function renderNodeInfo(treenodeobj) {
-        console.log(treenodeobj);
+
         $.post('/app_render_node_info.json', treenodeobj, function (data) {
             var objinfo = '';
             for(val in data){
@@ -191,7 +194,7 @@ $(function () {
      * @param treeNode
      */
     function createTreeObj(item, treeNode) {
-        console.log(item);
+        //console.log(item);
         var items = {
             clsid : item['clsid'],
             refid : treeNode['id']
@@ -227,7 +230,7 @@ $(function () {
                     commit.clsid = item.clsid;
                     commit.refid = treeNode.id;
                     commit.props = commitObj(data.selfInfo,'new');
-                    console.log(commit);
+                    //console.log(commit);
                 }
                 $.post('/app_addobj.json',commit, function (data) {
                     if(data.success == true){
@@ -282,7 +285,7 @@ $(function () {
     }
 
     function alterTreeObj(item,treeNode) {
-        console.log(item);
+
         if(treeNode.id == 0){
             alert('无法修改根对象');
         }else{
@@ -290,7 +293,7 @@ $(function () {
 
             $.post('/app_alterobj.json',treeNode, function (data) {
 
-                console.log(data);
+
                 var alterinfo = '';
                 for(val in data){
                     alterinfo += '<li><span><label>'+data[val]+'</label></span><input id="alter_'+val+'" type="text" placeholder="请输入'+data[val]+'"></li>'
@@ -318,7 +321,7 @@ $(function () {
                         commit.clsid = treeNode.clsid;
                         commit.refid = treeNode.id;
                         commit.props = commitObj(data,'alter');
-                        console.log(commit);
+
                     }
 
                     $.post('/app_savealter.json',commit, function (data) {
