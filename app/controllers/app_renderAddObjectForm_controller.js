@@ -7,7 +7,7 @@ var maps = require('../middleware/models_maps'),
     opt_db = require('../middleware/opt_db');
 module.exports = function (req, res) {
     var nodeInfo = req.body;
-    console.log(nodeInfo);
+    //console.log(nodeInfo);
     opt_db.checkRef(req,nodeInfo.refid, function (err, refcol) {
         ep.emit('$GetParentAttr',refcol);
         ep.emit('$GetSelfAttr',nodeInfo.clsid);
@@ -17,17 +17,17 @@ module.exports = function (req, res) {
         //console.log(clsid+'clsid');
         var _selfNodeDetail = {};
         var checkSelfProps = function (nextclsid) {
-            console.log(nextclsid);
+            //console.log(nextclsid);
             if(nextclsid != 0){
                 req.models.gom_props.find({CLS_ID:nextclsid}, function (err, propcols) {
                     //TODO 以后要谨记,返回一个数组或对象,一定要进行内容的检查
 
                     if(propcols.length !=0) {
                         for (var i = 0; i < propcols.length; i++) {
-                            console.log(propcols[i].PROP_NAME);
+                            //console.log(propcols[i].PROP_NAME);
                             _selfNodeDetail[propcols[i].PROP_COL] = propcols[i].PROP_NAME;
                             if (i == propcols.length - 1) {
-                                _selfNodeDetail.INST_NAME = '实例名称';
+                                _selfNodeDetail.INST_NAME = '名称';
                                 opt_db.checkParentClass(req,nextclsid, function (err, p_clscol) {
                                     return checkSelfProps(p_clscol.CLS_ID);
                                 });
@@ -39,7 +39,7 @@ module.exports = function (req, res) {
                     }
                 })
             }else{
-                _selfNodeDetail.INST_NAME = '实例名称';
+                _selfNodeDetail.INST_NAME = '名称';
                 ep.emit('$ReturnSelfInfo', _selfNodeDetail);
             }
 
@@ -49,7 +49,7 @@ module.exports = function (req, res) {
     });
 
     ep.all('$GetParentAttr', function (refcol) {
-        console.log(refcol.REF_ID);
+        //console.log(refcol.REF_ID);
         var _parentNodeDetail = {};
         if(refcol.REF_ID != 0){
             //TODO
@@ -98,12 +98,11 @@ module.exports = function (req, res) {
                             }
                         });
                     }
-
                 });
             };
             checkParentAttr(refcol);
         }else{
-            console.log('ref emit!');
+            //console.log('ref emit!');
             ep.emit('$ReturnParentInfo',_parentNodeDetail);
         }
     });
@@ -113,7 +112,7 @@ module.exports = function (req, res) {
             parentInfo:_parentNodeDetail,
             selfInfo:_selfNodeDetail
         };
-        console.log(node);
+        //console.log(node);
         return res.send(200,node);
     })
 };

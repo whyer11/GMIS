@@ -1,14 +1,15 @@
-// update at Thu Oct 16 2014 15:01:11 GMT+0800 (CST)
+// update at Tue Oct 21 2014 14:05:23 GMT+0800 (CST)
 exports.modelsmaps = function (req,tab_name) {
    var models = {
-     "STU_CHC" : req.models.STU_CHC,
-     "DPM" : req.models.DPM,
-     "BANGS" : req.models.BANGS,
-     "TERC" : req.models.TERC,
+     "STU_JQ_R" : req.models.STU_JQ_R,
+     "STU_HJ_R" : req.models.STU_HJ_R,
+     "TEST" : req.models.TEST,
+     "STU_KQ_R" : req.models.STU_KQ_R,
+     "RECORD" : req.models.RECORD,
      "STU" : req.models.STU,
      "PEO" : req.models.PEO,
+     "CATA" : req.models.CATA,
      "XIBIE" : req.models.XIBIE,
-     "CATEGORY" : req.models.CATEGORY,
      "COLLEGE" : req.models.COLLEGE,
      "gom_insts" : req.models.gom_insts
    }

@@ -288,11 +288,14 @@ $(function () {
             alert('无法修改根对象');
         }else{
 
-            /*
-            $.post('/app_alterobj.json',treeNode, function (data) {
 
+            $.post('/app_alterobj.json',treeNode, function (data) {
+                var htmlStr = '';
+                for(val in data){
+
+                }
             })
-            */
+
         }
     }
 });

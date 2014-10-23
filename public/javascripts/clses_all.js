@@ -49,33 +49,45 @@ $(function () {
             '</div>';
         var id = newModalForm('新建子类型', '/add_child_classes', contentStr);
 
+        $('#' + newprop + '').bind('click', function () {
+            $('#' + ulprop + '').append('<li class="span4"><div class="thumbnail">' +
+                '<label>属性名称</label>' +
+                '<input name="PROP_NAME" type="text" PLACEHOLDER="属性名称">' +
+                '<label>属性列名</label>' +
+                '<input name="PROP_COL" type="text">' +
+                '<label>属性列属性</label>' +
+                '<select name="PROP_DBMS_TYPE">' +
+                '   <option value="VARCHAR">VARCHAR</option>' +
+                '   <option value="INT">INT</option>' +
+                '   <option value="BOOLEAN">BOOLEAN</option> ' +
+                '</select>' +
+                '<label>属性长度</label>' +
+                '<input name="PROP_LENGTH" type="text">' +
+                '</div></li>');
+        });
+
 
         $('#' + id + '').modal();
     });
 
 
-    $('#' + newprop + '').bind('click', function () {
-        $('#' + ulprop + '').append('<li class="span4"><div class="thumbnail">' +
-            '<label>属性名称</label>' +
-            '<input name="PROP_NAME" type="text" PLACEHOLDER="属性名称">' +
-            '<label>属性列名</label>' +
-            '<input name="PROP_COL" type="text">' +
-            '<label>属性列属性</label>' +
-            '<select name="PROP_DBMS_TYPE">' +
-            '   <option value="VARCHAR">VARCHAR</option>' +
-            '   <option value="INT">INT</option>' +
-            '   <option value="BOOLEAN">BOOLEAN</option> ' +
-            '</select>' +
-            '<label>属性长度</label>' +
-            '<input name="PROP_LENGTH" type="text">' +
-            '</div></li>');
-    });
+
 
     $('.delclass').bind('click', function () {
-        if (confirm('确定要删除该类型？')) {
-            $.post('/delclass.json',currentTreeNode, function (data) {
-                refreshTree();
-            });
+        if(currentTreeNode.id == 0){
+            alert('不可以删除根类型');
+        }else {
+            if (confirm('确定要删除该类型？')) {
+                $.post('/delclass.json', currentTreeNode, function (data) {
+                    if(data.success){
+                        alert('操作成功');
+                        refreshTree();
+                    }else{
+                        alert('操做失败\n'+data.err);
+                        refreshTree();
+                    }
+                });
+            }
         }
     });
 
@@ -124,7 +136,13 @@ $(function () {
                     var formdata = generateFormDataForPost();
                     formdata.deledProps = deledcol;
                     $.post('/alterclass',formdata, function (data) {
+                        if(data.success){
+                            alert('good job');
 
+                        }else{
+                            console.error(data.err);
+                            alert('foolish');
+                        }
                     })
                 }
             });
@@ -190,7 +208,7 @@ $(function () {
 
     function newModalForm(title, action, modalbody) {
         deledcol = [];
-        $('body').append('<form name="form_'+modalid+'" class="form-horizontal">' +
+        $('body').append('<form name="form_'+modalid+'" class="form-horizontal" method="post" action="'+action+'">' +
             '<div class="modal fade mymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="' + modalid + '">' +
             '<div class="modal-header">' +
             '<button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>' +
@@ -198,6 +216,7 @@ $(function () {
             '<div class="modal-body">' + modalbody + '</div>' +
             '<div class="modal-footer">' +
             '<input  class="btn submitalter" type="button" value="提交">' +
+            '<input  class="btn " type="submit" value="提交新建">' +
             '</div></form>');
         currentModal = modalid;
         return modalid++;
