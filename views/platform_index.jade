@@ -4,10 +4,13 @@ extends layout
 
 block content
 
-  div.container
-    a.platform-app(href='/add_child_classes') 类型管理器
-    a.platform-app(href='/app_index') 我的应用列表
-    a.platform-app(href='/clslinks_view') 类型连接管理
-    a.platform-app(href='/app_manager') APP管理器
-    a.platform-app(href='/app_createapps') 创建APP
-    a.platform-app(href='/app_weakclass') APP类型强弱关联
+  div.row-fluid
+    div.span6.offset3
+      h1.text-center 管理信息系统
+      div.container-fluid
+        a.platform-app(href='/add_child_classes') 类型管理器
+        a.platform-app(href='/app_index') 我的应用列表
+        a.platform-app(href='/clslinks_view') 类型连接管理
+        a.platform-app(href='/app_manager') APP管理器
+        a.platform-app(href='/app_createapps') 创建APP
+        a.platform-app(href='/app_weakclass') APP类型强弱关联

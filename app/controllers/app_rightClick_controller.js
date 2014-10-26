@@ -21,21 +21,18 @@ module.exports = function (req, res) {
             }
         }
         req.models.gom_clses.find({CLS_ID: clses}, function (err, cls) {
-            console.log(req.body.clsid);
-
-            req.db.driver.execQuery("SELECT * FROM gmis.gom_appclses where CLS_ID = '"+req.body.clsid+"' and APP_ID = '"+req.body.appid+"';", function (err, result) {
-                if(err){
-                    res.send(200,{success:false,err:err});
-                }else{
-                    console.log(result);
-                    var data = {
-                        cls:cls,
-                        IS_WEAK:result[0].IS_WEAK
-                    };
-
-                    return res.send(200,data);
-                }
+            req.models.gom_appclses.find({CLS_ID:clses,APP_ID:req.body.appid}, function (err, appcls) {
+               for(var i = 0;i<cls.length;i++){
+                   for(var j = 0;j<appcls.length;j++){
+                       if(cls[i].CLS_ID == appcls[j].CLS_ID){
+                           cls[i].IS_WEAK = appcls[j].IS_WEAK;
+                       }
+                   }
+               }
+            return res.send(200,cls);
             });
+
+
 
         });
     });

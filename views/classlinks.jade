@@ -5,14 +5,13 @@ extends layout
 
 block content
   script(src='../javascripts/clses_links.js')
-  div.navbar.navbar-fixed-top.navbar-inverse
+  div.navbar.navbar-inverse
     div.navbar-inner
       div.container-fluid
         a.brand 类型连接管理
-  div.container-fluid(style="margin-top:40px")
+  div.container-fluid
     div.row-fluid
-      div.span1
-      div.span2
+      div.span2.offset1
         div.siderbar
           ul#treeDemo.ztree
       div.span3

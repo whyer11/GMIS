@@ -100,19 +100,21 @@ $(function () {
      */
     function onRightClick(e, tree, treeNode) {
         $.post('/app_rightclick.json', treeNode, function (data) {
-            console.log(data);
-            if(data.IS_WEAK == 'F'){
-                for (var i = 0; i < data.cls.length; i++) {
-                    var item = {
-                        label: '创建' + data.cls[i].CLS_NAME,
-                        action: function (item, treeNode) {
-                            createTreeObj(item, treeNode)
-                        },
-                        clsid: data.cls[i].CLS_ID
-                    };
-                    contextMenuSettings.items.push(item);
+
+
+                for (var i = 0; i < data.length; i++) {
+                    if(data[i].IS_WEAK == 'F') {
+                        var item = {
+                            label: '创建' + data[i].CLS_NAME,
+                            action: function (item, treeNode) {
+                                createTreeObj(item, treeNode)
+                            },
+                            clsid: data[i].CLS_ID
+                        };
+                        contextMenuSettings.items.push(item);
+                    }
                 }
-            }
+
             var menu = createContextMenu(e, treeNode).show();
             var bg = $('<div></div>')
                 .css({left: 0, top: 0, width: '100%', height: '100%', position: 'absolute', zIndex: 9999})

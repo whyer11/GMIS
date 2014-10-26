@@ -4,10 +4,10 @@
 extends layout
 block content
   script(src='../../javascripts/app_is_weak_class.js')
-  div.navbar.navbar-fixed-top.navbar-inverse
+  div.navbar.navbar-inverse
     div.navbar-inner
-      div.container
-        a.brand App管理器
+      div.container-fluid
+        a.brand 强弱连接管理
   div.container
     div.row-fluid
       div.span3
@@ -16,7 +16,7 @@ block content
             each val in app_info
               li
                 a.app-unselected(data-appid=val.APP_ID)=val.APP_NAME
-      div.span3
+      div.span3.offset1
         h3 强链接的类型
         div#strong
           a 这里将显示左侧已选中的APP强链接的类型

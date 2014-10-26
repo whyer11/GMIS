@@ -5,7 +5,7 @@ extends layout
 
 block content
   script(src='../../javascripts/app_manager.js')
-  div.navbar.navbar-fixed-top.navbar-inverse
+  div.navbar.navbar-inverse
     div.navbar-inner
       div.container
         a.brand App管理器
@@ -17,8 +17,8 @@ block content
             each val in app_info
               li
                 a.app-unselected(data-appid=val.APP_ID)=val.APP_NAME
-        a#delapp
         a#alterapp
+        a#delapp
       div.span3
         h3 已链接的类型
         div#linked.accordion

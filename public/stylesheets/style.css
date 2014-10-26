@@ -1,7 +1,4 @@
-body{
-    padding-top: 60px;
-    padding-bottom:40px ;
-}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
     display: table;
@@ -271,6 +268,11 @@ body{
     border-radius: 4px;
 }
 
+#applist li a:hover{
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
 .app-selected {
     background: #0088cc;
     color: #ffffff;
@@ -288,10 +290,10 @@ body{
     display: block;
     background: #0088cc;
     color: #fff;
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
-    line-height: 120px;
+    width: 135px;
+    height: 135px;
+    border-radius: 70px;
+    line-height: 135px;
     text-align: center;
     float: left;
     margin: 15px;

@@ -19,7 +19,7 @@
         "url": "https://github.com/whyer11/GMIS.git"
     },
     "version": "0.0.1",
-    "private": true,
+    "private": false,
     "scripts": {
         "start": "node app.js"
     },
