@@ -1,0 +1,26 @@
+//
+   Created by wanghuanyu on 14-10-28.
+
+extends layout
+block content
+   script(src='../../javascripts/grantors_manage.js')
+   div.navbar.navbar-inverse
+      div.navbar-inner
+         div.container-fluid
+            a.brand 用户/用户组管理
+   div.container
+      div.row-fluid
+         div.span3
+            div.siderbar
+               ul#applist
+                  each val in grantors_info
+                     li
+                        a.app-unselected(data-grantorsid=val.GRANTOR_ID)=val.GRANTOR_NAME
+         div.span3.offset1
+            h3 已包括的用户/用户组
+            div#have
+               a 这里将显示左侧已选中的用户组已包括的用户/组
+         div.span3
+            h3 未包括的用户/用户组
+            div#unhave
+               a 这里将显示左侧已选中的用户组未包括的用户/组

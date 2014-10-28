@@ -34,5 +34,6 @@ module.exports = {
     appsavealteredobj:require('./app_saveAlteredObj_controller'),
     appisweak:require('./app_isWeakClass_controller'),
     appisweakview:require('./app_isWeakClassView_controller'),
-    apptobeweakorstrong:require('./app_toBeWeakOrStrong_controller')
+    apptobeweakorstrong:require('./app_toBeWeakOrStrong_controller'),
+    grantor:require('./grantor_controller')
 };

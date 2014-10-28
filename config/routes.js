@@ -39,4 +39,10 @@ module.exports = function (app) {
     app.get('/app_weakclass',controllers.appisweak);
     app.post('/app_weakclassview',controllers.appisweakview);
     app.post('/app_tobewors',controllers.apptobeweakorstrong);
+    app.get('/grantor_create_view',controllers.grantor.createGrantor_view);
+    app.get('/grantors_create_view',controllers.grantor.createGrantors_view);
+    app.get('/grantor_manage_view',controllers.grantor.manageGrantor_view);
+    app.post('/grantor_create',controllers.grantor.createGrantor);
+    app.post('/show_have_unhave',controllers.grantor.showhau);
+    app.post('/have_or_unhave',controllers.grantor.haveorunhave);
 };

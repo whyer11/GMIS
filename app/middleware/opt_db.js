@@ -260,10 +260,20 @@ var checkNewRefId = function (req, cb) {
         return cb(err,refcols[0].REF_ID+1);
     })
 };
-
+/**
+ *
+ * @param req
+ * @param cb
+ */
 var checkNewPropId = function (req, cb) {
     req.models.gom_props.find(['PROP_ID','Z'], function (err, propcols) {
         return cb(err,propcols[0].PROP_ID+1);
+    })
+};
+
+var checkNewGrantorId = function (req, cb) {
+    req.models.gom_ac_grantors.find(['GRANTOR_ID','Z'], function (err, grantorcols) {
+        return cb(err,grantorcols[0].GRANTOR_ID+1);
     })
 };
 
@@ -276,3 +286,4 @@ exports.checkProp = checkProp;
 exports.checkNewInstId = checkNewInstId;
 exports.checkNewRefId = checkNewRefId;
 exports.checkNewPropId = checkNewPropId;
+exports.checkNewGrantorId = checkNewGrantorId;
