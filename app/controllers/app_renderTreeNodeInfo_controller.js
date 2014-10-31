@@ -49,7 +49,7 @@ module.exports = function (req, res) {
                 })
             })
         };
-        checkAllProps(clscols,nodeInfo.refid);
+        checkAllProps(clscols);
     });
 
     /*

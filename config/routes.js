@@ -45,4 +45,8 @@ module.exports = function (app) {
     app.post('/grantor_create',controllers.grantor.createGrantor);
     app.post('/show_have_unhave',controllers.grantor.showhau);
     app.post('/have_or_unhave',controllers.grantor.haveorunhave);
+    app.get('/grantor_app_view',controllers.grantor.grantorApp_view);
+    app.post('/show_allgrantors',controllers.grantor.showgrantors);
+    app.post('/show_aau',controllers.grantor.showAuthedApp);
+    app.post('/authed_or_unauthed',controllers.grantor.authedorunauthed);
 };

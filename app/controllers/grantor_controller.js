@@ -144,6 +144,112 @@ module.exports = {
                 }
             })
         }
+    },
+    grantorApp_view: function (req, res) {
+        return res.render('grantor_app',{
+            title:'用户/用户组APP管理'
+        })
+    },
+    showgrantors: function (req, res) {
+        req.models.gom_ac_grantors.find(['GRANTOR_ID','A'], function (err, allgan) {
+            req.models.gom_ac_groupusers.find(['GRANTOR_ID','A'], function (err, groupcols) {
+                for(var i = 0;i<allgan.length;i++){
+                    for(var j = 0;j<groupcols.length;j++){
+                        if(allgan[i] != null) {
+
+
+                            if (allgan[i].GRANTOR_ID == groupcols[j].GRANTOR_ID) {
+                                //console.log(allgan[i].GRANTOR_NAME);
+                                groupcols[j].GRANTOR_NAME = allgan[i].GRANTOR_NAME;
+                                allgan[i].has = true;
+                            }
+                        }
+                    }
+                }
+                for(var i = 0;i<allgan.length;i++){
+                    if(typeof (allgan[i].has) == 'undefined'){
+                        allgan[i].GOM_GRANTOR_ID = null;
+                        groupcols.push(allgan[i]);
+                    }
+                }
+
+                var temp = [];
+                for(var i =0;i<groupcols.length;i++){
+                    //console.log(groupcols[i].GRANTOR_NAME);
+                    var item = {
+                        GRANTOR_ID:groupcols[i].GRANTOR_ID,
+                        PARENT_GRANTOR_ID:groupcols[i].GOM_GRANTOR_ID,
+                        GRANTOR_NAME:groupcols[i].GRANTOR_NAME
+                    };
+
+                    temp.push(item);
+                }
+                //console.log(temp);
+                return res.send(200,temp);
+
+            })
+        })
+    },
+    showAuthedApp : function(req,res){
+        var authed = [];
+        var unauthed = [];
+        var temp = [];
+        var index = 0;
+        //console.log(req.body);
+        req.models.gom_ac_appacis.find({GRANTOR_ID:req.body.GRANTOR_ID}, function (err, appacicol) {
+            for(var i = 0;i<appacicol.length;i++){
+                temp[i] = appacicol[i].APP_ID;
+            }
+            req.models.gom_apps.find({APP_ID:temp}, function (err, appcols) {
+
+                authed = appcols;
+                req.models.gom_apps.find(['APP_ID','Z'], function (err, allapps) {
+                    for(var i = 0;i<allapps.length;i++){
+                        for(var j = 0;j<temp.length;j++){
+
+                            if(allapps[i].APP_ID == temp[j]){
+
+                                allapps[i].authed = true;
+                            }
+                        }
+                    }
+                    for(var i = 0;i<allapps.length;i++){
+
+                        if(allapps[i].authed == undefined){
+                            unauthed[index] = allapps[i];
+                            index++;
+                        }
+                    }
+                    //console.log(authed);
+                    //console.log(unauthed);
+                    return res.send(200,{authed:authed,unauthed:unauthed});
+                })
+            })
+        })
+    },
+    authedorunauthed: function (req, res) {
+        console.log(req.body);
+        if(req.body.del == 'true'){
+            req.db.driver.execQuery("DELETE FROM `gmis`.`gom_ac_appacis` WHERE `APP_ID`='"+req.body.appid+"' and`GRANTOR_ID`='"+req.body.grantorid+"';", function (err) {
+                if(err){
+                    return res.send(200,{success:false,err:err});
+                }else{
+                    return res.send(200,{success:true});
+                }
+            });
+
+        }else{
+            req.models.gom_ac_appacis.create({
+                APP_ID:req.body.appid,
+                GRANTOR_ID:req.body.grantorid
+            }, function (err, item) {
+                if(err){
+                    return res.send(200,{success:false,err:err});
+                }else{
+                    return res.send(200,{success:true});
+                }
+            })
+        }
     }
 
 };

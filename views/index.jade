@@ -7,6 +7,7 @@ block content
       h1.cover-heading Sign in
       div.container-fluid
         form.form-signin(action='/users_signin',method='post')
-          input.form-control(type='email',placeholder='Email address',required,autofocus,name='userid')
+          a.label-important.label=err
+          input.form-control(type='text',placeholder='Email address',required,autofocus,name='userid')
           input.form-control(type='password',placeholder='Password',required,name='password')
           button.btn.btn-lg.btn-block(type='submit') Sign in
