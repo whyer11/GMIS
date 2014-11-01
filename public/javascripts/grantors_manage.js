@@ -28,7 +28,8 @@ $(function () {
         }else {
             var haveStr = '';
             for (var i = 0; i < have.length; i++) {
-                haveStr += '<a class="btn btn-primary" data-grantorid = "'+have[i].GRANTOR_ID+'">' + have[i].GRANTOR_NAME + '</a><br>';
+
+                haveStr += '<a class="grantor-manage" data-grantorid = "'+have[i].GRANTOR_ID+'">' + have[i].GRANTOR_NAME + '</a>';
                 if (i == have.length - 1) {
 
                     $('#have').html(haveStr);
@@ -43,7 +44,7 @@ $(function () {
         }else{
             var unhaveStr = '';
             for(var i = 0;i<unhave.length;i++){
-                unhaveStr += '<a class="btn btn-primary" data-grantorid = "'+unhave[i].GRANTOR_ID+'">' + unhave[i].GRANTOR_NAME + '</a><br>';
+                unhaveStr += '<a class="grantor-manage" data-grantorid = "'+unhave[i].GRANTOR_ID+'">' + unhave[i].GRANTOR_NAME + '</a>';
                 if(i==unhave.length -1){
                     $('#unhave').html(unhaveStr);
                 }

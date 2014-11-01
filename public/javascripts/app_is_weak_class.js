@@ -32,7 +32,7 @@ $(function () {
         }else {
             var strongStr = '';
             for (var i = 0; i < strong.length; i++) {
-                strongStr += '<a class="btn btn-primary" data-clsid = "'+strong[i].CLS_ID+'">' + strong[i].CLS_NAME + '</a><br>';
+                strongStr += '<a class="manageed" data-clsid = "'+strong[i].CLS_ID+'">' + strong[i].CLS_NAME + '</a>';
                 if (i == strong.length - 1) {
 
                     $('#strong').html(strongStr);
@@ -49,7 +49,7 @@ $(function () {
         }else {
             var weakStr = '';
             for (var i = 0; i < weak.length; i++) {
-                weakStr += '<a class="btn btn-primary" data-clsid = "'+weak[i].CLS_ID+'">' + weak[i].CLS_NAME + '</a><br>';
+                weakStr += '<a class="manageed" data-clsid = "'+weak[i].CLS_ID+'">' + weak[i].CLS_NAME + '</a>';
                 if (i == weak.length - 1) {
 
                     $('#weak').html(weakStr);

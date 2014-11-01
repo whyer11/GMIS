@@ -85,7 +85,7 @@ $(function () {
         }else{
             var authedStr = '';
             for(var i = 0;i<authed.length;i++){
-                authedStr += '<a class="btn btn-primary" data-appid = "'+authed[i].APP_ID+'">' + authed[i].APP_NAME + '</a><br>';
+                authedStr += '<a class="manageed" data-appid = "'+authed[i].APP_ID+'">' + authed[i].APP_NAME + '</a>';
                 if(i == authed.length -1){
                     $('#authed').html(authedStr);
                 }
@@ -99,7 +99,7 @@ $(function () {
         }else{
             var unauthedStr = '';
             for(var i = 0;i<unauthed.length;i++){
-                unauthedStr += '<a class="btn btn-primary" data-appid = "'+unauthed[i].APP_ID+'">' + unauthed[i].APP_NAME + '</a><br>';
+                unauthedStr += '<a class="manageed" data-appid = "'+unauthed[i].APP_ID+'">' + unauthed[i].APP_NAME + '</a>';
                 if(i == unauthed.length -1){
                     $('#unauthed').html(unauthedStr);
                 }
