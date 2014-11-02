@@ -7,8 +7,10 @@ module.exports = function (req, res) {
         app.APP_NAME = req.body.appname;
         app.save(function (err) {
             if(err){
+                req.db.driver.close();
                 res.send(200,{success:false,err:err});
             }else{
+                req.db.driver.close();
                 res.send(200,{success:true,err:null});
             }
         })

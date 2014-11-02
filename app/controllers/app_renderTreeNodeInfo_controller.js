@@ -39,6 +39,7 @@ module.exports = function (req, res) {
                         }
                         if(_class.CLS_ID == 0){
                             console.log(nodeProps);
+                            req.db.driver.close();
                             return res.send(200,nodeProps);
                         }else{
                             opt_db.checkParentClass(req,_class.CLS_ID, function (err, parentClass) {

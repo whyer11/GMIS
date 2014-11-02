@@ -11,6 +11,7 @@ module.exports = function (req, res) {
      */
     opt_db.checkRef(req,req.body.refid, function (err,refcol) {
        if(err){
+           req.db.driver.close();
            return res.send(200,{success:false,err:'无此引用'});
        }else{
            alterInst(refcol.INST_ID,req.body.clsid);
@@ -43,14 +44,17 @@ module.exports = function (req, res) {
                 };
                 maps.modelsmaps(req,clscol.CLS_TAB_NAME).get(instid, function (err, col) {
                     if(err){
+                        req.db.driver.close();
                         return res.send(200,{success:false,err:err});
                     }else{
                         col.save(genProp(nextclsid),function (err) {
                             if(err){
                                 console.log(err);
+                                req.db.driver.close();
                                 return res.send(200,{success:false,err:err});
                             }else{
                                 if(clscol.CLS_ID == 0){
+                                    req.db.driver.close();
                                     return res.send(200,{success:true,err:null});
                                 }else{
                                     return alterInst(instid,clscol.PARENT_CLS_ID);
@@ -59,9 +63,6 @@ module.exports = function (req, res) {
                         });
                     }
                 })
-
-
-
             })
         })
     }

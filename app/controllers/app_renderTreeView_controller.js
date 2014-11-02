@@ -54,6 +54,7 @@ module.exports = function (req, res) {
                         }
                     }
                 }
+                req.db.driver.close();
                 return res.send(200,newTree);
             }
         });

@@ -18,23 +18,28 @@ module.exports = function (req, res) {
     req.models.gom_refs.find(['REF_ID','A'], function (err, allrefs) {
        if(err){
            console.error(err);
+           req.db.driver.close();
            return res.send(200,{success:false,err:err});
        }else{
            for(var i = 0;i<allrefs.length;i++){
                if(req.body.id == allrefs[i].PARENT_REF_ID) {
+                   req.db.driver.close();
                    return res.send(200,{success: false, err: '只能删除叶子对象'});
                }
            }
            req.models.gom_refs.get(req.body.id, function (err, ref) {
                if(err){
                    console.error(err);
+                   req.db.driver.close();
                    return res.send(200,{success:false,err:err});
                }else{
                    ref.remove(function (err) {
                        if(err){
                            console.error(err);
+                           req.db.driver.close();
                            return res.send(200,{success:false,err:err});
                        }else{
+                           req.db.driver.close();
                            return res.send(200,{success:true,err:null});
                        }
                    })

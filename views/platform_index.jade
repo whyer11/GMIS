@@ -3,27 +3,29 @@
 extends layout
 
 block content
-
+  script(src='../../javascripts/platform_index.js')
   div.row-fluid
-    div.span6.offset3
-      h1.text-center 管理信息系统动态建模实验平台
-  div.row-fluid
-    div.span3.offset1
-      h2.text-center 类型
-      div.container-fluid
-        a.platform-app(href='/clslinks_view') 类型连接管理
-        a.platform-app(href='/add_child_classes') 类型管理器
+    div.container
+      h2.header-title.pull-left 管理信息系统动态建模实验平台
+      h3.header-title.pull-right=user
+        | ,你好
+  div.row-fluid.AppCols
+    div.span3.offset2
+      div.app-category
+        h2 类型
+        a(href='/clslinks_view') 类型连接管理
+        a(href='/add_child_classes') 类型管理器
     div.span3
-      h2.text-center App
-      div.container-fluid
-        a.platform-app(href='/app_createapps') 创建App
-        a.platform-app(href='/app_index') App列表
-        a.platform-app(href='/app_manager') App管理器
-        a.platform-app(href='/app_weakclass') App类型强弱关联
+      div.app-category
+        h2 App
+        a(href='/app_createapps') 创建App
+        a(href='/app_index') App列表
+        a(href='/app_manager') App管理器
+        a(href='/app_weakclass') App类型强弱关联
     div.span3
-      h2.text-center 权限建模
-      div.container-fluid
-        a.platform-app(href='/grantor_create_view') 创建用户
-        a.platform-app(href='/grantors_create_view') 创建用户组
-        a.platform-app(href='/grantor_manage_view') 管理用户/用户组
-        a.platform-app(href='/grantor_app_view') 用户/组App关联
+      div.app-category
+        h2 权限建模
+        a(href='/grantor_create_view') 创建用户
+        a(href='/grantors_create_view') 创建用户组
+        a(href='/grantor_manage_view') 管理用户/用户组
+        a(href='/grantor_app_view') 用户/组App关联

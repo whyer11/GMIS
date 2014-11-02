@@ -13,6 +13,7 @@ module.exports = function (req, res) {
             ep.all('$ReturnLinkedClass', function (data) {
                 req.models.gom_clses.find(['CLS_ID','Z'], function (err, clscols) {
                     splitClass(data,clscols,function(linked,unlinked){
+                        req.db.driver.close();
                         return res.send(200,{linked:linked,unlinked:unlinked});
                     })
                 })
@@ -23,6 +24,7 @@ module.exports = function (req, res) {
              * TODO 未找到一个已连接的class时
              */
             req.models.gom_clses.find(['CLS_ID','Z'], function (err, clscols) {
+                req.db.driver.close();
                 return res.send(200,{linked:linkedClses,unlinked:clscols});
             })
         }

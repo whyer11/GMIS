@@ -19,6 +19,7 @@ module.exports = function (req, res) {
                     weakCls.push(clscols[i])
                 }
             }
+            req.db.driver.close();
             return res.send(200,{strong:strongCls,weak:weakCls});
         })
     })

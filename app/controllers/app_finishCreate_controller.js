@@ -15,6 +15,7 @@ module.exports = function (req, res) {
             APP_NAME:req.body.appname
         }, function (err, item) {
             if(err){
+                req.db.driver.close();
                 return res.send(200,{success:false,err:err});
             }else{
                 req.models.gom_appclses.create({
@@ -23,8 +24,10 @@ module.exports = function (req, res) {
                     IS_WEAK:'F'
                 }, function (err, item) {
                     if(err){
+                        req.db.driver.close();
                         return res.send(200,{success:false,err:err});
                     }else{
+                        req.db.driver.close();
                         return res.send(200,{success:true,err:null});
                     }
                 });

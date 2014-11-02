@@ -113,6 +113,7 @@ module.exports = function (req, res) {
             selfInfo:_selfNodeDetail
         };
         //console.log(node);
+        req.db.driver.close();
         return res.send(200,node);
     })
 };

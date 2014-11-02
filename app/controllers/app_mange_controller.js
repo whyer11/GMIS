@@ -8,6 +8,7 @@ module.exports = function (req, res) {
              *  处理err
              */
         }else{
+            req.db.driver.close();
             return res.render('app_manage',{
                 title:'APP管理器',
                 app_info:appcols

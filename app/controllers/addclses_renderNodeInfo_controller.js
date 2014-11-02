@@ -70,6 +70,7 @@ module.exports = function (req, res, err) {
         checkAllProps(classes, nodeinfo, classes[0], gom_props, 0, 0);
     });
     ep.all('next', function (nodeinfo) {
+        req.db.driver.close();
         return res.send(200,{nodeInfo: nodeinfo});
     });
 };

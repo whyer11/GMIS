@@ -66,6 +66,7 @@ module.exports = {
     createGrantor: function (req, res) {
         opt_db.checkNewGrantorId(req, function (err, id) {
             if(err){
+                req.db.driver.close();
                 return res.send(200,{success:false,err:'unknow'});
             }else{
                 req.models.gom_ac_grantors.create({
@@ -75,8 +76,10 @@ module.exports = {
                     USER_PWD:'123'
                 }, function (err, item) {
                     if(err){
+                        req.db.driver.close();
                         return res.send(200,{success:false,err:err});
                     }else{
+                        req.db.driver.close();
                         return res.send(200,{success:true,err:null});
                     }
                 })
@@ -113,6 +116,7 @@ module.exports = {
                             index++;
                         }
                     }
+                    req.db.driver.close();
                     return res.send(200,{have:have,unhave:unhave});
                 })
             });
@@ -124,8 +128,10 @@ module.exports = {
             req.db.driver.execQuery("DELETE FROM `gmis`.`gom_ac_groupusers` WHERE `GRANTOR_ID`='"+req.body.grantorid+"' and`GOM_GRANTOR_ID`='"+req.body.grantorsid+"';", function (err) {
                 if(err){
                     console.log(err);
+                    req.db.driver.close();
                     return res.send(200,{success:false,err:err});
                 }else{
+                    req.db.driver.close();
                     return res.send(200,{success:true,err:null});
                 }
             });
@@ -138,8 +144,10 @@ module.exports = {
             req.models.gom_ac_groupusers.create(item, function (err, item) {
                 if(err){
                     console.log(err);
+                    req.db.driver.close();
                     return res.send(200,{success:false,err:err});
                 }else{
+                    req.db.driver.close();
                     return res.send(200,{success:true,err:null});
                 }
             })
@@ -185,6 +193,7 @@ module.exports = {
                     temp.push(item);
                 }
                 //console.log(temp);
+                req.db.driver.close();
                 return res.send(200,temp);
 
             })
@@ -222,6 +231,7 @@ module.exports = {
                     }
                     //console.log(authed);
                     //console.log(unauthed);
+                    req.db.driver.close();
                     return res.send(200,{authed:authed,unauthed:unauthed});
                 })
             })
@@ -232,8 +242,10 @@ module.exports = {
         if(req.body.del == 'true'){
             req.db.driver.execQuery("DELETE FROM `gmis`.`gom_ac_appacis` WHERE `APP_ID`='"+req.body.appid+"' and`GRANTOR_ID`='"+req.body.grantorid+"';", function (err) {
                 if(err){
+                    req.db.driver.close();
                     return res.send(200,{success:false,err:err});
                 }else{
+                    req.db.driver.close();
                     return res.send(200,{success:true});
                 }
             });
@@ -244,12 +256,13 @@ module.exports = {
                 GRANTOR_ID:req.body.grantorid
             }, function (err, item) {
                 if(err){
+                    req.db.driver.close();
                     return res.send(200,{success:false,err:err});
                 }else{
+                    req.db.driver.close();
                     return res.send(200,{success:true});
                 }
             })
         }
     }
-
 };

@@ -11,8 +11,10 @@ module.exports = function (req, res) {
         }, function (err, item) {
             if(err){
                 console.error(err);
+                req.db.driver.close();
                 return res.send(200,{success:false,err:err,node:req.body.gom_clsid[i]});
             }else if(i == req.body.gom_clsid.length-1){
+                req.db.driver.close();
                 return res.send(200,{success:true,err:null,node:null});
             }else{
                 i++;

@@ -4,9 +4,11 @@
 var EventProxy = require('eventproxy');
 var ep = new EventProxy();
 module.exports = function (req, res) {
+    var user = '';
     if(req.body.userid == 'ROOT'){
         return res.render('platform_index',{
-            title:'管理员'
+            title:'管理员',
+            user:'管理员'
         })
     }else {
         req.models.gom_ac_grantors.find({
@@ -20,6 +22,7 @@ module.exports = function (req, res) {
             if (err) {
                 console.log(err);
             } else if (grantor.length == 0) {
+                req.db.driver.close();
                 return res.render('index', {
                     title: '无此用户,重新登录',
                     err: '用户名或密码错误,请重新登录'
@@ -59,9 +62,11 @@ module.exports = function (req, res) {
                                 if (err) {
 
                                 } else {
+                                    req.db.driver.close();
                                     return res.render('platform_user', {
                                         title: '我的应用中心',
-                                        apps: appcols
+                                        apps: appcols,
+                                        user: grantor[0].GRANTOR_NAME
                                     });
                                 }
                             })

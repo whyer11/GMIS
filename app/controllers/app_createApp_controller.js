@@ -9,7 +9,7 @@ module.exports = function (req, res) {
             req.models.gom_insts.get(refcol.INST_ID, function (err, instcol) {
                 if(err){
                     console.error(err);
-
+                    req.db.driver.close();
                     return res.render('500',{
                         title:'服务器出错啦',
                         err:err
@@ -20,6 +20,7 @@ module.exports = function (req, res) {
                     ref[refcol.REF_ID] = instcol;
                     i++;
                     if(count == i){
+                        req.db.driver.close();
                         return res.render('app_create',{
                             title:'创建一个App',
                             ref:ref

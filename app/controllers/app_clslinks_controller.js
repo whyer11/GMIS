@@ -14,12 +14,14 @@ module.exports = function (req, res) {
 
                 req.models.gom_clses.find(['CLS_ID','Z'], function (err, clscols) {
                     splitClass(data,clscols, function (linked, unlinked) {
+                        req.db.driver.close();
                         return res.send(200,{linked:linked,unlinked:unlinked});
                     })
                 })
             })
         }else{
             req.models.gom_clses.find(['CLS_ID','Z'], function(err,clscols){
+                req.db.driver.close();
                 return res.send(200,{linked:linkedClses,unlinked:clscols});
             })
         }

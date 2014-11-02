@@ -11,6 +11,7 @@ module.exports = function (req, res) {
         /**
          * 类型下子节点,无法删除
          */
+        req.db.driver.close();
         return res.send(200,{success:false,err:'您无法删除该类型,原因是它不是叶子类型'});
     }else{
         /**
@@ -28,14 +29,17 @@ module.exports = function (req, res) {
                                 console.log('未发现任何异常,开始删除该类型');
                                 ep.emit('$YouCanDel',{});
                             }else{
+                                req.db.driver.close();
                                 return res.send(200,{success:false,err:'您无法删除该类型,原因是它有实例对象'});
                             }
                         });
                     }else{
+                        req.db.driver.close();
                         return res.send(200,{success:false,err:'您无法删除该类型,原因是它与App有连接'});
                     }
                 })
             }else{
+                req.db.driver.close();
                 return res.send(200,{success:false,err:'您无法删除该类型,原因是它与其他类型有连接'});
             }
         })
@@ -53,6 +57,7 @@ module.exports = function (req, res) {
                     console.log('已删除第'+i+'条记录,在gom_props中');
                     if(err){
                         console.log(err);
+                        req.db.driver.close();
                         return res.send(200,{success:false,err:err});
                     }else if(i == count){
                         /**
@@ -76,11 +81,13 @@ module.exports = function (req, res) {
         req.models.gom_clses.get(req.body.id, function (err, clscol) {
             if(err){
                 console.error(err);
+                req.db.driver.close();
                 return res.send(200,{success:false,err:err});
             }else{
                 clscol.remove(function (err) {
                     if(err){
                         console.error(err);
+                        req.db.driver.close();
                         return res.send(200,{success:false,err:err});
                     }else{
                         /**
@@ -119,6 +126,7 @@ module.exports = function (req, res) {
                 console.log('已发现模型,正在删除');
                 fs.unlinkSync(modelpath);
                 console.log('模型删除完毕');
+                req.db.driver.close();
                 return res.send(200,{success:true,err:null});
             } else {
                 console.info(modelpath + ' have been del!');

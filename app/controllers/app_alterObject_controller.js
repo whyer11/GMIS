@@ -29,6 +29,7 @@ module.exports = function (req, res) {
         }else{
             _selfNodeDetail.INST_NAME = '名称';
             //console.log(_selfNodeDetail);
+            req.db.driver.close();
             return res.send(200,_selfNodeDetail);
         }
 

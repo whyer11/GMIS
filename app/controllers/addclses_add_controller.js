@@ -98,7 +98,7 @@ module.exports = function (req, res) {
             }
         })
     });
-
+    req.db.driver.close();
     return res.render('add_classes', {title: '类型管理器'});
     //res.end();
 };

@@ -104,6 +104,7 @@ module.exports = function (req, res) {
             req.db.driver.execQuery(delSQL, function (err,result) {
                 if(err){
                     console.log(err);
+                    req.db.driver.close();
                     return res.send(200,{success:false,err:err});
                 }else{
                     /**
@@ -112,6 +113,7 @@ module.exports = function (req, res) {
                     req.models.gom_props.find({'PROP_COL':form.deledProps}).each(function (propcol) {
                         propcol.remove(function (err) {
                             if(err){
+                                req.db.driver.close();
                                 return res.send(200,{success:false,err:err});
                             }
                         })
@@ -182,6 +184,7 @@ module.exports = function (req, res) {
 
         ep.all('$AlteredProps', function (data) {
             console.log('请求完毕');
+            req.db.driver.close();
             return res.send(200,{success:true,err:null});
         });
 
@@ -198,6 +201,7 @@ module.exports = function (req, res) {
                 propcol.save(function (err) {
                     if(err){
                         console.log(err);
+                        req.db.driver.close();
                         return res.send(200,{success:false,err:err});
                     }else{
 
@@ -205,6 +209,7 @@ module.exports = function (req, res) {
                         req.db.driver.execQuery(alterSQLStr, function (err, result) {
                             if(err){
                                 console.log(err);
+                                req.db.driver.close();
                                 return res.send(200,{success:false,err:err});
                             }else{
                                 i++;
@@ -252,6 +257,7 @@ module.exports = function (req, res) {
                     }, function (err, item) {
                         if(err){
                             console.log(err);
+                            req.db.driver.close();
                             return res.send(200,{success:false,err:err});
                         }else{
                             i++;
@@ -279,6 +285,7 @@ module.exports = function (req, res) {
                 req.db.driver.execQuery(createSQLStr, function (err,result) {
                     if(err){
                         console.log(err);
+                        req.db.driver.close();
                         return res.send(200,{success:false,err:err});
                     }else{
                         /**
