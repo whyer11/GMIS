@@ -4,5 +4,9 @@
 extends layout
 block content
    script(src='../javascripts/grantor_create.js')
-   input#username(placeholder='请输入用户名')
-   a.btn.btn-info#create(data-system='T') 创建
+   div.container
+      h2.white.text-center 创建用户
+      div.container
+         div.create-grantor
+            input.create-input#username(placeholder='请输入用户名')
+            a.btn.btn-info#create(data-system='T') 创建

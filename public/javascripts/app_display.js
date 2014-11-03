@@ -140,13 +140,25 @@ $(function () {
 
         $.post('/app_render_node_info.json', treenodeobj, function (data) {
             var objinfo = '';
+            //console.log(data);
+            var property_key = [];
+            var property_val = [];
             for(val in data){
-                objinfo += '<li><span>'+val+' : '+data[val]+'</span></li>'
+                property_key.push(val);
+                property_val.push(data[val]);
+                //objinfo += '<li><span>'+val+' : '+data[val]+'</span></li>'
             }
+            for(var i = property_key.length-1;i>=0;i--){
+                if(i == property_key.length-1){
+                    objinfo += '<li><span class="property-name">'+property_key[i]+'</span><span class="property-val">'+property_val[i]+'</span></li>';
+                }else{
+                    objinfo += '<div class="super"></div>' +
+                    '<li><span class="property-name">'+property_key[i]+'</span><span class="property-val">'+property_val[i]+'</span></li>'
+                }
+
+            }
+
             var htmlstr = '' +
-                '<div class="well-edit clearfix">' +
-                '<button class="btn btn-danger pull-left" id="editnow">编辑</button>' +
-                '</div>' +
                 '<div class="obj-view">' +
                 '<ul>' +
                 objinfo +
@@ -203,18 +215,27 @@ $(function () {
         };
         $.post('/app_render_add_obj_form.json',items,function(data){
             var objinfo = '';
-            //console.log(data);
+            var self_key = [];
+            var self_val = [];
+            for (val in data.selfInfo) {
+                self_key.push(val);
+                self_val.push(data.selfInfo[val]);
+
+
+            }
+            for(var i = self_key.length-1;i>=0;i--){
+
+                objinfo += '<li><span class="property-name">' + self_val[i] + '</span><input id="new_' + self_key[i] + '" type="text" placeholder="请输入' + self_val[i] + '"></li>';
+
+            }
             for (val in data.parentInfo)
             {
-                objinfo+='<li><span><label>'+val+'</label></span><p>'+data.parentInfo[val]+'</p></li>';
-            }
-            for (val in data.selfInfo) {
-                objinfo+='<li><span><label>'+data.selfInfo[val]+'</label></span><input id="new_'+val+'" type="text" placeholder="请输入'+data.selfInfo[val]+'"></li>';
+                objinfo+='<div class="super"></div><li><span class="property-name">'+val+'</span><span>'+data.parentInfo[val]+'</span></li>';
             }
             var htmlstr = '' +
                 '<div class="well-cancel clearfix">' +
-                    '<button class="btn btn-danger pull-left" id="cancelnew">取消</button>' +
-                    '<button class="btn btn-success pull-right" id="savenew">保存</button>' +
+                    '<a class="opt-btn pull-left" id="cancelnew">取消</a>' +
+                    '<a class="opt-btn pull-right" id="savenew">保存</a>' +
                 '</div>' +
                 '<div class="obj-view">' +
                     '<ul id="newobjarea">' +
@@ -297,13 +318,21 @@ $(function () {
 
 
                 var alterinfo = '';
+                var per_key = [];
+                var per_val = [];
+
                 for(val in data){
-                    alterinfo += '<li><span><label>'+data[val]+'</label></span><input id="alter_'+val+'" type="text" placeholder="请输入'+data[val]+'"></li>'
+                    per_key.push(val);
+                    per_val.push(data[val]);
+
+                }
+                for(var i = per_key.length-1;i>=0;i--){
+                    alterinfo += '<li><span class="property-name">'+per_val[i]+'</span><input id="alter_'+per_key[i]+'" type="text" placeholder="请输入'+per_val[i]+'"></li>';
                 }
                 var htmlStr = '' +
                     '<div class="well-cancel clearfix">' +
-                    '<button class="btn btn-danger pull-left" id="cancelalter">取消</button>' +
-                    '<button class="btn btn-success pull-right" id="savealter">保存</button>' +
+                    '<a class="pull-left opt-btn" id="cancelalter">取消</a>' +
+                    '<a class="pull-right opt-btn" id="savealter">保存</a>' +
                     '</div>' +
                     '<div class="obj-view">' +
                     '<ul id="newobjarea">' +

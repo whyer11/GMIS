@@ -4,16 +4,19 @@ extends layout
 
 block content
   script(src='../../javascripts/app_display.js')
-  div.navbar.navbar-inverse
-    div.navbar-inner
-      div.container-fluid
-        a.brand #{appname}
-  div.container-fluid
+  div.container
     div.row-fluid
       div.span3
+        h4.header-title.pull-left #{appname}
+      div.span6
+      div.span3
+        a.header-title.back-btn(href='javascript:history.back();') 返回
+  div.container-fluid
+    div.row-fluid
+      div.span3.offset1
         div.siderbar
           ul#treeDemo.ztree
-      div.span9
-        div.well.well-large#operatearea
+      div.span7
+        div#operatearea.operatearea
 
   input#app(value = '#{appid}',type='hidden')

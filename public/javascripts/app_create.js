@@ -76,8 +76,8 @@ $(function () {
     $('#nextstep').bind('click', function (e) {
         $('#cover').html('' +
             '<div class="alert alert-info">您选择了 '+refSelected.instname+' 作为新App的根节点</div>' +
-            '<h4>请输入这个App的名字</h4>' +
-            '<p>例如:中北学院管理器</p>' +
+            '<h4 class="header-title">请输入这个App的名字</h4>' +
+            '<p class="header-title">例如:中北学院管理器</p>' +
             '<input type="text" id="app_name">' +
             '<br>' +
             '<a class="btn btn-success" id="finish">完成App创建</a>');

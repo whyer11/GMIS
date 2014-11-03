@@ -11,6 +11,7 @@ $(function () {
             $.post('/grantor_create',{username:$('#username').val(),issystem:isSystem}, function (data) {
                 if(data.success){
                     alert('操作成功!\n点击确定转入用户/用户组管理器中');
+                    window.location = '/grantor_manage_view';
                 }else{
                     console.log(data.err);
                     alert('操作失败!\n请打开控制台查看错误');

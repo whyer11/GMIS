@@ -15,7 +15,7 @@ module.exports = function (req, res) {
                         //console.log(propcols[i].PROP_NAME);
                         _selfNodeDetail[propcols[i].PROP_COL] = propcols[i].PROP_NAME;
                         if (i == propcols.length - 1) {
-                            _selfNodeDetail.INST_NAME = '名称';
+                            //_selfNodeDetail.INST_NAME = '名称';
                             opt_db.checkParentClass(req,nextclsid, function (err, p_clscol) {
                                 return checkSelfProps(p_clscol.CLS_ID);
                             });
@@ -28,7 +28,7 @@ module.exports = function (req, res) {
             })
         }else{
             _selfNodeDetail.INST_NAME = '名称';
-            //console.log(_selfNodeDetail);
+            console.log(_selfNodeDetail);
             req.db.driver.close();
             return res.send(200,_selfNodeDetail);
         }

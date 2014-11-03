@@ -3,10 +3,8 @@
 extends layout
 
 block content
-  div.row-fluid
-    div.span4.offset4
-      h2 我的Apps
-      ul
-        each val in appinfo
-          li
-            a(href='/app/'+val.APP_ID+'/view')=val.APP_NAME
+  div.container
+    h1.pull-left.header-title 所有的Apps
+  div.container
+    each val in appinfo
+        a.platform-app(href='/app/'+val.APP_ID+'/view')=val.APP_NAME
