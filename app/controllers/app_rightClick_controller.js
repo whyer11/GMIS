@@ -4,7 +4,6 @@
 var EventProxy = require('eventproxy');
 var ep = new EventProxy();
 module.exports = function (req, res) {
-    //console.log(req.body);
     req.models.gom_clslinks.find({CLS_ID: req.body.clsid}, function (err, clses) {
         ep.emit('clslink', clses);
     });
@@ -32,9 +31,6 @@ module.exports = function (req, res) {
                 req.db.driver.close();
                 return res.send(200,cls);
             });
-
-
-
         });
     });
 };

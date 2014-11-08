@@ -238,7 +238,6 @@ module.exports = {
         })
     },
     authedorunauthed: function (req, res) {
-        console.log(req.body);
         if(req.body.del == 'true'){
             req.db.driver.execQuery("DELETE FROM `gmis`.`gom_ac_appacis` WHERE `APP_ID`='"+req.body.appid+"' and`GRANTOR_ID`='"+req.body.grantorid+"';", function (err) {
                 if(err){

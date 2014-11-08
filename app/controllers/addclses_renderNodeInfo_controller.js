@@ -35,26 +35,32 @@ module.exports = function (req, res, err) {
     }
 
     function checkAllProps(classes, nodeinfo, nextclassid, db_props, a, classindex) {
-        if (nextclassid >= 0) {
+        console.log(nextclassid);
+        if (nextclassid >= 0 && nextclassid != undefined) {
             db_props.find({CLS_ID: nextclassid}, function (err, data) {
-                for (var i = 0; i < data.length; i++) {
-                    if (data[i].PROP_CAN_VISIBLE == 'T') {
+                if(data == undefined){
 
-                        var propObj = {
-                            propid: data[i].PROP_ID,
-                            name: data[i].PROP_NAME,
-                            type: data[i].PROP_TYPE,
-                            col: data[i].PROP_COL,
-                            dbms_type: data[i].PROP_DBMS_TYPE,
-                            length: data[i].PROP_LENGTH,
-                            can_visible: data[i].PROP_CAN_VISIBLE,
-                            can_modify: data[i].PROP_CAN_MODIFY,
-                            can_delete: data[i].PROP_CAN_DELETE,
-                            code: data[i].PROP_CODE,
-                            classid: data[i].CLS_ID
-                        };
-                        nodeinfo[a] = propObj;
-                        a++;
+                }else {
+
+                    for (var i = 0; i < data.length; i++) {
+                        if (data[i].PROP_CAN_VISIBLE == 'T') {
+
+                            var propObj = {
+                                propid: data[i].PROP_ID,
+                                name: data[i].PROP_NAME,
+                                type: data[i].PROP_TYPE,
+                                col: data[i].PROP_COL,
+                                dbms_type: data[i].PROP_DBMS_TYPE,
+                                length: data[i].PROP_LENGTH,
+                                can_visible: data[i].PROP_CAN_VISIBLE,
+                                can_modify: data[i].PROP_CAN_MODIFY,
+                                can_delete: data[i].PROP_CAN_DELETE,
+                                code: data[i].PROP_CODE,
+                                classid: data[i].CLS_ID
+                            };
+                            nodeinfo[a] = propObj;
+                            a++;
+                        }
                     }
                 }
                 classindex++;
