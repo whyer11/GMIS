@@ -328,6 +328,8 @@ body {
 
 .app-category h2 {
     color: #ffffff;
+    text-align: center;
+    line-height: 150px;
 }
 
 .app-category a {
@@ -351,6 +353,7 @@ body {
 .app-category:hover h2{
 
     color: rgba(0, 0, 0, 0);
+    display: none;
 
 }
 .app-category:hover a{
