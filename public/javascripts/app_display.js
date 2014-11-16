@@ -313,21 +313,27 @@ $(function () {
             alert('无法修改根对象');
         }else{
 
+            $.post('/app_render_node_info.json',treeNode, function (nodeinfo) {
+
 
             $.post('/app_alterobj.json',treeNode, function (data) {
 
-
+                console.log(data);
                 var alterinfo = '';
                 var per_key = [];
                 var per_val = [];
+                var val_val = [];
 
                 for(val in data){
                     per_key.push(val);
                     per_val.push(data[val]);
 
                 }
+                for(val in nodeinfo){
+                    val_val.push(nodeinfo[val]);
+                }
                 for(var i = per_key.length-1;i>=0;i--){
-                    alterinfo += '<li><span class="property-name">'+per_val[i]+'</span><input id="alter_'+per_key[i]+'" type="text" placeholder="请输入'+per_val[i]+'"></li>';
+                    alterinfo += '<li><span class="property-name">'+per_val[i]+'</span><input id="alter_'+per_key[i]+'" type="text" value="'+val_val[i]+'"placeholder="请输入'+per_val[i]+'"></li>';
                 }
                 var htmlStr = '' +
                     '<div class="well-cancel clearfix">' +
@@ -367,6 +373,7 @@ $(function () {
 
                 })
 
+            })
             })
 
         }

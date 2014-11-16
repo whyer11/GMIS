@@ -28,7 +28,7 @@ module.exports = function (req, res) {
                 console.log(err)
             } else {
                 console.log("insert successfully(table gom_clses)");
-            }
+            }/*
             if(form.parent_class_id == 0){
                 req.models.gom_clslinks.create({
                     CLS_ID : form.parent_class_id,
@@ -39,13 +39,16 @@ module.exports = function (req, res) {
                         console.log(err);
                     }
                 });
-            }
+            }*/
             gom_clses.find(['CLS_ID','Z'],function(err,data){
                 opt_db.addModelsMaps(data);
             });
 
         });
-        gom_props.find(['PROP_ID', 'Z']).run(function (err, data) {
+        //console.log(gom_props);
+        req.models.gom_props.find(['PROP_ID', 'Z'],function (err, data) {
+            console.log(err);
+            //console.log(data);
             currentPropId = data[0].PROP_ID + 1;
             if (typeof(form.PROP_NAME) == 'string') {
                 gom_props.create({
@@ -97,6 +100,6 @@ module.exports = function (req, res) {
             }
         })
     });
-    req.db.driver.close();
+    //req.db.driver.close();
     return res.render('add_classes', {title: '类型管理器'});
 };

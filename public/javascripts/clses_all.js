@@ -135,6 +135,7 @@ $(function () {
                 if(confirm('确定修改?')){
                     var formdata = generateFormDataForPost();
                     formdata.deledProps = deledcol;
+                    console.log(formdata);
                     $.post('/alterclass',formdata, function (data) {
                         if(data.success){
                             alert('good job');
@@ -176,6 +177,7 @@ $(function () {
     function generateFormDataForPost () {
         var formdata = {};
         var _form = document.forms["form_"+currentModal].elements;
+        console.log(currentModal);
         var example = { PROP_ID: '42',
             deledProps: '',
             PROP_NAME: '系人数',
@@ -215,7 +217,7 @@ $(function () {
             '<h3>' + title + '</h3></div>' +
             '<div class="modal-body">' + modalbody + '</div>' +
             '<div class="modal-footer">' +
-            '<input  class="btn submitalter" type="button" value="提交">' +
+            '<input  class="btn submitalter" type="button" value="提交修改">' +
             '<input  class="btn " type="submit" value="提交新建">' +
             '</div></form>');
         currentModal = modalid;
