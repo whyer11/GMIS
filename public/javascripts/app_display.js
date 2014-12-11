@@ -24,9 +24,7 @@ $(function () {
         contextMenuClass: 'contextMenu',
         contextSeperatorClass: 'contextDivider',
         items: [
-            alterObj,
-            deleteObj,
-            null
+
         ]
     };
     //将$中封装的Ztree插件赋给全局变量
@@ -79,7 +77,8 @@ $(function () {
                 name: data[i].REF_NAME,
                 clsid: data[i].REF_CLS_ID,
                 instid: data[i].REF_INST_ID,
-                appid: data[i].REF_APP_ID
+                appid: data[i].REF_APP_ID,
+                isweak: data[i].IS_WEAK
             };
             nodes.push(n);
         }
@@ -91,6 +90,7 @@ $(function () {
      * treeNode获取当前节点的整个对象
      */
     function onClick(event, treeId, treeNode) {
+        //console.log(treeNode.isweak);
         renderNodeInfo(treeNode);
 
     }
@@ -99,6 +99,10 @@ $(function () {
      *
      */
     function onRightClick(e, tree, treeNode) {
+        if(treeNode.isweak == 'F'){
+            contextMenuSettings.items.push(alterObj);
+            contextMenuSettings.items.push(deleteObj);
+        }
         $.post('/app_rightclick.json', treeNode, function (data) {
 
 
@@ -121,13 +125,13 @@ $(function () {
                 .appendTo(document.body).bind('contextmenu click', function () {
                     bg.remove();
                     menu.remove();
-                    contextMenuSettings.items = [alterObj, deleteObj, null];
+                    contextMenuSettings.items = [];
                     return false;
                 });
             menu.find('a').click(function () {
                 menu.remove();
                 bg.remove();
-                contextMenuSettings.items = [alterObj, deleteObj, null];
+                contextMenuSettings.items = [];
             })
         })
     }

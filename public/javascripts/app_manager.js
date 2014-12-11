@@ -99,6 +99,7 @@ $(function () {
                         window.location = '/app_manager';
                     } else {
                         alert(data.err);
+                        console.log(data.err);
                     }
                 })
             }

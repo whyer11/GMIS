@@ -28,11 +28,12 @@ module.exports = function (req, res) {
         for (var i = 0; i < refs.length; i++) {
             isChild(pid, refs[i], refs[i], refs, tree);
         }
+
         ep.emit('returntree', tree);
     });
 
     ep.all('returntree', function (tree) {
-
+        //console.log(tree);
         addProperties(0, tree);
     });
 
@@ -88,18 +89,26 @@ module.exports = function (req, res) {
      * @param tree
      */
     function addProperties(i, tree) {
+        //console.log(tree);
         if (i < tree.length) {
             models.gom_insts.get(tree[i].INST_ID, function (err, inst) {
                 models.gom_clses.get(inst.CLS_ID, function (err,cls) {
+                    //console.log(cls.CLS_NAME);
+                    models.gom_appclses.find({CLS_ID:cls.CLS_ID,APP_ID:appid}, function (err,appclscols) {
+                        //console.log(appclscols[0]);
 
 
-                    tree[i].REF_CLS_NAME = cls.CLS_NAME;
-                    tree[i].REF_NAME = inst.INST_NAME;
-                    tree[i].REF_CLS_ID = inst.CLS_ID;
-                    tree[i].REF_INST_ID = inst.INST_ID;
-                    tree[i].REF_APP_ID = appid;
-                    i++;
-                    return addProperties(i, tree);
+                        tree[i].REF_CLS_NAME = cls.CLS_NAME;
+                        tree[i].REF_NAME = inst.INST_NAME;
+                        tree[i].REF_CLS_ID = inst.CLS_ID;
+                        tree[i].REF_INST_ID = inst.INST_ID;
+                        tree[i].REF_APP_ID = appid;
+                        if(appclscols[0]) {
+                            tree[i].IS_WEAK = appclscols[0].IS_WEAK;
+                        }
+                        i++;
+                        return addProperties(i, tree);
+                    });
                 })
             })
         } else {

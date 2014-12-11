@@ -85,16 +85,14 @@ $(function () {
         forLink = [];
         forUnlink = [];
 
-        if(currentTreeNode.id == 0){
-            alert('您无法为根类型指定类型连接')
-        }else{
+
             $.post('/clslinks_linked',currentTreeNode, function (data) {
                 refreshLinked(data.linked);
                 refreshUnlinked(data.unlinked);
                 bindUnlinkedClick();
                 bindLinkedClick();
             })
-        }
+
     }
 
     /**

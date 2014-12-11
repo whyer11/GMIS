@@ -1,4 +1,4 @@
-// update at Fri Nov 14 2014 13:08:58 GMT+0800 (CST)
+// update at Tue Nov 18 2014 14:18:15 GMT+0800 (CST)
 exports.modelsmaps = function (req,tab_name) {
    var models = {
      "JOB_INFO" : req.models.JOB_INFO,

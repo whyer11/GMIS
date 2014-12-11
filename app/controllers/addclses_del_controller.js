@@ -57,7 +57,7 @@ module.exports = function (req, res) {
                     console.log('已删除第'+i+'条记录,在gom_props中');
                     if(err){
                         console.log(err);
-                        req.db.driver.close();
+                        //req.db.driver.close();
                         return res.send(200,{success:false,err:err});
                     }else if(i == count){
                         /**
@@ -81,13 +81,13 @@ module.exports = function (req, res) {
         req.models.gom_clses.get(req.body.id, function (err, clscol) {
             if(err){
                 console.error(err);
-                req.db.driver.close();
+                //req.db.driver.close();
                 return res.send(200,{success:false,err:err});
             }else{
                 clscol.remove(function (err) {
                     if(err){
                         console.error(err);
-                        req.db.driver.close();
+                        //req.db.driver.close();
                         return res.send(200,{success:false,err:err});
                     }else{
                         /**
@@ -126,7 +126,7 @@ module.exports = function (req, res) {
                 console.log('已发现模型,正在删除');
                 fs.unlinkSync(modelpath);
                 console.log('模型删除完毕');
-                req.db.driver.close();
+                //req.db.driver.close();
                 return res.send(200,{success:true,err:null});
             } else {
                 console.info(modelpath + ' have been del!');
