@@ -2,12 +2,15 @@ extends layout
 
 block content
   link(rel='stylesheet', href='/stylesheets/for_index.css')
-  div.container
-    div.inner.cover
-      h1.cover-heading Sign in
-      div.container-fluid
-        form.form-signin(action='/users_signin',method='post')
-          a.label-important.label=err
-          input.form-control(type='text',placeholder='Email address',required,autofocus,name='userid')
-          input.form-control(type='password',placeholder='Password',required,name='password')
-          button.btn.btn-lg.btn-block(type='submit') Sign in
+  div.sign-in-form
+    div.form-header
+      div.form-title 登录到 GMIS
+    form.form-horizontal(action='/users_signin',method='post')
+      a.label-important.label=err
+      div.form-group
+        input.input-lg.form-control(type='text',placeholder='Email address',required,autofocus,name='userid')
+      div.form-group
+        input.input-lg.form-control(type='password',placeholder='Password',required,name='password')
+      div.form-group
+        button.btn.btn-lg.btn-success.pull-right(type='submit') 登录
+        a.btn.btn-link.btn-lg 注册
