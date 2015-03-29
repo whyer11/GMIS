@@ -4,28 +4,32 @@ extends layout
 
 block content
   script(src='../../javascripts/platform_index.js')
-  div.row-fluid
-    div.container
-      h3.header-title.pull-left 管理信息系统动态建模实验平台
-      h3.header-title.pull-right=user
-        | ,你好
-      h2.header-title 建模中心
-    div.container
 
-  div.row-fluid.AppCols
-    div.span3.offset2
+  div.navbar-wrapper
+    div.container
+      nav.navbar.navbar-default
+        div.container
+          div.navbar-header
+            a.navbar-brand 管理信息系统动态建模实验平台
+          div.collapse.navbar-collapse
+            p.pull-right.navbar-text=user
+              | 你好
+
+
+  div.row-fluid
+    div.col-md-3
       div.app-category
         h2 类型建模
         a(href='/add_child_classes') 类型管理器
         a(href='/clslinks_view') 类型连接管理
-    div.span3
+    div.col-md-3
       div.app-category
         h2 App建模
         a(href='/app_createapps') 创建App
         a(href='/app_index') App列表
         a(href='/app_manager') App管理器
         a(href='/app_weakclass') App类型强弱关联
-    div.span3
+    div.col-md-3
       div.app-category
         h2 权限建模
         a(href='/grantor_create_view') 创建用户

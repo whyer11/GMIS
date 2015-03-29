@@ -30,27 +30,30 @@ $(function () {
     };
 
 
-
+    /**
+     * new one class click event
+     */
     $('.getparentID').bind('click', function () {
+        console.log(currentNodeInfo);
+        if(currentNodeInfo.length){
+            var contentStr = '<div class="row-fluid">' +
+                '<div class="span4">' +
+                '<label>类型名称</label>' +
+                '<input name="class_name" type="text" placeholder="类型名称">' +
+                '<label>类型表名称</label>' +
+                '<input name="class_tab_name" type="text" placeholder="类型表名称">' +
+                '<input name="parent_class_id" type="hidden" value="'+currentNodeInfo[0].classid+'"></div>' +
+                '<div class="span8 pull-left">' +
+                '<h3>属性</h3>' +
+                '<ul class="thumbnails" id="' + ulprop + '">' +
+                '</ul>' +
+                '<a class="btn btn-info" id="' + newprop + '">新建类型</a>' +
+                '</div>' +
+                '</div>';
+            var id = newModalForm('新建子类型', '/add_child_classes', contentStr);
 
-        var contentStr = '<div class="row-fluid">' +
-            '<div class="span4">' +
-            '<label>类型名称</label>' +
-            '<input name="class_name" type="text" placeholder="类型名称">' +
-            '<label>类型表名称</label>' +
-            '<input name="class_tab_name" type="text" placeholder="类型表名称">' +
-            '<input name="parent_class_id" type="hidden" value="'+currentNodeInfo[0].classid+'"></div>' +
-            '<div class="span8 pull-left">' +
-            '<h3>属性</h3>' +
-            '<ul class="thumbnails" id="' + ulprop + '">' +
-            '</ul>' +
-            '<a class="btn btn-info" id="' + newprop + '">新建类型</a>' +
-            '</div>' +
-            '</div>';
-        var id = newModalForm('新建子类型', '/add_child_classes', contentStr);
-
-        $('#' + newprop + '').bind('click', function () {
-            $('#' + ulprop + '').append('<li class="span4"><div class="thumbnail">' +
+            $('#' + newprop + '').bind('click', function () {
+                $('#' + ulprop + '').append('<li class="span4"><div class="thumbnail">' +
                 '<label>属性名称</label>' +
                 '<input name="PROP_NAME" type="text" PLACEHOLDER="属性名称">' +
                 '<label>属性列名</label>' +
@@ -64,15 +67,20 @@ $(function () {
                 '<label>属性长度</label>' +
                 '<input name="PROP_LENGTH" type="text">' +
                 '</div></li>');
-        });
+            });
 
 
-        $('#' + id + '').modal();
+            $('#' + id + '').modal({w:900});
+        }else{
+            alert()
+        }
+
     });
 
 
-
-
+    /**
+     * del one class click event
+     */
     $('.delclass').bind('click', function () {
         if(currentTreeNode.id == 0){
             alert('不可以删除根类型');
@@ -102,7 +110,7 @@ $(function () {
     $('.alterclass').bind('click', function () {
         var childClassProps = [];
         var j = 0;
-        if (confirm('确定要修改此类型？')) {
+
             for (var i = 0; i < currentNodeInfo.length; i++) {
                 if (currentTreeNode.id == currentNodeInfo[i].classid) {
                     childClassProps[j] = currentNodeInfo[i];
@@ -147,8 +155,8 @@ $(function () {
                     })
                 }
             });
-            $('#' + id + '').modal();
-        }
+            $('#' + id + '').modal({w:900});
+
     });
 
 
@@ -210,16 +218,37 @@ $(function () {
 
     function newModalForm(title, action, modalbody) {
         deledcol = [];
-        $('body').append('<form name="form_'+modalid+'" class="form-horizontal" method="post" action="'+action+'">' +
-            '<div class="modal fade mymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="' + modalid + '">' +
-            '<div class="modal-header">' +
-            '<button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>' +
-            '<h3>' + title + '</h3></div>' +
-            '<div class="modal-body">' + modalbody + '</div>' +
-            '<div class="modal-footer">' +
-            '<input  class="btn submitalter" type="button" value="提交修改">' +
-            '<input  class="btn " type="submit" value="提交新建">' +
-            '</div></form>');
+        $('body').append('' +
+        '<form name="form_'+modalid+'" class="form-horizontal" method="post" action="'+action+'">' +
+        '<div class="modal fade" id="'+modalid+'">' +
+        '<div class="modal-dialog">' +
+        '<div class="modal-content">' +
+        '<div class="modal-header">' +
+        '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+        '<h4 class="modal-title">' + title + '</h4>' +
+        '</div>' +
+        '<div class="modal-body">' +modalbody+'</div>' +
+        '<div class="modal-footer">' +
+        '<input  class="btn submitalter" type="button" value="提交修改">' +
+        '<input  class="btn " type="submit" value="提交新建">' +
+        '</div>' +
+        '</div>' +
+        '</div>' +
+        '</div>' +
+        '</form>');
+
+
+
+        //$('body').append('<form name="form_'+modalid+'" class="form-horizontal" method="post" action="'+action+'">' +
+        //    '<div class="modal fade mymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="' + modalid + '">' +
+        //    '<div class="modal-header">' +
+        //    '<button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>' +
+        //    '<h3>' + title + '</h3></div>' +
+        //    '<div class="modal-body">' + modalbody + '</div>' +
+        //    '<div class="modal-footer">' +
+        //    '<input  class="btn submitalter" type="button" value="提交修改">' +
+        //    '<input  class="btn " type="submit" value="提交新建">' +
+        //    '</div></form>');
         currentModal = modalid;
         return modalid++;
     }
@@ -243,23 +272,48 @@ $(function () {
     }
 
     function renderPropsForAlter(childClassProps, treeid) {
-        var content = '';
+
+        var tbody = '';
         for (var i = 0; i < childClassProps.length; i++) {
-            content += '<li class="span4"><div class="thumbnail">' +
-                '<input name="PROP_ID" type="hidden" value="' + childClassProps[i].propid + '">' +
-                '<label>属性名称</label>' +
-                '<input name="PROP_NAME" type="text" value="' + childClassProps[i].name + '">' +
-                '<label>属性列名</label>' +
-                '<input name="PROP_COL" type="text" value="' + childClassProps[i].col + '">' +
-                '<label>属性列属性</label>' +
-                '<input name="PROP_DBMS_TYPE" type="text" value="' + childClassProps[i].dbms_type + '">' +
-                '<label>属性长度</label>' +
-                '<input name="PROP_LENGTH" type="text" value="' + childClassProps[i].length + '">' +
-                '<a class="btn btn-danger delthisprop">删除该属性</a> ' +
-                '</div></li>';
+            tbody += '' +
+            '<tr>' +
+            '<input name="PROP_ID" type="hidden" value="' + childClassProps[i].propid + '">' +
+            '   <td><input name="PROP_NAME" type="text" value="' + childClassProps[i].name + '"></td>' +
+            '   <td><input name="PROP_COL" type="text" value="' + childClassProps[i].col + '"></td>' +
+            '   <td><input name="PROP_DBMS_TYPE" type="text" value="' + childClassProps[i].dbms_type + '"></td>' +
+            '   <td><input name="PROP_LENGTH" type="text" value="' + childClassProps[i].length + '"></td>' +
+            '   <td><a class="btn btn-danger delthisprop">删除该属性</a></td>' +
+            '</tr>'
+
+
+            //tbody += '<li class="span4"><div class="thumbnail">' +
+            //    '<input name="PROP_ID" type="hidden" value="' + childClassProps[i].propid + '">' +
+            //    '<label>属性名称</label>' +
+            //    '<input name="PROP_NAME" type="text" value="' + childClassProps[i].name + '">' +
+            //    '<label>属性列名</label>' +
+            //    '<input name="PROP_COL" type="text" value="' + childClassProps[i].col + '">' +
+            //    '<label>属性列属性</label>' +
+            //    '<input name="PROP_DBMS_TYPE" type="text" value="' + childClassProps[i].dbms_type + '">' +
+            //    '<label>属性长度</label>' +
+            //    '<input name="PROP_LENGTH" type="text" value="' + childClassProps[i].length + '">' +
+            //    '<a class="btn btn-danger delthisprop">删除该属性</a> ' +
+            //    '</div></li>';
         }
-        content += '<input name="class_id" type="hidden" value="' + treeid + '">' +
-            '<a class="btn btn-danger addpropinalter">添加属性</a>';
+        tbody += '<input name="class_id" type="hidden" value="' + treeid + '">' ;
+        var content = '' +
+            '<table class="table">' +
+            '   <thead>' +
+            '       <tr>' +
+            '           <td>属性名称</td>' +
+            '           <td>属性列名</td>' +
+            '           <td>属性列属性</td>' +
+            '           <td>属性长度</td>' +
+            '           <td>操作</td>' +
+            '       </tr>' +
+            '   </thead>' +
+            '   <tbody>' +tbody+'</tbody>' +
+            '<a class="btn btn-danger addpropinalter">添加属性</a>'+
+            '</table>';
         return content;
     }
 

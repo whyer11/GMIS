@@ -1,8 +1,6 @@
 
 body {
     background: url("img/background.png");
-    background-attachment: fixed;
-    background-size: contain;
 }
 .header-title{
     color: rgba(0,0,0,.7);
@@ -10,10 +8,8 @@ body {
 }
 
 
-.form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+.navbar-wrapper {
+    margin: 20px 0 0 0;
 }
 
 .siderbar {

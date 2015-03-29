@@ -4,22 +4,19 @@ extends layout
 
 block content
   script(src='../javascripts/clses_all.js')
-  div.navbar.navbar-inverse
-    div.navbar-inner
-      div.container-fluid
-        a.brand 类型管理器
-  div.container-fluid
-    div.row-fluid
-      div.span2
+  div.container
+    div.row
+      div.col-md-3
         div.siderbar
           ul#treeDemo.ztree
-      div.span1#class_opts
-        div.optionsbar
-          a.classopts.delclass 删除
-          a.classopts.alterclass 修改
-          a.classopts.getparentID 新建
-      div.span9
-        table.table(style='color:white;')
+
+      div.col-md-9
+        div#class_opts
+          div
+            a.btn.btn-danger.delclass 删除
+            a.btn.btn-default.alterclass 修改
+            a.btn.btn-success.getparentID 新建
+        table.table
           thead
             tr
               th 属性名
