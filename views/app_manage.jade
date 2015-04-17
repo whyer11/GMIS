@@ -5,13 +5,15 @@ extends layout
 
 block content
   script(src='../../javascripts/app_manager.js')
-  div.navbar.navbar-inverse
-    div.navbar-inner
-      div.container
-        a.brand App管理器
   div.container
-    div.row-fluid
-      div.span3
+    div.navbar-wrapper
+      nav.navbar.navbar-default
+        div.container
+          div.navbar-header
+            a.navbar-brand App管理器
+  div.container
+    div.row
+      div.col-md-3
         div.siderbar
           ul#applist
             each val in app_info
@@ -19,14 +21,14 @@ block content
                 a.app-unselected(data-appid=val.APP_ID)=val.APP_NAME
         a#alterapp
         a#delapp
-      div.span3
-        h3.white 已链接的类型
+      div.col-md-3
+        h3 已链接的类型
         div#linked.accordion
           a 这里将显示左侧已选中的APP链接的类型
-      div.span3
-        h3.white 未链接的类型
+      div.col-md-3
+        h3 未链接的类型
         div#unlinked.unlinked
           a 这里将显示左侧已选中的APP未连接的类型
-      div.span3
+      div.col-md-3
         a#link.btn.btn-info 连接
         a#unlink.btn.btn-danger 删除连接

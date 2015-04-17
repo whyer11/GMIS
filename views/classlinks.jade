@@ -5,23 +5,25 @@ extends layout
 
 block content
   script(src='../javascripts/clses_links.js')
-  div.navbar.navbar-inverse
-    div.navbar-inner
-      div.container-fluid
-        a.brand 类型连接管理
-  div.container-fluid
-    div.row-fluid
-      div.span2.offset1
+  div.container
+    div.navbar-wrapper
+      nav.navbar.navbar-default
+        div.container
+          div.navbar-header
+            a.navbar-brand 类型连接管理
+  div.container
+    div.row
+      div.col-md-3
         div.siderbar
           ul#treeDemo.ztree
-      div.span3
-        h3.white 已连接的类型
+      div.col-md-3
+        h3 已连接的类型
         div#linked.accordion
           a 这里将显示左侧已选中类型的已连接的类型
-      div.span3
-        h3.white 未连接的类型
+      div.col-md-3
+        h3 未连接的类型
         div#unlinked.unlinked
           a 这里将显示左侧已选中类型未连接的类型
-      div.span3
+      div.col-md-3
         a#link.btn.btn-info 连接
         a#unlink.btn.btn-danger 删除连接

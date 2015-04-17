@@ -144,9 +144,9 @@ $(function () {
                 '           <span class="label label-success pull-right" style="display: none;">已选中</span>' +
                 '       </a>' +
                 '   </div>' +
-                '   <div id="linked_'+i+'" class="accordion-body collapse">' +
-                '       <div class="accordion-inner">'+generateAccBody(linked[i])+'</div>' +
-                '   </div>' +
+                //'   <div id="linked_'+i+'" class="accordion-body collapse">' +
+                //'       <div class="accordion-inner">'+generateAccBody(linked[i])+'</div>' +
+                //'   </div>' +
                 '</div>';
         }
         return  linkedHtml;

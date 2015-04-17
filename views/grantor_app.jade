@@ -4,20 +4,22 @@
 extends layout
 block content
    script(src='../../javascripts/grantor_app.js')
-   div.navbar.navbar-inverse
-      div.navbar-inner
-         div.container-fluid
-            a.brand 用户/用户组与APP关联
-   div.container-fluid
-      div.row-fluid
-         div.span3
+   div.container
+      div.navbar-wrapper
+         nav.navbar.navbar-default
+            div.container
+               div.navbar-header
+                  a.navbar-brand 用户/用户组与APP关联
+   div.container
+      div.row
+         div.col-md-3
             div.siderbar
                ul#treeDemo.ztree
-         div.span3
-            h3.white 授权的APP
+         div.col-md-3
+            h3 授权的APP
             div#authed
                a 这里将显示已授权的APP
-         div.span3
-            h3.white 未授权的APP
+         div.col-md-3
+            h3 未授权的APP
             div#unauthed
                a 这里将显示未授权的APP
