@@ -1,6 +1,7 @@
-// update at Tue Nov 18 2014 14:18:15 GMT+0800 (CST)
+// update at Fri Apr 17 2015 13:51:07 GMT+0800 (CST)
 exports.modelsmaps = function (req,tab_name) {
    var models = {
+     "test_1233" : req.models.test_1233,
      "JOB_INFO" : req.models.JOB_INFO,
      "STU_JQ_R" : req.models.STU_JQ_R,
      "STU_HJ_R" : req.models.STU_HJ_R,

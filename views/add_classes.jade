@@ -5,18 +5,25 @@ extends layout
 block content
   script(src='../javascripts/clses_all.js')
   div.container
+    div.navbar-wrapper
+      nav.navbar.navbar-default
+        div.container
+          div.navbar-header
+            a.navbar-brand 管理信息系统动态建模实验平台
+  div.container
     div.row
       div.col-md-3
         div.siderbar
           ul#treeDemo.ztree
 
-      div.col-md-9
+      div.col-md-1
         div#class_opts
-          div
+          div.btn-group-vertical
             a.btn.btn-danger.delclass 删除
             a.btn.btn-default.alterclass 修改
             a.btn.btn-success.getparentID 新建
-        table.table
+      div.col-md-8
+        table.table.table-hover(style="margin:0;")
           thead
             tr
               th 属性名

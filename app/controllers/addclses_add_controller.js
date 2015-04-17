@@ -9,6 +9,7 @@ module.exports = function (req, res) {
     var gom_clses = req.models.gom_clses;
     var gom_props = req.models.gom_props;
     var form = req.body;
+    console.log(form);
     var currentClassId = 0;
     var currentPropId = 0;
     var modelContent = opt_db.newModelContent(form);
@@ -101,5 +102,5 @@ module.exports = function (req, res) {
         })
     });
     //req.db.driver.close();
-    return res.render('add_classes', {title: '类型管理器'});
+    return res.redirect('/add_classes');
 };

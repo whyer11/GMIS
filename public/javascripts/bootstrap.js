@@ -1199,6 +1199,37 @@ if (typeof jQuery === 'undefined') {
         this.$body[0].removeChild(scrollDiv)
         return scrollbarWidth
     }
+    Modal.prototype.init = function (option) {
+        console.log(option);
+        if (!option.type) return false;
+        var current = this.$element;
+        console.log(current.find('.modal-title'));
+        current.find('.modal-title').html(option.title || '');
+        //console.log(this.options);
+        current.find('.modal-body-message').html(option.content || '');
+        var footer = '';
+        current.find('.modal-footer').html('');
+        if (!option.btn || option.btn.length == 0 || !option.btn.length) return false;
+        for (var i = 0; i < option.btn.length; i++) {
+            var cid = 'button_' + parseInt(Math.random() * 10000);
+            if (option.btn[i].type) {
+                if(option.btn[i].type == 'cancel'){
+                    footer = '<a id="' + cid + '" type="button" data-dismiss="modal"  class="btn btn-' + option.btn[i].style + '" >' + option.btn[i].content + '</a>';
+                }else {
+                    footer = '<a id="' + cid + '" type="button"  class="btn btn-' + option.btn[i].style + '" >' + option.btn[i].content + '</a>';}
+                current.find('.modal-footer').append(footer);
+                if (option.btn[i].event) {
+                    for (var e in option.btn[i].event) {
+                        $("#" + cid).bind(e, option.btn[i].event[e])
+                    }
+                }
+            } else {
+                footer = '<button id="' + cid + '" type="button"  data-dismiss="modal" class="btn btn-' + option.btn[i].style + '" >' + option.btn[i].content + '</button>';
+                current.find('.modal-footer').append(footer);
+            }
+        }
+
+    }
 
 
     // MODAL PLUGIN DEFINITION
@@ -1208,13 +1239,18 @@ if (typeof jQuery === 'undefined') {
         return this.each(function () {
             var $this = $(this)
             var data = $this.data('bs.modal')
-            $this.find('.modal-dialog').css({'width': option.w})
-            $this.find('.modal-body').css({'height': option.h})
+            $this.find('.modal-dialog').css({'width': option.w});
+            $this.find('.modal-body').css({'height': option.h});
+
             var options = $.extend({}, Modal.DEFAULTS, $this.data(), typeof option == 'object' && option)
 
-            if (!data) $this.data('bs.modal', (data = new Modal(this, options)))
-            if (typeof option == 'string') data[option](_relatedTarget)
-            else if (options.show) data.show(_relatedTarget)
+            if (!data) {
+                $this.data ('bs.modal', (data = new Modal (this, options)))
+            }
+            if (typeof option == 'string') {data[option](_relatedTarget)}
+            else if (options.show) {
+                data.init(option);
+                data.show(_relatedTarget)}
         })
     }
 

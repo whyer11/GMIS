@@ -15,24 +15,30 @@ block content
             p.pull-right.navbar-text=user
               | 你好
 
-
-  div.row-fluid
-    div.col-md-3
-      div.app-category
-        h2 类型建模
-        a(href='/add_child_classes') 类型管理器
-        a(href='/clslinks_view') 类型连接管理
-    div.col-md-3
-      div.app-category
-        h2 App建模
-        a(href='/app_createapps') 创建App
-        a(href='/app_index') App列表
-        a(href='/app_manager') App管理器
-        a(href='/app_weakclass') App类型强弱关联
-    div.col-md-3
-      div.app-category
-        h2 权限建模
-        a(href='/grantor_create_view') 创建用户
-        a(href='/grantors_create_view') 创建用户组
-        a(href='/grantor_manage_view') 管理用户/用户组
-        a(href='/grantor_app_view') 用户/组App关联
+  div.container
+    div.row
+      div.col-md-4
+        div.panel.panel-primary
+          div.panel-heading
+            h3.panel-title 类型建模
+          div.panel-body
+            a.btn.btn-info.btn-block(href='/add_child_classes') 类型管理器
+            a.btn.btn-info.btn-block(href='/clslinks_view') 类型连接管理
+      div.col-md-4
+        div.panel.panel-success
+          div.panel-heading
+            h3.panel-title App建模
+          div.panel-body
+            a.btn.btn-info.btn-block(href='/app_createapps') 创建App
+            a.btn.btn-info.btn-block(href='/app_index') App列表
+            a.btn.btn-info.btn-block(href='/app_manager') App管理器
+            a.btn.btn-info.btn-block(href='/app_weakclass') App类型强弱关联
+      div.col-md-4
+        div.panel.panel-danger
+          div.panel-heading
+            h3.panel-title 权限建模
+          div.panel-body
+            a.btn.btn-info.btn-block(href='/grantor_create_view') 创建用户
+            a.btn.btn-info.btn-block(href='/grantors_create_view') 创建用户组
+            a.btn.btn-info.btn-block(href='/grantor_manage_view') 管理用户/用户组
+            a.btn.btn-info.btn-block(href='/grantor_app_view') 用户/组App关联

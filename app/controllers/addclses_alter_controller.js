@@ -193,6 +193,7 @@ module.exports = function (req, res) {
             var i = index;
             //console.log(propids[i]);
             req.models.gom_props.get(propids[i], function (err, propcol) {
+
                 OLD_PROP_COL[i] = propcol.PROP_COL;
                 propcol.PROP_NAME = form.PROP_NAME[i];
                 propcol.PROP_COL = form.PROP_COL[i];
@@ -206,9 +207,11 @@ module.exports = function (req, res) {
                     }else{
 
                         var alterSQLStr = 'ALTER TABLE `gmis`.`'+form.class_tab_name+'` CHANGE COLUMN `'+OLD_PROP_COL[i]+'` `'+form.PROP_COL[i]+'` VARCHAR('+form.PROP_LENGTH[i]+') NULL DEFAULT NULL ;';
+                        console.log (alterSQLStr);
+
                         req.db.driver.execQuery(alterSQLStr, function (err, result) {
                             if(err){
-                                console.log(err);
+                                console.log(err+'......');
                                 //req.db.driver.close();
                                 return res.send(200,{success:false,err:err});
                             }else{
