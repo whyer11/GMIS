@@ -3,10 +3,20 @@
 
 extends layout
 block content
+
   div.container
     h1.pull-left.header-title 我的应用中心
     h3.pull-right.header-title=user
       | ,你好
   div.container
-    each val in apps
-      a.platform-app(href='/app/'+val.APP_ID+'/view')=val.APP_NAME
+    div.gridly
+      each val in apps
+        div.brick.small
+          a.platform-app(href='/app/'+val.APP_ID+'/view')=val.APP_NAME
+
+  script.
+    $('.gridly').gridly({
+      base: 60, // px
+      gutter: 20, // px
+      columns: 12
+    })

@@ -5,18 +5,18 @@ extends layout
 block content
   script(src='../../javascripts/app_display.js')
   div.container
-    div.row-fluid
-      div.span3
+    div.row
+      div.col-md-3
         h4.header-title.pull-left #{appname}
-      div.span6
-      div.span3
+      div.col-md-6
+      div.col-md-3
         a.header-title.back-btn(href='javascript:history.back();') 返回
-  div.container-fluid
-    div.row-fluid
-      div.span3.offset1
+  div.container
+    div.row
+      div.col-md-3.offset1
         div.siderbar
           ul#treeDemo.ztree
-      div.span7
+      div.col-md-9
         div#operatearea.operatearea
 
   input#app(value = '#{appid}',type='hidden')
